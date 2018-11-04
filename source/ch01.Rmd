@@ -1,9 +1,7 @@
 ---
 title: "Chapter 1: Probability and inference"
-output: md_document
+output: github_document
 ---
-
-# Chapter 1: Probability and inference
 
 ```{r, echo = FALSE}
 library(Cairo)
