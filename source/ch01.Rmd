@@ -1,9 +1,8 @@
 ---
-title: "Chapter 1: Probability and inference"
+title: "Chapter 1. Probability and inference"
 output:
-  html_document:
+  md_document:
     toc: yes
-    keep_md: yes
 ---
 
 ```{r, echo = FALSE}
