@@ -1,9 +1,9 @@
 ---
-title: "Chapter 1. Probability and inference"
-output:
-  md_document:
-    toc: yes
+title: "Chapter 1: Probability and inference"
+output: md_document
 ---
+
+# Chapter 1: Probability and inference
 
 ```{r, echo = FALSE}
 library(Cairo)
