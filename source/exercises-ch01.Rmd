@@ -241,10 +241,10 @@ for(i in 1:sims){
 }
 meanwaits <- na.omit(meanwaits)
 
-simplehist(patients, xlab = "total patients", ylab = "density", main = "")
-simplehist(waited, xlab = "number who waited", ylab = "density", main = "")
-simplehist(meanwaits, xlab = "mean wait time", ylab = "density", main = "")
-simplehist(close, xlab = "minutes office was open", ylab = "density", main = "")
+simplehist(patients, xlab = "total patients")
+simplehist(waited, xlab = "number of patients who waited")
+plot(density(meanwaits), xlab = "mean wait time (in minutes)", ylab = "density", main = "")
+simplehist(close, xlab = "minutes office was open")
 
 data.frame(
     median = c(median(patients), median(waited), round(median(meanwaits), 2), median(close)),

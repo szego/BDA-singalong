@@ -225,16 +225,16 @@ sim()
 ```
 
     ## $patients
-    ## [1] 43
+    ## [1] 46
     ## 
     ## $waited
-    ## [1] 13
+    ## [1] 5
     ## 
     ## $meanwait
-    ## [1] 12
+    ## [1] 4.6
     ## 
     ## $close
-    ## [1] 437
+    ## [1] 432
 
 ### (b)
 
@@ -255,25 +255,25 @@ for(i in 1:sims){
 }
 meanwaits <- na.omit(meanwaits)
 
-simplehist(patients, xlab = "total patients", ylab = "density", main = "")
+simplehist(patients, xlab = "total patients")
 ```
 
 ![](ch01ex_figs/ch01ex-unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
-simplehist(waited, xlab = "number who waited", ylab = "density", main = "")
+simplehist(waited, xlab = "number of patients who waited")
 ```
 
 ![](ch01ex_figs/ch01ex-unnamed-chunk-9-2.png)<!-- -->
 
 ``` r
-simplehist(meanwaits, xlab = "mean wait time", ylab = "density", main = "")
+plot(density(meanwaits), xlab = "mean wait time (in minutes)", ylab = "density", main = "")
 ```
 
 ![](ch01ex_figs/ch01ex-unnamed-chunk-9-3.png)<!-- -->
 
 ``` r
-simplehist(close, xlab = "minutes office was open", ylab = "density", main = "")
+simplehist(close, xlab = "minutes office was open")
 ```
 
 ![](ch01ex_figs/ch01ex-unnamed-chunk-9-4.png)<!-- -->
@@ -292,9 +292,9 @@ data.frame(
 ```
 
     ##                         median middle50percent
-    ## total patients           40.00         36 - 44
+    ## total patients           39.00         36 - 44
     ## number who waited         3.00           1 - 6
-    ## mean wait time            3.83        2.75 - 5
+    ## mean wait time            3.71        2.55 - 5
     ## minutes office was open 426.00       420 - 432
 
 -----
