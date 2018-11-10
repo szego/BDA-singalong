@@ -1,0 +1,3113 @@
+"county","stateabbr","value","state","region"
+"abbeville","SC",6.79567611180941,"south carolina",45001
+"acadia","LA",6.71788028844876,"louisiana",22001
+"accomack","VA",6.45989435780789,"virginia",51001
+"ada","ID",4.38371438877859,"idaho",16001
+"adair","IA",5.40933650897288,"iowa",19001
+"adair","KY",4.97334756766076,"kentucky",21001
+"adair","MO",4.71276670550822,"missouri",29001
+"adair","OK",6.03946992803392,"oklahoma",40001
+"adams","CO",3.64047693072467,"colorado",8001
+"adams","IA",4.75498701804207,"iowa",19003
+"adams","ID",5.218941105722,"idaho",16003
+"adams","IL",4.7556705785201,"illinois",17001
+"adams","IN",5.2444824042617,"indiana",18001
+"adams","MS",5.21698839792517,"mississippi",28001
+"adams","ND",4.90862507423313,"north dakota",38001
+"adams","NE",5.94552914215225,"nebraska",31001
+"adams","OH",4.89534003178634,"ohio",39001
+"adams","PA",5.20051644879473,"pennsylvania",42001
+"adams","WA",4.78455227460711,"washington",53001
+"adams","WI",5.50350948497982,"wisconsin",55001
+"addison","VT",5.44218136945172,"vermont",50001
+"aiken","SC",4.55941304039718,"south carolina",45003
+"aitkin","MN",5.6548395651645,"minnesota",27001
+"alachua","FL",3.2725067262126,"florida",12001
+"alamance","NC",5.68858587396478,"north carolina",37001
+"alameda","CA",4.41587067622791,"california",6001
+"alamosa","CO",4.84779825970245,"colorado",8003
+"albany","NY",5.0743289293507,"new york",36001
+"albany","WY",4.3122783882579,"wyoming",56001
+"albemarle","VA",3.8208427896164,"virginia",51003
+"alcona","MI",6.46999755380701,"michigan",26001
+"alcorn","MS",5.35892490488289,"mississippi",28003
+"alexander","IL",5.19208493805485,"illinois",17003
+"alexander","NC",4.62742837667438,"north carolina",37003
+"alexandria cit","VA",3.90040971865667,"virginia",51510
+"alfalfa","OK",5.84458662458092,"oklahoma",40003
+"alger","MI",4.5235721892874,"michigan",26003
+"allamakee","IA",5.79250219237521,"iowa",19005
+"allegan","MI",4.17111692902168,"michigan",26005
+"allegany","MD",5.57122826569857,"maryland",24001
+"allegany","NY",4.84605206695753,"new york",36003
+"alleghany","NC",5.06443690861449,"north carolina",37005
+"alleghany","VA",4.77770728760613,"virginia",51005
+"allegheny","PA",5.79275876685825,"pennsylvania",42003
+"allen","IN",4.10144519637043,"indiana",18003
+"allen","KS",6.07662646326668,"kansas",20001
+"allen","KY",6.11983835973319,"kentucky",21003
+"allen","LA",5.11380599176376,"louisiana",22003
+"allen","OH",5.46779096119988,"ohio",39003
+"allendale","SC",4.8687675132158,"south carolina",45005
+"alpena","MI",4.3248278952182,"michigan",26007
+"alpine","CA",5.09327800914928,"california",6003
+"amador","CA",5.2172559727661,"california",6005
+"amelia","VA",4.75034594247201,"virginia",51007
+"amherst","VA",5.48687700723955,"virginia",51009
+"amite","MS",4.6215444348895,"mississippi",28005
+"anderson","KS",5.74846948362199,"kansas",20003
+"anderson","KY",4.56673835293556,"kentucky",21005
+"anderson","SC",5.67704607677245,"south carolina",45007
+"anderson","TN",4.51370318307614,"tennessee",47001
+"anderson","TX",5.6974192591575,"texas",48001
+"andrew","MO",5.28913170990972,"missouri",29003
+"andrews","TX",4.96526455700993,"texas",48003
+"androscoggin","ME",5.20232852051598,"maine",23001
+"angelina","TX",4.39638058770394,"texas",48005
+"anne arundel","MD",3.75582466440425,"maryland",24003
+"anoka","MN",3.52001501491179,"minnesota",27003
+"anson","NC",4.82528133815325,"north carolina",37007
+"antelope","NE",5.44393419757238,"nebraska",31003
+"antrim","MI",6.1482235528356,"michigan",26009
+"apache","AZ",4.8147183715263,"arizona",4001
+"appanoose","IA",5.30950758574132,"iowa",19007
+"appling","GA",4.85261665625646,"georgia",13001
+"appomattox","VA",5.39512814132686,"virginia",51011
+"aransas","TX",5.14869769516514,"texas",48007
+"arapahoe","CO",2.49578175500649,"colorado",8005
+"archer","TX",5.18759689711451,"texas",48009
+"archuleta","CO",5.40801956386252,"colorado",8007
+"arenac","MI",5.52207711396138,"michigan",26011
+"arkansas","AR",5.04841576494305,"arkansas",5001
+"arlington","VA",4.11094629372616,"virginia",51013
+"armstrong","PA",4.8975831916846,"pennsylvania",42005
+"armstrong","TX",5.32990485690269,"texas",48011
+"aroostook","ME",5.23906979768897,"maine",23003
+"arthur","NE",5.13075838968799,"nebraska",31005
+"ascension","LA",6.12811771762745,"louisiana",22005
+"ashe","NC",4.54811157049184,"north carolina",37009
+"ashland","OH",4.8768778701634,"ohio",39005
+"ashland","WI",4.95003059304924,"wisconsin",55003
+"ashley","AR",4.98885782243509,"arkansas",5003
+"ashtabula","OH",5.63303160719466,"ohio",39007
+"asotin","WA",5.40382190031546,"washington",53003
+"assumption","LA",4.89882604168648,"louisiana",22007
+"atascosa","TX",4.68791981124456,"texas",48013
+"atchison","KS",5.66870919862493,"kansas",20005
+"atchison","MO",5.45719203582151,"missouri",29005
+"athens","OH",4.62162740258691,"ohio",39009
+"atkinson","GA",4.81097801086795,"georgia",13003
+"atlantic","NJ",5.52414725839134,"new jersey",34001
+"atoka","OK",4.64396476480121,"oklahoma",40005
+"attala","MS",6.35622503122171,"mississippi",28007
+"audrain","MO",5.93091774625614,"missouri",29007
+"audubon","IA",5.46010632267115,"iowa",19009
+"auglaize","OH",6.17465025516572,"ohio",39011
+"augusta","VA",3.9688105376927,"virginia",51015
+"aurora","SD",5.22331314592206,"south dakota",46003
+"austin","TX",7.18333041730189,"texas",48015
+"autauga","AL",4.32622936725609,"alabama",1001
+"avery","NC",5.25592150812893,"north carolina",37011
+"avoyelles","LA",5.27881997213235,"louisiana",22009
+"baca","CO",5.11325744206907,"colorado",8009
+"bacon","GA",4.88331294609105,"georgia",13005
+"bailey","TX",4.60093790699998,"texas",48017
+"baker","FL",4.44631236627971,"florida",12003
+"baker","GA",5.04439863896985,"georgia",13007
+"baker","OR",5.70503405974295,"oregon",41001
+"baldwin","AL",5.63654901017954,"alabama",1003
+"baldwin","GA",4.71103471744416,"georgia",13009
+"ballard","KY",4.86450979191596,"kentucky",21007
+"baltimore city","MD",6.54112772215023,"maryland",24510
+"baltimore","MD",6.24258732455667,"maryland",24005
+"bamberg","SC",4.63641476852854,"south carolina",45009
+"bandera","TX",5.71404715210004,"texas",48019
+"banks","GA",5.08520570659361,"georgia",13011
+"banner","NE",5.09080417650312,"nebraska",31007
+"bannock","ID",4.61929408254009,"idaho",16005
+"baraga","MI",5.21491686330126,"michigan",26013
+"barber","KS",5.59226606806596,"kansas",20007
+"barbour","AL",4.48347974435685,"alabama",1005
+"barbour","WV",4.90201587445945,"west virginia",54001
+"barnes","ND",5.35250014669572,"north dakota",38003
+"barnstable","MA",7.04731237317298,"massachusetts",25001
+"barnwell","SC",4.6212002515847,"south carolina",45011
+"barren","KY",6.49643303653666,"kentucky",21009
+"barron","WI",6.15448245308147,"wisconsin",55005
+"barrow","GA",4.8385521863778,"georgia",13013
+"barry","MI",4.19513022125365,"michigan",26015
+"barry","MO",6.96831910997201,"missouri",29009
+"bartholomew","IN",5.41127216225465,"indiana",18005
+"barton","KS",4.53519375712457,"kansas",20009
+"barton","MO",5.5165095700643,"missouri",29011
+"bartow","GA",4.66017231590903,"georgia",13015
+"bastrop","TX",5.34808127575849,"texas",48021
+"bates","MO",7.10181267094521,"missouri",29013
+"bath","KY",5.61067711530102,"kentucky",21011
+"bath","VA",5.08579148708991,"virginia",51017
+"baxter","AR",5.5751002464227,"arkansas",5005
+"bay","FL",4.66959275880143,"florida",12005
+"bay","MI",4.50602282601351,"michigan",26017
+"bayfield","WI",5.0908768572083,"wisconsin",55007
+"baylor","TX",5.42093778859347,"texas",48023
+"beadle","SD",5.27614663787234,"south dakota",46005
+"bear lake","ID",4.97506285990068,"idaho",16007
+"beaufort","NC",5.84000054942756,"north carolina",37013
+"beaufort","SC",4.06304594722026,"south carolina",45013
+"beauregard","LA",5.00664351522127,"louisiana",22011
+"beaver","OK",4.67683302226241,"oklahoma",40007
+"beaver","PA",5.56353155479947,"pennsylvania",42007
+"beaver","UT",5.4166491580451,"utah",49001
+"beaverhead","MT",5.11375365637414,"montana",30001
+"becker","MN",5.1832196064496,"minnesota",27005
+"beckham","OK",4.87882953981716,"oklahoma",40009
+"bedford city","VA",5.42753623813628,"virginia",51515
+"bedford","PA",4.24828697278792,"pennsylvania",42009
+"bedford","TN",5.07208693777219,"tennessee",47003
+"bedford","VA",4.52040603233524,"virginia",51019
+"bee","TX",5.28105792774723,"texas",48025
+"belknap","NH",5.30284176935549,"new hampshire",33001
+"bell","KY",5.80801426819266,"kentucky",21013
+"bell","TX",3.89604370425824,"texas",48027
+"belmont","OH",5.96973682287365,"ohio",39013
+"beltrami","MN",6.52970825282569,"minnesota",27007
+"ben hill","GA",5.24498837296541,"georgia",13017
+"benewah","ID",5.77167206438307,"idaho",16009
+"bennett","SD",5.34371493265896,"south dakota",46007
+"bennington","VT",5.4764342623258,"vermont",50003
+"benson","ND",5.68015625656775,"north dakota",38005
+"bent","CO",5.0176773102363,"colorado",8011
+"benton","AR",5.01027721605083,"arkansas",5007
+"benton","IA",5.00627079041483,"iowa",19011
+"benton","IN",5.33492512751052,"indiana",18007
+"benton","MN",5.21852669185218,"minnesota",27009
+"benton","MO",4.86009219900055,"missouri",29015
+"benton","MS",4.81882679398663,"mississippi",28009
+"benton","OR",4.39732112436825,"oregon",41003
+"benton","TN",5.0216187839927,"tennessee",47005
+"benton","WA",3.75917225330589,"washington",53005
+"benzie","MI",5.51393404643755,"michigan",26019
+"bergen","NJ",6.19327248908139,"new jersey",34003
+"berkeley","SC",4.37551416481852,"south carolina",45015
+"berkeley","WV",4.8858207844562,"west virginia",54003
+"berks","PA",5.34417798582263,"pennsylvania",42011
+"berkshire","MA",5.68320254165676,"massachusetts",25003
+"bernalillo","NM",4.19821360474123,"new mexico",35001
+"berrien","GA",5.42630668239364,"georgia",13019
+"berrien","MI",5.29754515022622,"michigan",26021
+"bertie","NC",4.87494857024549,"north carolina",37015
+"bexar","TX",3.96435726498193,"texas",48029
+"bibb","AL",4.5983637164908,"alabama",1007
+"bibb","GA",4.04366021877168,"georgia",13021
+"bienville","LA",5.95734256683744,"louisiana",22013
+"big horn","MT",5.37033775181359,"montana",30003
+"big horn","WY",5.14806624496342,"wyoming",56003
+"big stone","MN",5.83212431054245,"minnesota",27011
+"billings","ND",5.08223943217352,"north dakota",38007
+"bingham","ID",3.87281671744356,"idaho",16011
+"black hawk","IA",5.27233944843799,"iowa",19013
+"blackford","IN",4.70290274807763,"indiana",18009
+"bladen","NC",5.32972714902028,"north carolina",37017
+"blaine","ID",4.86372753716857,"idaho",16013
+"blaine","MT",5.43567200879178,"montana",30005
+"blaine","NE",5.12380742718816,"nebraska",31009
+"blaine","OK",4.63458872472412,"oklahoma",40011
+"blair","PA",5.59725643126187,"pennsylvania",42013
+"blanco","TX",5.40751055403757,"texas",48031
+"bland","VA",5.57965467075762,"virginia",51021
+"bleckley","GA",4.83731755546446,"georgia",13023
+"bledsoe","TN",4.76067834411907,"tennessee",47007
+"blount","AL",4.89463976201353,"alabama",1009
+"blount","TN",5.54726581914883,"tennessee",47009
+"blue earth","MN",4.42412594492455,"minnesota",27013
+"boise","ID",4.90958446890828,"idaho",16015
+"bolivar","MS",5.14427074158858,"mississippi",28011
+"bollinger","MO",4.71953649173616,"missouri",29017
+"bon homme","SD",4.59788288699412,"south dakota",46009
+"bond","IL",5.76583592651155,"illinois",17005
+"bonner","ID",4.33319098617599,"idaho",16017
+"bonneville","ID",3.67951920490312,"idaho",16019
+"boone","AR",5.9361907968214,"arkansas",5009
+"boone","IA",5.33974440755153,"iowa",19015
+"boone","IL",5.30452214861177,"illinois",17007
+"boone","IN",5.11778880999666,"indiana",18011
+"boone","KY",5.06776403873021,"kentucky",21015
+"boone","MO",4.1144746908077,"missouri",29019
+"boone","NE",4.90461655059946,"nebraska",31011
+"boone","WV",5.34280752608178,"west virginia",54005
+"borden","TX",5.10786551220922,"texas",48033
+"bosque","TX",6.42875625039548,"texas",48035
+"bossier","LA",3.98492012157258,"louisiana",22015
+"botetourt","VA",4.73091827306501,"virginia",51023
+"bottineau","ND",4.80556597491565,"north dakota",38009
+"boulder","CO",3.97928129352667,"colorado",8013
+"boundary","ID",5.47378514297972,"idaho",16021
+"bourbon","KS",5.25533865569018,"kansas",20011
+"bourbon","KY",6.13532241859044,"kentucky",21017
+"bowie","TX",5.28619360305041,"texas",48037
+"bowman","ND",6.09016716164656,"north dakota",38011
+"box butte","NE",5.05857510920446,"nebraska",31013
+"box elder","UT",3.92621943140448,"utah",49003
+"boyd","KY",6.08382065161609,"kentucky",21019
+"boyd","NE",4.9292981359989,"nebraska",31015
+"boyle","KY",5.0013629821198,"kentucky",21021
+"bracken","KY",5.81634816731296,"kentucky",21023
+"bradford","FL",6.2845291908676,"florida",12007
+"bradford","PA",3.93839219691944,"pennsylvania",42015
+"bradley","AR",4.54511427218464,"arkansas",5011
+"bradley","TN",4.25021241099554,"tennessee",47011
+"branch","MI",5.58512264396745,"michigan",26023
+"brantley","GA",4.80553460270894,"georgia",13025
+"braxton","WV",5.5829215913712,"west virginia",54007
+"brazoria","TX",3.31728226923804,"texas",48039
+"brazos","TX",3.70191640086117,"texas",48041
+"breathitt","KY",4.88022868006798,"kentucky",21025
+"breckinridge","KY",5.40617613930414,"kentucky",21027
+"bremer","IA",6.39862350711017,"iowa",19017
+"brevard","FL",6.2680387257032,"florida",12009
+"brewster","TX",5.15137547528073,"texas",48043
+"briscoe","TX",4.99699237641288,"texas",48045
+"bristol city","VA",5.1394680949651,"virginia",51520
+"bristol","MA",4.89323479594769,"massachusetts",25005
+"bristol","RI",5.39041722157915,"rhode island",44001
+"broadwater","MT",5.21474197596905,"montana",30007
+"bronx","NY",4.98696472860524,"new york",36005
+"brooke","WV",5.57801395077965,"west virginia",54009
+"brookings","SD",4.36238035621215,"south dakota",46011
+"brooks","GA",4.57364212444897,"georgia",13027
+"brooks","TX",5.13287392171578,"texas",48047
+"broome","NY",5.99545644273705,"new york",36007
+"broward","FL",8.5729059486976,"florida",12011
+"brown","IL",5.04010483962809,"illinois",17009
+"brown","IN",5.34232368077445,"indiana",18013
+"brown","KS",5.86802847336944,"kansas",20013
+"brown","MN",5.40633319097651,"minnesota",27015
+"brown","NE",5.78922108634586,"nebraska",31017
+"brown","OH",5.35100270566229,"ohio",39015
+"brown","SD",5.64919301591396,"south dakota",46013
+"brown","TX",5.8083027627619,"texas",48049
+"brown","WI",4.51222780629051,"wisconsin",55009
+"brule","SD",4.77994405728878,"south dakota",46015
+"brunswick","NC",5.84716213803177,"north carolina",37019
+"brunswick","VA",6.46772968156996,"virginia",51025
+"bryan","GA",5.04969688938085,"georgia",13029
+"bryan","OK",5.44129423535462,"oklahoma",40013
+"buchanan","IA",5.04146884012111,"iowa",19019
+"buchanan","MO",5.44958196340201,"missouri",29021
+"buchanan","VA",5.78411105063765,"virginia",51027
+"buckingham","VA",5.49916979836039,"virginia",51029
+"bucks","PA",4.24280385513988,"pennsylvania",42017
+"buena vista ci","VA",4.73053441502297,"virginia",51530
+"buena vista","IA",5.90888076570135,"iowa",19021
+"buffalo","NE",4.74454207421046,"nebraska",31019
+"buffalo","SD",5.11866432082832,"south dakota",46017
+"buffalo","WI",5.00946597250177,"wisconsin",55011
+"bullitt","KY",3.54443722437443,"kentucky",21029
+"bulloch","GA",4.9075665641564,"georgia",13031
+"bullock","AL",4.90416876528479,"alabama",1011
+"buncombe","NC",4.85091837463785,"north carolina",37021
+"bureau","IL",7.20435713661337,"illinois",17011
+"burke","GA",5.04449215008254,"georgia",13033
+"burke","NC",4.98943218663501,"north carolina",37023
+"burke","ND",4.87370824411194,"north dakota",38013
+"burleigh","ND",4.61481500337948,"north dakota",38015
+"burleson","TX",5.52026367828177,"texas",48051
+"burlington","NJ",4.54237024664022,"new jersey",34005
+"burnet","TX",5.62269018032284,"texas",48053
+"burnett","WI",5.15582387940483,"wisconsin",55013
+"burt","NE",5.17594843002862,"nebraska",31021
+"butler","AL",4.54055983931968,"alabama",1013
+"butler","IA",6.44176016212877,"iowa",19023
+"butler","KS",5.38488223042875,"kansas",20015
+"butler","KY",5.79316625450835,"kentucky",21031
+"butler","MO",6.25482944538402,"missouri",29023
+"butler","NE",5.65253603652931,"nebraska",31023
+"butler","OH",4.56745839702897,"ohio",39017
+"butler","PA",4.45978829483464,"pennsylvania",42019
+"butte","CA",6.11814364980398,"california",6007
+"butte","ID",5.22751617043278,"idaho",16023
+"butte","SD",5.46244911561343,"south dakota",46019
+"butts","GA",5.92087677778083,"georgia",13035
+"cabarrus","NC",4.7786160724836,"north carolina",37025
+"cabell","WV",4.26938408529322,"west virginia",54011
+"cache","UT",2.85500261271981,"utah",49005
+"caddo","LA",5.69902666682479,"louisiana",22017
+"caddo","OK",5.85418579438735,"oklahoma",40015
+"calaveras","CA",5.36332821927451,"california",6009
+"calcasieu","LA",4.57977411595351,"louisiana",22019
+"caldwell","KY",4.31997256796555,"kentucky",21033
+"caldwell","LA",6.02193195421368,"louisiana",22021
+"caldwell","MO",5.17004134488668,"missouri",29025
+"caldwell","NC",5.42598407945964,"north carolina",37027
+"caldwell","TX",5.98180354106713,"texas",48055
+"caledonia","VT",4.5527145789411,"vermont",50005
+"calhoun","AL",4.72065293267203,"alabama",1015
+"calhoun","AR",5.45550611293196,"arkansas",5013
+"calhoun","FL",4.85942724836455,"florida",12013
+"calhoun","GA",5.30949987553256,"georgia",13037
+"calhoun","IA",5.99804027429692,"iowa",19025
+"calhoun","IL",5.35435871443515,"illinois",17013
+"calhoun","MI",5.21807618706298,"michigan",26025
+"calhoun","MS",5.23255431190939,"mississippi",28013
+"calhoun","SC",5.36402875592696,"south carolina",45017
+"calhoun","TX",4.93533626747781,"texas",48057
+"calhoun","WV",4.5554063096541,"west virginia",54013
+"callahan","TX",5.7302332810336,"texas",48059
+"callaway","MO",5.4704905967412,"missouri",29027
+"calloway","KY",5.34241477190901,"kentucky",21035
+"calumet","WI",5.55989948922936,"wisconsin",55015
+"calvert","MD",3.78702133239163,"maryland",24009
+"camas","ID",5.10676723773147,"idaho",16025
+"cambria","PA",6.96399256741473,"pennsylvania",42021
+"camden","GA",4.14171223283982,"georgia",13039
+"camden","MO",5.92142891433891,"missouri",29029
+"camden","NC",5.17096313739619,"north carolina",37029
+"camden","NJ",5.12525439696231,"new jersey",34007
+"cameron","LA",5.04713729621364,"louisiana",22023
+"cameron","PA",5.30448710640546,"pennsylvania",42023
+"cameron","TX",3.35448249321296,"texas",48061
+"camp","TX",4.63935563857853,"texas",48063
+"campbell","KY",4.72552369811425,"kentucky",21037
+"campbell","SD",5.32267578362768,"south dakota",46021
+"campbell","TN",5.88934148938312,"tennessee",47013
+"campbell","VA",3.5658153475136,"virginia",51031
+"campbell","WY",3.8087281769241,"wyoming",56005
+"canadian","OK",3.82376378737268,"oklahoma",40017
+"candler","GA",5.1026218335343,"georgia",13043
+"cannon","TN",5.60025870745683,"tennessee",47015
+"canyon","ID",5.79483565089964,"idaho",16027
+"cape girardeau","MO",5.1746803140538,"missouri",29031
+"cape may","NJ",6.68840057394139,"new jersey",34009
+"carbon","MT",5.46632300887397,"montana",30009
+"carbon","PA",4.21104056619705,"pennsylvania",42025
+"carbon","UT",5.04123625023843,"utah",49007
+"carbon","WY",4.09852329428156,"wyoming",56007
+"caribou","ID",5.43512029837459,"idaho",16029
+"carlisle","KY",5.07193628506866,"kentucky",21039
+"carlton","MN",4.66524604264525,"minnesota",27017
+"caroline","MD",4.87575115736763,"maryland",24011
+"caroline","VA",4.95870207494047,"virginia",51033
+"carroll","AR",5.10875344982304,"arkansas",5015
+"carroll","GA",4.40699236011905,"georgia",13045
+"carroll","IA",5.76432556594786,"iowa",19027
+"carroll","IL",7.14450462700769,"illinois",17015
+"carroll","IN",6.26230903310899,"indiana",18015
+"carroll","KY",5.6641681294425,"kentucky",21041
+"carroll","MD",4.2721044401788,"maryland",24013
+"carroll","MO",5.53594403234457,"missouri",29033
+"carroll","MS",5.98139647447749,"mississippi",28015
+"carroll","NH",5.50066819315494,"new hampshire",33003
+"carroll","OH",4.79011843988601,"ohio",39019
+"carroll","TN",5.86882283034432,"tennessee",47017
+"carroll","VA",4.52263590198328,"virginia",51035
+"carson city","NV",4.7968528299572,"nevada",32510
+"carson","TX",4.63875211809748,"texas",48065
+"carter","KY",4.87054241647597,"kentucky",21043
+"carter","MO",5.66185719393062,"missouri",29035
+"carter","MT",5.02221112695579,"montana",30011
+"carter","OK",5.68124439859953,"oklahoma",40019
+"carter","TN",4.86103111510831,"tennessee",47019
+"carteret","NC",4.39806569604508,"north carolina",37031
+"carver","MN",3.86987839090824,"minnesota",27019
+"cascade","MT",6.03184874151393,"montana",30013
+"casey","KY",4.9720468639282,"kentucky",21045
+"cass","IA",4.90544508050792,"iowa",19029
+"cass","IL",4.49112105428919,"illinois",17017
+"cass","IN",5.83295092660548,"indiana",18017
+"cass","MI",4.32979336140015,"michigan",26027
+"cass","MN",5.94486977553918,"minnesota",27021
+"cass","MO",4.12306678406963,"missouri",29037
+"cass","ND",5.15552795948152,"north dakota",38017
+"cass","NE",4.59483127100716,"nebraska",31025
+"cass","TX",5.92927344227164,"texas",48067
+"cassia","ID",4.64647858999945,"idaho",16031
+"castro","TX",4.45332905936301,"texas",48069
+"caswell","NC",5.1562580149952,"north carolina",37033
+"catahoula","LA",4.80686355866208,"louisiana",22025
+"catawba","NC",5.27622004037004,"north carolina",37035
+"catoosa","GA",5.03344301055277,"georgia",13047
+"catron","NM",4.95183291749503,"new mexico",35003
+"cattaraugus","NY",4.51687682457201,"new york",36009
+"cavalier","ND",4.95127791545205,"north dakota",38019
+"cayuga","NY",5.99190740628736,"new york",36011
+"cecil","MD",5.56775301892292,"maryland",24015
+"cedar","IA",6.06800797356099,"iowa",19031
+"cedar","MO",4.63539194427511,"missouri",29039
+"cedar","NE",6.66834875436292,"nebraska",31027
+"centre","PA",3.71441428528139,"pennsylvania",42027
+"cerro gordo","IA",6.59036356340233,"iowa",19033
+"chaffee","CO",4.53909619646064,"colorado",8015
+"chambers","AL",5.39625075415161,"alabama",1017
+"chambers","TX",5.06975700682253,"texas",48071
+"champaign","IL",4.37030456662732,"illinois",17019
+"champaign","OH",4.66980239272575,"ohio",39021
+"chariton","MO",5.07659786899775,"missouri",29041
+"charles city","VA",5.02865042171709,"virginia",51036
+"charles mix","SD",4.90661879599894,"south dakota",46023
+"charles","MD",4.32795751954533,"maryland",24017
+"charleston","SC",4.21725252846426,"south carolina",45019
+"charlevoix","MI",5.9370760000499,"michigan",26029
+"charlotte","FL",8.81422591465066,"florida",12015
+"charlotte","VA",4.60163867877782,"virginia",51037
+"charlottesvill","VA",4.75655148513933,"virginia",51540
+"charlton","GA",5.06061320234204,"georgia",13049
+"chase","KS",5.24094059351531,"kansas",20017
+"chase","NE",4.80144929015218,"nebraska",31029
+"chatham","GA",5.88165926972835,"georgia",13051
+"chatham","NC",4.75560179742608,"north carolina",37037
+"chattahoochee","GA",4.00384329101048,"georgia",13053
+"chattooga","GA",4.15920300724547,"georgia",13055
+"chautauqua","KS",5.13611498945063,"kansas",20019
+"chautauqua","NY",5.78629802970893,"new york",36013
+"chaves","NM",5.26977478761197,"new mexico",35005
+"cheatham","TN",4.71219036195887,"tennessee",47021
+"cheboygan","MI",5.89908667781438,"michigan",26031
+"chelan","WA",5.70785543516238,"washington",53007
+"chemung","NY",5.61258912913415,"new york",36015
+"chenango","NY",5.81886526498051,"new york",36017
+"cherokee","AL",3.99650374387613,"alabama",1019
+"cherokee","GA",4.87132373708719,"georgia",13057
+"cherokee","IA",5.76264966791672,"iowa",19035
+"cherokee","KS",5.12701991388467,"kansas",20021
+"cherokee","NC",5.013144567324,"north carolina",37039
+"cherokee","OK",5.51703318222871,"oklahoma",40021
+"cherokee","SC",4.21510889164794,"south carolina",45021
+"cherokee","TX",5.55155966229972,"texas",48073
+"cherry","NE",4.9430121531671,"nebraska",31031
+"chesapeake cit","VA",4.70340015562658,"virginia",51550
+"cheshire","NH",5.63636224400684,"new hampshire",33005
+"chester","PA",4.64076562688532,"pennsylvania",42029
+"chester","SC",5.7791069319529,"south carolina",45023
+"chester","TN",4.94699474364458,"tennessee",47023
+"chesterfield","SC",5.30589289461042,"south carolina",45025
+"chesterfield","VA",3.68907231214457,"virginia",51041
+"cheyenne","CO",4.97177049008301,"colorado",8017
+"cheyenne","KS",5.2126138700549,"kansas",20023
+"cheyenne","NE",5.61175850534393,"nebraska",31033
+"chickasaw","IA",5.80714668357645,"iowa",19037
+"chickasaw","MS",4.38271941534377,"mississippi",28017
+"chicot","AR",4.90678551079084,"arkansas",5017
+"childress","TX",5.3405712660778,"texas",48075
+"chilton","AL",4.7179583909729,"alabama",1021
+"chippewa","MI",5.87228656287637,"michigan",26033
+"chippewa","MN",5.29739492651875,"minnesota",27023
+"chippewa","WI",5.10531893364608,"wisconsin",55017
+"chisago","MN",5.82863022725276,"minnesota",27025
+"chittenden","VT",4.35640444661633,"vermont",50007
+"choctaw","AL",5.68248792179033,"alabama",1023
+"choctaw","MS",4.98698055163514,"mississippi",28019
+"choctaw","OK",5.73743752464857,"oklahoma",40023
+"chouteau","MT",5.32500542407077,"montana",30015
+"chowan","NC",5.49889229683334,"north carolina",37041
+"christian","IL",5.87628305341862,"illinois",17021
+"christian","KY",4.46120513726561,"kentucky",21047
+"christian","MO",5.53054401656621,"missouri",29043
+"churchill","NV",6.07518390758749,"nevada",32001
+"cimarron","OK",5.21059171044427,"oklahoma",40025
+"citrus","FL",8.25411298019141,"florida",12017
+"clackamas","OR",4.66206473295351,"oregon",41005
+"claiborne","LA",5.07588083526031,"louisiana",22027
+"claiborne","MS",5.59654014834988,"mississippi",28021
+"claiborne","TN",5.32356150455412,"tennessee",47025
+"clallam","WA",5.41049571185944,"washington",53009
+"clare","MI",5.17564593544628,"michigan",26035
+"clarendon","SC",5.16289183275929,"south carolina",45027
+"clarion","PA",6.64250235233017,"pennsylvania",42031
+"clark","AR",4.80288017497285,"arkansas",5019
+"clark","ID",5.44542699624613,"idaho",16033
+"clark","IL",5.41168329692615,"illinois",17023
+"clark","IN",5.06100564283051,"indiana",18019
+"clark","KS",5.62925543971454,"kansas",20025
+"clark","KY",4.74899183626037,"kentucky",21049
+"clark","MO",5.75187685330437,"missouri",29045
+"clark","NV",4.29939614125148,"nevada",32003
+"clark","OH",5.55417543055793,"ohio",39023
+"clark","SD",4.79130827057549,"south dakota",46025
+"clark","WA",4.79181470320121,"washington",53011
+"clark","WI",5.30643339607737,"wisconsin",55019
+"clarke","AL",5.18452615978277,"alabama",1025
+"clarke","GA",4.3480490823616,"georgia",13059
+"clarke","IA",4.57134903084127,"iowa",19039
+"clarke","MS",4.68506606044701,"mississippi",28023
+"clarke","VA",4.75154836979778,"virginia",51043
+"clatsop","OR",6.71647980725388,"oregon",41007
+"clay","AL",6.08637942391111,"alabama",1027
+"clay","AR",6.47946318438019,"arkansas",5021
+"clay","FL",3.69687522816226,"florida",12019
+"clay","GA",5.07285354074732,"georgia",13061
+"clay","IA",4.52095854400981,"iowa",19041
+"clay","IL",7.65791296360404,"illinois",17025
+"clay","IN",5.63911279229985,"indiana",18021
+"clay","KS",4.49483642677936,"kansas",20027
+"clay","KY",4.49939403500315,"kentucky",21051
+"clay","MN",6.66424227005358,"minnesota",27027
+"clay","MO",5.11253340096795,"missouri",29047
+"clay","MS",5.01954809683795,"mississippi",28025
+"clay","NC",5.24358162439834,"north carolina",37043
+"clay","NE",4.89937662795483,"nebraska",31035
+"clay","SD",5.11979581221659,"south dakota",46027
+"clay","TN",4.92364792090605,"tennessee",47027
+"clay","TX",5.03047292579586,"texas",48077
+"clay","WV",4.66230470228733,"west virginia",54015
+"clayton","GA",3.78234638235746,"georgia",13063
+"clayton","IA",5.1223179884513,"iowa",19043
+"clear creek","CO",4.84845904862626,"colorado",8019
+"clearfield","PA",6.41371550060093,"pennsylvania",42033
+"clearwater","ID",4.72411500552521,"idaho",16035
+"clearwater","MN",5.73854865243253,"minnesota",27029
+"cleburne","AL",5.13714069891585,"alabama",1029
+"cleburne","AR",5.81071705216067,"arkansas",5023
+"clermont","OH",3.66971462974464,"ohio",39025
+"cleveland","AR",4.97999450932122,"arkansas",5025
+"cleveland","NC",6.07578012090787,"north carolina",37045
+"cleveland","OK",3.16297402725252,"oklahoma",40027
+"clifton forge","VA",5.50591762167811,"virginia",51560
+"clinch","GA",4.78736751765038,"georgia",13065
+"clinton","IA",5.48929696840011,"iowa",19045
+"clinton","IL",4.86703935665447,"illinois",17027
+"clinton","IN",4.34976163047499,"indiana",18023
+"clinton","KY",5.66508267143483,"kentucky",21053
+"clinton","MI",4.2543161299912,"michigan",26037
+"clinton","MO",4.93797231945319,"missouri",29049
+"clinton","NY",4.69730423868118,"new york",36019
+"clinton","OH",5.93998849814108,"ohio",39027
+"clinton","PA",4.67888283746921,"pennsylvania",42035
+"cloud","KS",5.50543125257763,"kansas",20029
+"coahoma","MS",4.60513001776816,"mississippi",28027
+"coal","OK",5.40076088135473,"oklahoma",40029
+"cobb","GA",3.00989768269143,"georgia",13067
+"cochise","AZ",4.19310833652511,"arizona",4003
+"cochran","TX",5.14053416344966,"texas",48079
+"cocke","TN",5.37184086314032,"tennessee",47029
+"coconino","AZ",3.59820385048531,"arizona",4005
+"codington","SD",5.5754390629958,"south dakota",46029
+"coffee","AL",4.87915280763092,"alabama",1031
+"coffee","GA",4.11391218732016,"georgia",13069
+"coffee","TN",4.85018076252628,"tennessee",47031
+"coffey","KS",5.6910299218996,"kansas",20031
+"coke","TX",5.5523473612324,"texas",48081
+"colbert","AL",4.77103386489314,"alabama",1033
+"cole","MO",5.48101176736056,"missouri",29051
+"coleman","TX",5.33771587682046,"texas",48083
+"coles","IL",5.08990912710662,"illinois",17029
+"colfax","NE",5.34614011381128,"nebraska",31037
+"colfax","NM",4.77408515317079,"new mexico",35007
+"colleton","SC",4.5285731002339,"south carolina",45029
+"collier","FL",7.53629021765211,"florida",12021
+"collin","TX",3.65396772183624,"texas",48085
+"collingsworth","TX",5.49903202567938,"texas",48087
+"colonial heigh","VA",5.21801236852883,"virginia",51570
+"colorado","TX",5.39894584344592,"texas",48089
+"colquitt","GA",4.4943650897968,"georgia",13071
+"columbia","AR",6.16997133153621,"arkansas",5027
+"columbia","FL",5.16610092340237,"florida",12023
+"columbia","GA",4.36009853074748,"georgia",13073
+"columbia","NY",6.58648512705567,"new york",36021
+"columbia","OR",5.34678779225207,"oregon",41009
+"columbia","PA",5.65919235043502,"pennsylvania",42037
+"columbia","WA",5.16319080364672,"washington",53013
+"columbia","WI",6.31096850291418,"wisconsin",55021
+"columbiana","OH",4.93042209653829,"ohio",39029
+"columbus","NC",4.65263461134836,"north carolina",37047
+"colusa","CA",5.30201312126524,"california",6011
+"comal","TX",5.60310275658234,"texas",48091
+"comanche","KS",5.30685173930013,"kansas",20033
+"comanche","OK",3.83977871469379,"oklahoma",40031
+"comanche","TX",5.93833955081268,"texas",48093
+"concho","TX",4.92524022001048,"texas",48095
+"concordia","LA",5.52394713988658,"louisiana",22029
+"conecuh","AL",5.72736825116306,"alabama",1035
+"conejos","CO",4.89733860569366,"colorado",8021
+"contra costa","CA",4.31417562463723,"california",6013
+"converse","WY",4.5106869733384,"wyoming",56009
+"conway","AR",5.14506584119827,"arkansas",5029
+"cook","GA",5.65734012154684,"georgia",13075
+"cook","IL",5.83890235342648,"illinois",17031
+"cook","MN",4.88721610482675,"minnesota",27031
+"cooke","TX",4.92824319637885,"texas",48097
+"cooper","MO",5.30820763007515,"missouri",29053
+"coos","NH",4.63530730322364,"new hampshire",33007
+"coos","OR",5.66366164624224,"oregon",41011
+"coosa","AL",5.53962864986197,"alabama",1037
+"copiah","MS",4.80119944354062,"mississippi",28029
+"corson","SD",4.96352072566478,"south dakota",46031
+"cortland","NY",4.64459259414534,"new york",36023
+"coryell","TX",3.33628901920972,"texas",48099
+"coshocton","OH",5.00666670488495,"ohio",39031
+"costilla","CO",4.91941758972066,"colorado",8023
+"cottle","TX",5.62754751764177,"texas",48101
+"cotton","OK",5.92050843678463,"oklahoma",40033
+"cottonwood","MN",5.04738714248071,"minnesota",27033
+"covington city","VA",6.19301598945784,"virginia",51580
+"covington","AL",4.97342303310904,"alabama",1039
+"covington","MS",5.27432285124427,"mississippi",28031
+"coweta","GA",5.10083609755409,"georgia",13077
+"cowley","KS",5.92111831371125,"kansas",20035
+"cowlitz","WA",4.50087520686246,"washington",53015
+"craig","OK",5.45897288381068,"oklahoma",40035
+"craig","VA",5.15886037540915,"virginia",51045
+"craighead","AR",5.14588860525794,"arkansas",5031
+"crane","TX",4.78325136563963,"texas",48103
+"craven","NC",4.85430261487993,"north carolina",37049
+"crawford","AR",5.69385080965436,"arkansas",5033
+"crawford","GA",4.76247639357874,"georgia",13079
+"crawford","IA",5.28057681047662,"iowa",19047
+"crawford","IL",5.6365115597715,"illinois",17033
+"crawford","IN",6.1810736066451,"indiana",18025
+"crawford","KS",6.25872201952105,"kansas",20037
+"crawford","MI",5.26591090459723,"michigan",26039
+"crawford","MO",5.00695731658081,"missouri",29055
+"crawford","OH",5.51857740336551,"ohio",39033
+"crawford","PA",5.34502577027032,"pennsylvania",42039
+"crawford","WI",5.64218809736964,"wisconsin",55023
+"creek","OK",5.28627812508716,"oklahoma",40037
+"crenshaw","AL",4.73969311323425,"alabama",1041
+"crisp","GA",5.20100142751808,"georgia",13081
+"crittenden","AR",3.78403543130952,"arkansas",5035
+"crittenden","KY",5.68049747958074,"kentucky",21055
+"crockett","TN",4.96136309445084,"tennessee",47033
+"crockett","TX",5.10549790624877,"texas",48105
+"crook","OR",6.18236980050964,"oregon",41013
+"crook","WY",5.01629611395412,"wyoming",56011
+"crosby","TX",5.22904587197208,"texas",48107
+"cross","AR",4.97588953396647,"arkansas",5037
+"crow wing","MN",5.8755294358933,"minnesota",27035
+"crowley","CO",5.53874018316668,"colorado",8025
+"culberson","TX",4.89848365526858,"texas",48109
+"cullman","AL",5.32215725045649,"alabama",1043
+"culpeper","VA",4.70260647672778,"virginia",51047
+"cumberland","IL",4.95948496487978,"illinois",17035
+"cumberland","KY",4.67957751221618,"kentucky",21057
+"cumberland","ME",5.5498259308941,"maine",23005
+"cumberland","NC",3.03680276334707,"north carolina",37051
+"cumberland","NJ",4.76754968852956,"new jersey",34011
+"cumberland","PA",4.41322114791237,"pennsylvania",42041
+"cumberland","TN",4.3480954736671,"tennessee",47035
+"cumberland","VA",5.43277639404041,"virginia",51049
+"cuming","NE",4.94088194447905,"nebraska",31039
+"currituck","NC",4.97117478524167,"north carolina",37053
+"curry","NM",5.36840979077858,"new mexico",35009
+"curry","OR",5.6209570144908,"oregon",41015
+"custer","CO",5.02109489630556,"colorado",8027
+"custer","ID",5.12097875718083,"idaho",16037
+"custer","MT",4.85895376055837,"montana",30017
+"custer","NE",5.65354928592919,"nebraska",31041
+"custer","OK",4.56948891177946,"oklahoma",40039
+"custer","SD",5.00174023735393,"south dakota",46033
+"cuyahoga","OH",6.16666008087593,"ohio",39035
+"dade","FL",6.38038666526068,"florida",12086
+"dade","GA",4.58635006282005,"georgia",13083
+"dade","MO",5.8380790465301,"missouri",29057
+"daggett","UT",5.11877391935034,"utah",49009
+"dakota","MN",3.59497057234284,"minnesota",27037
+"dakota","NE",5.66231140360178,"nebraska",31043
+"dale","AL",3.6474057600769,"alabama",1045
+"dallam","TX",4.71359883700065,"texas",48111
+"dallas","AL",5.0361163391092,"alabama",1047
+"dallas","AR",4.69489519997091,"arkansas",5039
+"dallas","IA",5.10400221785928,"iowa",19049
+"dallas","MO",5.42916364100408,"missouri",29059
+"dallas","TX",4.06411703926414,"texas",48113
+"dane","WI",4.04300287921177,"wisconsin",55025
+"daniels","MT",5.5889481266049,"montana",30019
+"danville city","VA",5.29644351377539,"virginia",51590
+"dare","NC",4.58942137632924,"north carolina",37055
+"darke","OH",5.82848221818342,"ohio",39037
+"darlington","SC",5.3229333805095,"south carolina",45031
+"dauphin","PA",6.36234828390856,"pennsylvania",42043
+"davidson","NC",5.15734498497921,"north carolina",37057
+"davidson","TN",5.08162512561011,"tennessee",47037
+"davie","NC",4.46244323827097,"north carolina",37059
+"daviess","IN",5.42333101523647,"indiana",18027
+"daviess","KY",5.22252260056204,"kentucky",21059
+"daviess","MO",5.16588762059453,"missouri",29061
+"davis","IA",5.11940323029711,"iowa",19051
+"davis","UT",2.92336724757788,"utah",49011
+"davison","SD",5.6475227230967,"south dakota",46035
+"dawes","NE",5.38211825727496,"nebraska",31045
+"dawson","GA",4.96168298259065,"georgia",13085
+"dawson","MT",4.909431805307,"montana",30021
+"dawson","NE",4.82817065391779,"nebraska",31047
+"dawson","TX",5.77501934067035,"texas",48115
+"day","SD",4.91812285032348,"south dakota",46037
+"de baca","NM",4.99239234499219,"new mexico",35011
+"de kalb","AL",4.97303579834316,"alabama",1049
+"de kalb","GA",4.58590109426516,"georgia",13089
+"de kalb","IL",4.07989447282193,"illinois",17037
+"de kalb","IN",4.20771459171024,"indiana",18033
+"de kalb","MO",5.10727048653694,"missouri",29063
+"de kalb","TN",5.34647090991523,"tennessee",47041
+"de soto","FL",5.81746157517605,"florida",12027
+"de soto","LA",5.50411408378671,"louisiana",22031
+"de soto","MS",4.33259154177045,"mississippi",28033
+"de witt","IL",4.31228530939972,"illinois",17039
+"de witt","TX",5.64315954656209,"texas",48123
+"deaf smith","TX",4.40709915742815,"texas",48117
+"dearborn","IN",4.97048253085635,"indiana",18029
+"decatur","GA",5.47098867626646,"georgia",13087
+"decatur","IA",5.70235524543734,"iowa",19053
+"decatur","IN",5.67723774688971,"indiana",18031
+"decatur","KS",5.46364248744116,"kansas",20039
+"decatur","TN",5.86930268268408,"tennessee",47039
+"deer lodge","MT",5.5479210540235,"montana",30023
+"defiance","OH",4.38398595095542,"ohio",39039
+"del norte","CA",4.99668841855662,"california",6015
+"delaware","IA",5.51577829085168,"iowa",19055
+"delaware","IN",5.24420565655026,"indiana",18035
+"delaware","NY",6.21217041541703,"new york",36025
+"delaware","OH",5.08650282456572,"ohio",39041
+"delaware","OK",4.90520345289728,"oklahoma",40041
+"delaware","PA",5.83411997556169,"pennsylvania",42045
+"delta","CO",5.78137543182893,"colorado",8029
+"delta","MI",5.25458368766395,"michigan",26041
+"delta","TX",5.14581957439311,"texas",48119
+"dent","MO",5.03510866650462,"missouri",29065
+"denton","TX",3.69496191339801,"texas",48121
+"denver","CO",4.86297511226936,"colorado",8031
+"des moines","IA",4.85718794065899,"iowa",19057
+"deschutes","OR",4.10267009503826,"oregon",41017
+"desha","AR",4.71073666464886,"arkansas",5041
+"deuel","NE",4.98026163532066,"nebraska",31049
+"deuel","SD",5.08417916741376,"south dakota",46039
+"dewey","OK",6.56815295584514,"oklahoma",40043
+"dewey","SD",5.3239227479344,"south dakota",46041
+"dickens","TX",5.55575431200823,"texas",48125
+"dickenson","VA",4.44793521829072,"virginia",51051
+"dickey","ND",4.96167084293923,"north dakota",38021
+"dickinson","IA",4.97800380479977,"iowa",19059
+"dickinson","KS",6.250074896786,"kansas",20041
+"dickinson","MI",4.56947020314818,"michigan",26043
+"dickson","TN",4.59796677688093,"tennessee",47043
+"dillon","SC",5.15108315626502,"south carolina",45033
+"dimmit","TX",4.37289682822864,"texas",48127
+"dinwiddie","VA",4.80938146320818,"virginia",51053
+"divide","ND",5.54607877428154,"north dakota",38023
+"dixie","FL",5.1523641017218,"florida",12029
+"dixon","NE",5.57247557306529,"nebraska",31051
+"doddridge","WV",6.09056079067678,"west virginia",54017
+"dodge","GA",5.42917031295898,"georgia",13091
+"dodge","MN",4.66865178068218,"minnesota",27039
+"dodge","NE",5.04648705850224,"nebraska",31053
+"dodge","WI",5.74543527300831,"wisconsin",55027
+"dolores","CO",5.68979965084881,"colorado",8033
+"dona ana","NM",3.59516143564906,"new mexico",35013
+"doniphan","KS",6.02847235599398,"kansas",20043
+"donley","TX",4.88845681684592,"texas",48129
+"dooly","GA",4.7893155352345,"georgia",13093
+"door","WI",5.05946221509779,"wisconsin",55029
+"dorchester","MD",4.34810239599691,"maryland",24019
+"dorchester","SC",4.54455108766286,"south carolina",45035
+"dougherty","GA",4.0000179883758,"georgia",13095
+"douglas","CO",4.40311607239762,"colorado",8035
+"douglas","GA",3.67345960370937,"georgia",13097
+"douglas","IL",4.68903123679881,"illinois",17041
+"douglas","KS",4.363242937394,"kansas",20045
+"douglas","MN",5.84071199218582,"minnesota",27041
+"douglas","MO",4.91112007739024,"missouri",29067
+"douglas","NE",5.41903589596417,"nebraska",31055
+"douglas","NV",5.51577101319633,"nevada",32005
+"douglas","OR",6.63070396282258,"oregon",41019
+"douglas","SD",5.48178610648418,"south dakota",46043
+"douglas","WA",5.15330815423826,"washington",53017
+"douglas","WI",7.44001937450536,"wisconsin",55031
+"drew","AR",5.39077818606009,"arkansas",5043
+"du page","IL",3.88999827190499,"illinois",17043
+"dubois","IN",6.64866333619448,"indiana",18037
+"dubuque","IA",5.84114821184042,"iowa",19061
+"duchesne","UT",4.21466315197745,"utah",49013
+"dukes","MA",4.7985481734665,"massachusetts",25007
+"dundy","NE",5.27559866238232,"nebraska",31057
+"dunklin","MO",6.76613509198091,"missouri",29069
+"dunn","ND",5.14077172654251,"north dakota",38025
+"dunn","WI",4.5828474515312,"wisconsin",55033
+"duplin","NC",4.80126567952265,"north carolina",37061
+"durham","NC",4.88030876130636,"north carolina",37063
+"dutchess","NY",5.72557238629077,"new york",36027
+"duval","FL",4.29717075726306,"florida",12031
+"duval","TX",4.50729361089697,"texas",48131
+"dyer","TN",4.4105246386085,"tennessee",47045
+"eagle","CO",3.95783478147643,"colorado",8037
+"early","GA",4.94287594831298,"georgia",13099
+"east baton rou","LA",4.79619061798097,"louisiana",22033
+"east carroll","LA",4.85433737318735,"louisiana",22035
+"east feliciana","LA",4.98470141496838,"louisiana",22037
+"eastland","TX",4.7014347728371,"texas",48133
+"eaton","MI",4.53055305216624,"michigan",26045
+"eau claire","WI",4.92131384304138,"wisconsin",55035
+"echols","GA",4.99476587084265,"georgia",13101
+"ector","TX",5.06403946932958,"texas",48135
+"eddy","ND",5.8380331433431,"north dakota",38027
+"eddy","NM",4.53769579693666,"new mexico",35015
+"edgar","IL",4.891486406777,"illinois",17045
+"edgecombe","NC",5.97975206211126,"north carolina",37065
+"edgefield","SC",5.37936535025392,"south carolina",45037
+"edmonson","KY",5.30007368846213,"kentucky",21061
+"edmunds","SD",5.73630282072789,"south dakota",46045
+"edwards","IL",4.59193427109407,"illinois",17047
+"edwards","KS",5.20788098681013,"kansas",20047
+"edwards","TX",4.98890864856072,"texas",48137
+"effingham","GA",5.2914609561524,"georgia",13103
+"effingham","IL",4.77073418421799,"illinois",17049
+"el dorado","CA",4.65809955332928,"california",6017
+"el paso","CO",2.70629814556874,"colorado",8041
+"el paso","TX",4.01069391579056,"texas",48141
+"elbert","CO",4.86612975886172,"colorado",8039
+"elbert","GA",5.37775130732025,"georgia",13105
+"elk","KS",5.55865992225907,"kansas",20049
+"elk","PA",6.13591141453506,"pennsylvania",42047
+"elkhart","IN",4.88038718038835,"indiana",18039
+"elko","NV",4.52777199539838,"nevada",32007
+"elliott","KY",5.25939498662717,"kentucky",21063
+"ellis","KS",6.14199953040056,"kansas",20051
+"ellis","OK",5.06047509020482,"oklahoma",40045
+"ellis","TX",3.83811530819899,"texas",48139
+"ellsworth","KS",5.88817137309309,"kansas",20053
+"elmore","AL",4.09947299514005,"alabama",1051
+"elmore","ID",4.29091291619221,"idaho",16039
+"emanuel","GA",5.315888301768,"georgia",13107
+"emery","UT",4.60087000576821,"utah",49015
+"emmet","IA",4.31155789211867,"iowa",19063
+"emmet","MI",5.23425485533337,"michigan",26047
+"emmons","ND",5.06027081750875,"north dakota",38029
+"emporia city","VA",5.25059898422161,"virginia",51595
+"erath","TX",4.87612128487291,"texas",48143
+"erie","NY",6.29625602653207,"new york",36029
+"erie","OH",5.33603376489159,"ohio",39043
+"erie","PA",4.93729325463193,"pennsylvania",42049
+"escambia","AL",6.00207224688858,"alabama",1053
+"escambia","FL",5.65991023432962,"florida",12033
+"esmeralda","NV",5.07603838579539,"nevada",32009
+"essex","MA",5.75913844146023,"massachusetts",25009
+"essex","NJ",6.68688254534483,"new jersey",34013
+"essex","NY",7.03612752315459,"new york",36031
+"essex","VA",6.00449564042342,"virginia",51057
+"essex","VT",5.61519944144195,"vermont",50009
+"estill","KY",6.08161758648244,"kentucky",21065
+"etowah","AL",4.52033940454583,"alabama",1055
+"eureka","NV",5.38552543174797,"nevada",32011
+"evangeline","LA",5.29089959706654,"louisiana",22039
+"evans","GA",5.36501434067829,"georgia",13109
+"fairfax city","VA",5.26403533830656,"virginia",51600
+"fairfax","VA",3.09172757576138,"virginia",51059
+"fairfield","CT",5.71327990029637,"connecticut",9001
+"fairfield","OH",4.20385301431296,"ohio",39045
+"fairfield","SC",5.39874299404275,"south carolina",45039
+"fall river","SD",4.88192900342331,"south dakota",46047
+"fallon","MT",5.21147279392531,"montana",30025
+"falls church c","VA",4.79952901809604,"virginia",51610
+"falls","TX",5.92658308606195,"texas",48145
+"fannin","GA",6.06098020475284,"georgia",13111
+"fannin","TX",4.76785017122816,"texas",48147
+"faribault","MN",5.26867043546959,"minnesota",27043
+"faulk","SD",4.92823463796496,"south dakota",46049
+"faulkner","AR",4.83803556108913,"arkansas",5045
+"fauquier","VA",4.08684946080026,"virginia",51061
+"fayette","AL",5.15035464337328,"alabama",1057
+"fayette","GA",3.70965168116618,"georgia",13113
+"fayette","IA",6.88469392230128,"iowa",19065
+"fayette","IL",6.05720816266212,"illinois",17051
+"fayette","IN",4.30833321042966,"indiana",18041
+"fayette","KY",4.36402654976581,"kentucky",21067
+"fayette","OH",5.03754666058689,"ohio",39047
+"fayette","PA",5.63651280889086,"pennsylvania",42051
+"fayette","TN",4.79422554009136,"tennessee",47047
+"fayette","TX",5.75330285053673,"texas",48149
+"fayette","WV",5.05383589435779,"west virginia",54019
+"fentress","TN",5.23549137519782,"tennessee",47049
+"fergus","MT",5.1336115431241,"montana",30027
+"ferry","WA",4.7970251275928,"washington",53019
+"fillmore","MN",6.54282834292318,"minnesota",27045
+"fillmore","NE",6.11066338050581,"nebraska",31059
+"finney","KS",5.10814689658247,"kansas",20055
+"fisher","TX",5.06948377186382,"texas",48151
+"flagler","FL",6.04054436738372,"florida",12035
+"flathead","MT",4.11946595933572,"montana",30029
+"fleming","KY",6.2719463624749,"kentucky",21069
+"florence","SC",5.74620592654835,"south carolina",45041
+"florence","WI",6.07759917855984,"wisconsin",55037
+"floyd","GA",4.53167838254812,"georgia",13115
+"floyd","IA",5.3047259088868,"iowa",19067
+"floyd","IN",5.38717974732253,"indiana",18043
+"floyd","KY",5.58376316389778,"kentucky",21071
+"floyd","TX",5.1357258141383,"texas",48153
+"floyd","VA",4.9262123562559,"virginia",51063
+"fluvanna","VA",5.16677828742615,"virginia",51065
+"foard","TX",5.36408578535321,"texas",48155
+"fond du lac","WI",5.29939568764661,"wisconsin",55039
+"ford","IL",5.80715161698481,"illinois",17053
+"ford","KS",4.80581420220375,"kansas",20057
+"forest","PA",5.72527453566363,"pennsylvania",42053
+"forest","WI",5.13572862863938,"wisconsin",55041
+"forrest","MS",4.80570854904548,"mississippi",28035
+"forsyth","GA",4.60450647559489,"georgia",13117
+"forsyth","NC",4.75466629999654,"north carolina",37067
+"fort bend","TX",4.29768957058516,"texas",48157
+"foster","ND",5.45253701117598,"north dakota",38031
+"fountain","IN",5.27041583826723,"indiana",18045
+"franklin city","VA",4.90139818610875,"virginia",51620
+"franklin","AL",5.47460689500995,"alabama",1059
+"franklin","AR",4.96056536123407,"arkansas",5047
+"franklin","FL",5.21855246576801,"florida",12037
+"franklin","GA",5.30864457805723,"georgia",13119
+"franklin","IA",5.41036858207836,"iowa",19069
+"franklin","ID",4.78270706576024,"idaho",16041
+"franklin","IL",6.48098085389809,"illinois",17055
+"franklin","IN",4.39967311993433,"indiana",18047
+"franklin","KS",6.35123122014665,"kansas",20059
+"franklin","KY",4.59475365445984,"kentucky",21073
+"franklin","LA",4.64799735453598,"louisiana",22041
+"franklin","MA",4.34205013360582,"massachusetts",25011
+"franklin","ME",5.19438706349339,"maine",23007
+"franklin","MO",5.36047599343879,"missouri",29071
+"franklin","MS",5.07399825856246,"mississippi",28037
+"franklin","NC",5.15980863150719,"north carolina",37069
+"franklin","NE",6.09250834787558,"nebraska",31061
+"franklin","NY",6.29357094895327,"new york",36033
+"franklin","OH",4.25783614655771,"ohio",39049
+"franklin","PA",6.76197902426477,"pennsylvania",42055
+"franklin","TN",4.31711305912062,"tennessee",47051
+"franklin","TX",4.93644897160778,"texas",48159
+"franklin","VA",4.65706662186465,"virginia",51067
+"franklin","VT",4.52361547125811,"vermont",50011
+"franklin","WA",4.32697389636459,"washington",53021
+"frederick","MD",5.31625056915376,"maryland",24021
+"frederick","VA",4.23969396240722,"virginia",51069
+"fredericksburg","VA",6.28402469112809,"virginia",51630
+"freeborn","MN",5.86806172800394,"minnesota",27047
+"freestone","TX",4.8484709300262,"texas",48161
+"fremont","CO",5.42647431890861,"colorado",8043
+"fremont","IA",5.43081776767241,"iowa",19071
+"fremont","ID",4.37790999333146,"idaho",16043
+"fremont","WY",4.67463599247357,"wyoming",56013
+"fresno","CA",3.94332379998246,"california",6019
+"frio","TX",4.50596702023497,"texas",48163
+"frontier","NE",4.91829907370594,"nebraska",31063
+"fulton","AR",5.6318147943085,"arkansas",5049
+"fulton","GA",5.21869605175425,"georgia",13121
+"fulton","IL",4.96248873708503,"illinois",17057
+"fulton","IN",4.98180244855306,"indiana",18049
+"fulton","KY",5.87528480948682,"kentucky",21075
+"fulton","NY",6.21115013538514,"new york",36035
+"fulton","OH",6.30960152042469,"ohio",39051
+"fulton","PA",5.34395600787513,"pennsylvania",42057
+"furnas","NE",5.60795745765274,"nebraska",31065
+"gadsden","FL",4.83026717669443,"florida",12039
+"gage","NE",4.97632375995635,"nebraska",31067
+"gaines","TX",4.21340654686356,"texas",48165
+"galax city","VA",5.33702815765275,"virginia",51640
+"gallatin","IL",4.91503396997796,"illinois",17059
+"gallatin","KY",5.10936211055501,"kentucky",21077
+"gallatin","MT",3.8301172051842,"montana",30031
+"gallia","OH",5.10243018726236,"ohio",39053
+"galveston","TX",4.5195518544249,"texas",48167
+"garden","NE",4.97197647721575,"nebraska",31069
+"garfield","CO",4.49495446412743,"colorado",8045
+"garfield","MT",5.03649955648321,"montana",30033
+"garfield","NE",5.32624437752957,"nebraska",31071
+"garfield","OK",5.53772600801702,"oklahoma",40047
+"garfield","UT",5.18732467761606,"utah",49017
+"garfield","WA",4.98257131036005,"washington",53023
+"garland","AR",7.09980002789233,"arkansas",5051
+"garrard","KY",4.98408963679891,"kentucky",21079
+"garrett","MD",6.8554259206536,"maryland",24023
+"garvin","OK",4.33835946918439,"oklahoma",40049
+"garza","TX",5.39035770146945,"texas",48169
+"gasconade","MO",7.8360495451119,"missouri",29073
+"gaston","NC",5.10254741739368,"north carolina",37071
+"gates","NC",5.74013382910057,"north carolina",37073
+"geary","KS",4.40115586378955,"kansas",20061
+"geauga","OH",4.23984876416545,"ohio",39055
+"gem","ID",5.19157295689666,"idaho",16045
+"genesee","MI",6.04955226595285,"michigan",26049
+"genesee","NY",5.25071274506026,"new york",36037
+"geneva","AL",5.60344747814195,"alabama",1061
+"gentry","MO",5.51112192059529,"missouri",29075
+"george","MS",5.23569412082931,"mississippi",28039
+"georgetown","SC",4.62729233478122,"south carolina",45043
+"gibson","IN",4.48764884106323,"indiana",18051
+"gibson","TN",6.31351749911015,"tennessee",47053
+"gila","AZ",5.31454308277972,"arizona",4007
+"gilchrist","FL",5.25841653050554,"florida",12041
+"giles","TN",4.83960334589168,"tennessee",47055
+"giles","VA",6.42797554518656,"virginia",51071
+"gillespie","TX",5.49370864628662,"texas",48171
+"gilliam","OR",5.66698192712774,"oregon",41021
+"gilmer","GA",4.62025310924433,"georgia",13123
+"gilmer","WV",6.02299267287067,"west virginia",54021
+"gilpin","CO",5.23673720902554,"colorado",8047
+"glacier","MT",6.28995120582699,"montana",30035
+"glades","FL",5.02568803423197,"florida",12043
+"gladwin","MI",4.86317949134981,"michigan",26051
+"glascock","GA",5.02799573165895,"georgia",13125
+"glasscock","TX",5.05184934783818,"texas",48173
+"glenn","CA",5.276451584708,"california",6021
+"gloucester","NJ",5.42543475670387,"new jersey",34015
+"gloucester","VA",5.03404854531409,"virginia",51073
+"glynn","GA",5.05995814100499,"georgia",13127
+"gogebic","MI",4.73421561661436,"michigan",26053
+"golden valley","MT",5.09741040225328,"montana",30037
+"golden valley","ND",5.31282283711102,"north dakota",38033
+"goliad","TX",5.38240417625676,"texas",48175
+"gonzales","TX",7.5260498239571,"texas",48177
+"goochland","VA",5.69363576572972,"virginia",51075
+"goodhue","MN",5.38546864217691,"minnesota",27049
+"gooding","ID",5.43207684226101,"idaho",16047
+"gordon","GA",5.00228136226786,"georgia",13129
+"goshen","WY",6.24863847453209,"wyoming",56015
+"gosper","NE",4.98049404715169,"nebraska",31073
+"gove","KS",4.88699409058891,"kansas",20063
+"grady","GA",4.51513479014948,"georgia",13131
+"grady","OK",6.6153420373705,"oklahoma",40051
+"grafton","NH",5.11771462541147,"new hampshire",33009
+"graham","AZ",7.04023507441847,"arizona",4009
+"graham","KS",5.17678641321751,"kansas",20065
+"graham","NC",4.94471415040566,"north carolina",37075
+"grainger","TN",4.32968622252399,"tennessee",47057
+"grand forks","ND",5.419639116867,"north dakota",38035
+"grand isle","VT",4.79247967384175,"vermont",50013
+"grand traverse","MI",5.07646630423077,"michigan",26055
+"grand","CO",4.84451407899012,"colorado",8049
+"grand","UT",5.21588805896499,"utah",49019
+"granite","MT",5.59745925995176,"montana",30039
+"grant","AR",4.82800721112636,"arkansas",5053
+"grant","IN",6.27887025489157,"indiana",18053
+"grant","KS",4.66332209238527,"kansas",20067
+"grant","KY",4.48632496803859,"kentucky",21081
+"grant","LA",5.54163921905805,"louisiana",22043
+"grant","MN",5.26453973240629,"minnesota",27051
+"grant","ND",5.15946916714202,"north dakota",38037
+"grant","NE",5.10688584487852,"nebraska",31075
+"grant","NM",5.00025940188616,"new mexico",35017
+"grant","OK",5.29598539630416,"oklahoma",40053
+"grant","OR",4.85247457466635,"oregon",41023
+"grant","SD",5.09502944598927,"south dakota",46051
+"grant","WA",4.43729369547036,"washington",53025
+"grant","WI",5.6956198929127,"wisconsin",55043
+"grant","WV",4.43889637035476,"west virginia",54023
+"granville","NC",6.3061018029747,"north carolina",37077
+"gratiot","MI",5.41489159144535,"michigan",26057
+"graves","KY",6.28883384976215,"kentucky",21083
+"gray","KS",5.0789353803931,"kansas",20069
+"gray","TX",3.89850599471257,"texas",48179
+"grays harbor","WA",6.37836903593215,"washington",53027
+"grayson","KY",4.36531506185093,"kentucky",21085
+"grayson","TX",4.71016546075231,"texas",48181
+"grayson","VA",5.97060566783237,"virginia",51077
+"greeley","KS",5.0329553241947,"kansas",20071
+"greeley","NE",4.90392848668753,"nebraska",31077
+"green lake","WI",5.77304598465007,"wisconsin",55047
+"green","KY",4.97945900627993,"kentucky",21087
+"green","WI",5.93683944027222,"wisconsin",55045
+"greenbrier","WV",5.44205679042437,"west virginia",54025
+"greene","AL",4.99472806128988,"alabama",1063
+"greene","AR",5.45116347448999,"arkansas",5055
+"greene","GA",5.34795069449015,"georgia",13133
+"greene","IA",6.6559879453112,"iowa",19073
+"greene","IL",4.90845671833544,"illinois",17061
+"greene","IN",4.60149125700393,"indiana",18055
+"greene","MO",5.19494914603757,"missouri",29077
+"greene","MS",4.88545105620721,"mississippi",28041
+"greene","NC",4.501911386605,"north carolina",37079
+"greene","NY",4.95701256729963,"new york",36039
+"greene","OH",4.77736913726102,"ohio",39057
+"greene","PA",4.9768080638477,"pennsylvania",42059
+"greene","TN",5.44998078101936,"tennessee",47059
+"greene","VA",5.1548591844833,"virginia",51079
+"greenlee","AZ",5.03818728196297,"arizona",4011
+"greensville","VA",5.14998445486009,"virginia",51081
+"greenup","KY",3.85222428599987,"kentucky",21089
+"greenville","SC",4.86657996965624,"south carolina",45045
+"greenwood","KS",6.33632228562855,"kansas",20073
+"greenwood","SC",5.57600697451793,"south carolina",45047
+"greer","OK",5.58568036775304,"oklahoma",40055
+"gregg","TX",4.65280664380192,"texas",48183
+"gregory","SD",5.05000172372331,"south dakota",46053
+"grenada","MS",5.14701633747469,"mississippi",28043
+"griggs","ND",5.18412484965224,"north dakota",38039
+"grimes","TX",5.85714868603081,"texas",48185
+"grundy","IA",5.0969631167276,"iowa",19075
+"grundy","IL",4.95992141149359,"illinois",17063
+"grundy","MO",5.24560743993169,"missouri",29079
+"grundy","TN",4.76089653609356,"tennessee",47061
+"guadalupe","NM",5.15111178744532,"new mexico",35019
+"guadalupe","TX",5.14837284454376,"texas",48187
+"guernsey","OH",5.20730359875183,"ohio",39059
+"guilford","NC",6.46068627947941,"north carolina",37081
+"gulf","FL",4.50513348747555,"florida",12045
+"gunnison","CO",4.64823500812015,"colorado",8051
+"guthrie","IA",4.94883317644908,"iowa",19077
+"gwinnett","GA",3.62358414813171,"georgia",13135
+"haakon","SD",4.9560847656079,"south dakota",46055
+"habersham","GA",5.33947266917088,"georgia",13137
+"hale","AL",4.710261327838,"alabama",1065
+"hale","TX",5.66532570360051,"texas",48189
+"halifax","NC",5.02052869347532,"north carolina",37083
+"halifax","VA",5.31353792881762,"virginia",51083
+"hall","GA",3.9460263395039,"georgia",13139
+"hall","NE",4.41485525290062,"nebraska",31079
+"hall","TX",5.14747923012524,"texas",48191
+"hamblen","TN",4.96383729640734,"tennessee",47063
+"hamilton","FL",5.29683094551706,"florida",12047
+"hamilton","IA",5.8870015677168,"iowa",19079
+"hamilton","IL",6.29085866021956,"illinois",17065
+"hamilton","IN",4.13589552562153,"indiana",18057
+"hamilton","KS",5.31256827643637,"kansas",20075
+"hamilton","NE",4.7990778549589,"nebraska",31081
+"hamilton","NY",5.41087378604892,"new york",36041
+"hamilton","OH",5.32801874703121,"ohio",39061
+"hamilton","TN",5.27154093548531,"tennessee",47065
+"hamilton","TX",5.79693169380734,"texas",48193
+"hamlin","SD",5.40392027976143,"south dakota",46057
+"hampden","MA",5.99864748765777,"massachusetts",25013
+"hampshire","MA",4.69927684179983,"massachusetts",25015
+"hampshire","WV",5.47554633444006,"west virginia",54027
+"hampton city","VA",3.78163365495808,"virginia",51650
+"hampton","SC",4.84013492985433,"south carolina",45049
+"hancock","GA",5.0235356166153,"georgia",13141
+"hancock","IA",5.36910158850532,"iowa",19081
+"hancock","IL",6.01883262919492,"illinois",17067
+"hancock","IN",4.75204036638255,"indiana",18059
+"hancock","KY",4.87386373244709,"kentucky",21091
+"hancock","ME",6.3444978162119,"maine",23009
+"hancock","MS",5.7376405134914,"mississippi",28045
+"hancock","OH",6.30994066303762,"ohio",39063
+"hancock","TN",5.87649260833543,"tennessee",47067
+"hancock","WV",4.27776134877311,"west virginia",54029
+"hand","SD",5.71722813086474,"south dakota",46059
+"hanover","VA",4.77749477254358,"virginia",51085
+"hansford","TX",5.59707655224215,"texas",48195
+"hanson","SD",5.86644090191368,"south dakota",46061
+"haralson","GA",5.50908673156751,"georgia",13143
+"hardee","FL",4.47085578989787,"florida",12049
+"hardeman","TN",5.79785538842137,"tennessee",47069
+"hardeman","TX",5.68690629762222,"texas",48197
+"hardin","IA",5.39433818975732,"iowa",19083
+"hardin","IL",5.40494153097729,"illinois",17069
+"hardin","KY",3.99087311299303,"kentucky",21093
+"hardin","OH",5.62237354532179,"ohio",39065
+"hardin","TN",4.59021868897682,"tennessee",47071
+"hardin","TX",5.86798482928559,"texas",48199
+"harding","NM",5.09359399676577,"new mexico",35021
+"harding","SD",5.02467128428749,"south dakota",46063
+"hardy","WV",4.4415354029196,"west virginia",54031
+"harford","MD",4.59973196184153,"maryland",24025
+"harlan","KY",5.02361137813056,"kentucky",21095
+"harlan","NE",4.84823099965484,"nebraska",31083
+"harmon","OK",5.20685853211007,"oklahoma",40057
+"harnett","NC",4.20182055825985,"north carolina",37085
+"harney","OR",4.90753367787314,"oregon",41025
+"harper","KS",5.79336567183736,"kansas",20077
+"harper","OK",5.11746592545131,"oklahoma",40059
+"harris","GA",5.75928570628824,"georgia",13145
+"harris","TX",3.12141193512902,"texas",48201
+"harrison","IA",6.55302872773152,"iowa",19085
+"harrison","IN",4.88977882517058,"indiana",18061
+"harrison","KY",4.96508131831112,"kentucky",21097
+"harrison","MO",5.06191580456907,"missouri",29081
+"harrison","MS",4.72910865168862,"mississippi",28047
+"harrison","OH",5.13074726516279,"ohio",39067
+"harrison","TX",5.18984269467456,"texas",48203
+"harrison","WV",5.47714186503343,"west virginia",54033
+"harrisonburg c","VA",4.23845226799843,"virginia",51660
+"hart","GA",6.32167047430989,"georgia",13147
+"hart","KY",5.03696971952143,"kentucky",21099
+"hartford","CT",4.70566449371164,"connecticut",9003
+"hartley","TX",5.20709473880347,"texas",48205
+"harvey","KS",5.51510238580895,"kansas",20079
+"haskell","KS",5.17738223000126,"kansas",20081
+"haskell","OK",6.18206344310377,"oklahoma",40061
+"haskell","TX",5.86870536873988,"texas",48207
+"hawaii","HI",3.65453429551959,"hawaii",15001
+"hawkins","TN",3.79544291974064,"tennessee",47073
+"hayes","NE",5.05006761768738,"nebraska",31085
+"hays","TX",3.6929330716495,"texas",48209
+"haywood","NC",4.52093543097725,"north carolina",37087
+"haywood","TN",4.77060850587773,"tennessee",47075
+"heard","GA",5.02305322373457,"georgia",13149
+"hemphill","TX",4.76610246414476,"texas",48211
+"hempstead","AR",5.17980327658454,"arkansas",5057
+"henderson","IL",4.54835014458401,"illinois",17071
+"henderson","KY",4.60713533270661,"kentucky",21101
+"henderson","NC",6.99996342085324,"north carolina",37089
+"henderson","TN",6.21393728730791,"tennessee",47077
+"henderson","TX",5.43900363278581,"texas",48213
+"hendricks","IN",4.36688278936429,"indiana",18063
+"hendry","FL",4.50222274165854,"florida",12051
+"hennepin","MN",5.01394457583162,"minnesota",27053
+"henrico","VA",4.82763493445256,"virginia",51087
+"henry","AL",4.76411739428797,"alabama",1067
+"henry","GA",4.84081093974439,"georgia",13151
+"henry","IA",4.75676708520884,"iowa",19087
+"henry","IL",5.94306461652965,"illinois",17073
+"henry","IN",6.22915517673308,"indiana",18065
+"henry","KY",4.87318769153075,"kentucky",21103
+"henry","MO",4.96628040140679,"missouri",29083
+"henry","OH",4.46059068836909,"ohio",39069
+"henry","TN",7.23513170644397,"tennessee",47079
+"henry","VA",5.31935901784655,"virginia",51089
+"herkimer","NY",5.93395614423331,"new york",36043
+"hernando","FL",7.2127241562186,"florida",12053
+"hertford","NC",5.62582022137826,"north carolina",37091
+"hettinger","ND",4.85401779677527,"north dakota",38041
+"hickman","KY",5.71609358443605,"kentucky",21105
+"hickman","TN",6.2699824873007,"tennessee",47081
+"hickory","MO",5.55009419432684,"missouri",29085
+"hidalgo","NM",5.61003257819449,"new mexico",35023
+"hidalgo","TX",2.59111882163068,"texas",48215
+"highland","OH",4.22510172194604,"ohio",39071
+"highland","VA",5.92564820610755,"virginia",51091
+"highlands","FL",6.04346170590858,"florida",12055
+"hill","MT",4.37093599121318,"montana",30041
+"hill","TX",5.92370623080573,"texas",48217
+"hillsborough","FL",4.42492863620485,"florida",12057
+"hillsborough","NH",4.11852105234014,"new hampshire",33011
+"hillsdale","MI",5.04822886064421,"michigan",26059
+"hinds","MS",4.77730048962436,"mississippi",28049
+"hinsdale","CO",5.16639338993021,"colorado",8053
+"hitchcock","NE",4.84380612366692,"nebraska",31087
+"hocking","OH",4.66199010583767,"ohio",39073
+"hockley","TX",4.20407567316136,"texas",48219
+"hodgeman","KS",4.99081810550495,"kansas",20083
+"hoke","NC",4.4748794341247,"north carolina",37093
+"holmes","FL",4.44877022649753,"florida",12059
+"holmes","MS",5.64363050323091,"mississippi",28051
+"holmes","OH",4.98577250797774,"ohio",39075
+"holt","MO",4.99953944126137,"missouri",29087
+"holt","NE",5.06822359557861,"nebraska",31089
+"honolulu","HI",3.28963628551517,"hawaii",15003
+"hood river","OR",5.4031311398501,"oregon",41027
+"hood","TX",4.46949632601862,"texas",48221
+"hooker","NE",5.09740612225569,"nebraska",31091
+"hopewell city","VA",5.05724829321859,"virginia",51670
+"hopkins","KY",4.81542184024617,"kentucky",21107
+"hopkins","TX",5.81833594629538,"texas",48223
+"horry","SC",6.84127652366897,"south carolina",45051
+"hot spring","AR",4.46995291995625,"arkansas",5059
+"hot springs","WY",5.34701938707636,"wyoming",56017
+"houghton","MI",6.40512638733703,"michigan",26061
+"houston","AL",4.33206462433319,"alabama",1069
+"houston","GA",4.10424669858955,"georgia",13153
+"houston","MN",6.25983204528492,"minnesota",27055
+"houston","TN",5.2606379411773,"tennessee",47083
+"houston","TX",5.6949295657585,"texas",48225
+"howard","AR",4.97714399782234,"arkansas",5061
+"howard","IA",5.27695274897875,"iowa",19089
+"howard","IN",4.33307697802042,"indiana",18067
+"howard","MD",4.09341961982144,"maryland",24027
+"howard","MO",5.98115173388546,"missouri",29089
+"howard","NE",4.97437821898614,"nebraska",31093
+"howard","TX",4.62472241687464,"texas",48227
+"howell","MO",6.4695170138075,"missouri",29091
+"hubbard","MN",5.81861096007191,"minnesota",27057
+"hudson","NJ",4.75322719882196,"new jersey",34017
+"hudspeth","TX",4.93584335251594,"texas",48229
+"huerfano","CO",4.6802177122526,"colorado",8055
+"hughes","OK",4.37268463105016,"oklahoma",40063
+"hughes","SD",5.64434604977503,"south dakota",46065
+"humboldt","CA",5.32587173914514,"california",6023
+"humboldt","IA",5.19886822590848,"iowa",19091
+"humboldt","NV",4.68013849218714,"nevada",32013
+"humphreys","MS",5.15427057199781,"mississippi",28053
+"humphreys","TN",5.20808404931787,"tennessee",47085
+"hunt","TX",3.99121704037965,"texas",48231
+"hunterdon","NJ",4.92391911204346,"new jersey",34019
+"huntingdon","PA",6.02068241572278,"pennsylvania",42061
+"huntington","IN",5.47036476298155,"indiana",18069
+"huron","MI",6.86016632100829,"michigan",26063
+"huron","OH",5.44941467685624,"ohio",39077
+"hutchinson","SD",4.82697756283215,"south dakota",46067
+"hutchinson","TX",5.90570696690989,"texas",48233
+"hyde","NC",5.18466546834135,"north carolina",37095
+"hyde","SD",5.66652511840189,"south dakota",46069
+"iberia","LA",4.56490258271516,"louisiana",22045
+"iberville","LA",5.59557516690634,"louisiana",22047
+"ida","IA",5.72339807913367,"iowa",19093
+"idaho","ID",5.26769183770368,"idaho",16049
+"imperial","CA",4.32831383317269,"california",6025
+"independence","AR",5.02294791406988,"arkansas",5063
+"indian river","FL",5.91008939737869,"florida",12061
+"indiana","PA",4.53984327968554,"pennsylvania",42063
+"ingham","MI",3.07179228649017,"michigan",26065
+"inyo","CA",4.61838941489762,"california",6027
+"ionia","MI",5.29088440029346,"michigan",26067
+"iosco","MI",5.52587733771863,"michigan",26069
+"iowa","IA",5.23966261247133,"iowa",19095
+"iowa","WI",5.12917079859114,"wisconsin",55049
+"iredell","NC",5.15760131729916,"north carolina",37097
+"irion","TX",5.04301505420231,"texas",48235
+"iron","MI",5.91673538890384,"michigan",26071
+"iron","MO",5.28661089865806,"missouri",29093
+"iron","UT",4.97206188091098,"utah",49021
+"iron","WI",4.98370265604536,"wisconsin",55051
+"iroquois","IL",4.94795658093109,"illinois",17075
+"irwin","GA",5.02210981204596,"georgia",13155
+"isabella","MI",4.27923478411426,"michigan",26073
+"isanti","MN",4.38882804626095,"minnesota",27059
+"island","WA",5.10756812086042,"washington",53029
+"isle of wight","VA",4.96676932601328,"virginia",51093
+"issaquena","MS",5.09557399345683,"mississippi",28055
+"itasca","MN",7.27603170602064,"minnesota",27061
+"itawamba","MS",5.24433090835865,"mississippi",28057
+"izard","AR",5.54291583418111,"arkansas",5065
+"jack","TX",4.60762724277775,"texas",48237
+"jackson","AL",5.40258489234768,"alabama",1071
+"jackson","AR",5.09443874472266,"arkansas",5067
+"jackson","CO",5.0082423948732,"colorado",8057
+"jackson","FL",4.59964571178646,"florida",12063
+"jackson","GA",4.62876758922556,"georgia",13157
+"jackson","IA",5.06078530203903,"iowa",19097
+"jackson","IL",5.26360317806513,"illinois",17077
+"jackson","IN",6.18654940067066,"indiana",18071
+"jackson","KS",5.53868781834734,"kansas",20085
+"jackson","KY",5.41567157505953,"kentucky",21109
+"jackson","LA",5.46891426521008,"louisiana",22049
+"jackson","MI",4.69011056670153,"michigan",26075
+"jackson","MN",5.36126889889372,"minnesota",27063
+"jackson","MO",6.03810207035413,"missouri",29095
+"jackson","MS",4.06492339604082,"mississippi",28059
+"jackson","NC",4.96055736503032,"north carolina",37099
+"jackson","OH",5.75049653094031,"ohio",39079
+"jackson","OK",4.49654579438744,"oklahoma",40065
+"jackson","OR",4.3353001597207,"oregon",41029
+"jackson","SD",5.01707885168516,"south dakota",46071
+"jackson","TN",4.4853219481951,"tennessee",47087
+"jackson","TX",5.6964938809354,"texas",48239
+"jackson","WI",5.91409867923592,"wisconsin",55053
+"jackson","WV",5.26206197868479,"west virginia",54035
+"james city","VA",6.32242420336132,"virginia",51095
+"jasper","GA",5.12551237251785,"georgia",13159
+"jasper","IA",5.64794203129505,"iowa",19099
+"jasper","IL",4.95652300824382,"illinois",17079
+"jasper","IN",5.76624270906953,"indiana",18073
+"jasper","MO",5.87016853079413,"missouri",29097
+"jasper","MS",5.70120090121474,"mississippi",28061
+"jasper","SC",4.66946940272757,"south carolina",45053
+"jasper","TX",5.55023600147256,"texas",48241
+"jay","IN",5.29116580195491,"indiana",18075
+"jeff davis","GA",4.44096093165382,"georgia",13161
+"jeff davis","TX",5.03748615696071,"texas",48243
+"jefferson davi","LA",5.74798360065046,"louisiana",22053
+"jefferson davi","MS",5.58773595084692,"mississippi",28065
+"jefferson","AL",5.36765506354625,"alabama",1073
+"jefferson","AR",5.90686333159916,"arkansas",5069
+"jefferson","CO",3.13654437684569,"colorado",8059
+"jefferson","FL",5.02395164443533,"florida",12065
+"jefferson","GA",4.87698588446425,"georgia",13163
+"jefferson","IA",5.685629621144,"iowa",19101
+"jefferson","ID",4.33998909832484,"idaho",16051
+"jefferson","IL",5.20295893861699,"illinois",17081
+"jefferson","IN",5.31377496806536,"indiana",18077
+"jefferson","KS",5.20026447120641,"kansas",20087
+"jefferson","KY",5.80679185095814,"kentucky",21111
+"jefferson","LA",5.29480357614797,"louisiana",22051
+"jefferson","MO",4.83015923448371,"missouri",29099
+"jefferson","MS",5.71924984146631,"mississippi",28063
+"jefferson","MT",4.58892979427063,"montana",30043
+"jefferson","NE",5.07039871807494,"nebraska",31095
+"jefferson","NY",5.10790279832222,"new york",36045
+"jefferson","OH",4.8988132701772,"ohio",39081
+"jefferson","OK",5.49983643443803,"oklahoma",40067
+"jefferson","OR",5.28701431452169,"oregon",41031
+"jefferson","PA",4.64555669415608,"pennsylvania",42065
+"jefferson","TN",4.52217613320584,"tennessee",47089
+"jefferson","TX",6.40958855899924,"texas",48245
+"jefferson","WA",5.87948921618965,"washington",53031
+"jefferson","WI",4.23969713753053,"wisconsin",55055
+"jefferson","WV",4.60742486880146,"west virginia",54037
+"jenkins","GA",5.09329591963386,"georgia",13165
+"jennings","IN",4.71514137363331,"indiana",18079
+"jerauld","SD",4.95071117493063,"south dakota",46073
+"jerome","ID",4.66658754955866,"idaho",16053
+"jersey","IL",5.13595460389073,"illinois",17083
+"jessamine","KY",4.29931255959707,"kentucky",21113
+"jewell","KS",5.11659966107404,"kansas",20089
+"jim hogg","TX",5.7041006880346,"texas",48247
+"jim wells","TX",4.77959991089818,"texas",48249
+"jo daviess","IL",5.70707645950672,"illinois",17085
+"johnson","AR",6.37403602637496,"arkansas",5071
+"johnson","GA",5.65172573150449,"georgia",13167
+"johnson","IA",4.13777706684282,"iowa",19103
+"johnson","IL",5.28122073413161,"illinois",17087
+"johnson","IN",4.69951026540292,"indiana",18081
+"johnson","KS",5.08578912798363,"kansas",20091
+"johnson","KY",5.12077962279848,"kentucky",21115
+"johnson","MO",4.8500010954348,"missouri",29101
+"johnson","NE",5.39100561687425,"nebraska",31097
+"johnson","TN",6.13337080351857,"tennessee",47091
+"johnson","TX",4.35613780720077,"texas",48251
+"johnson","WY",5.55976037324526,"wyoming",56019
+"johnston","NC",4.61692402536922,"north carolina",37101
+"johnston","OK",4.82310195462546,"oklahoma",40069
+"jones","GA",5.0452606095841,"georgia",13169
+"jones","IA",5.89846603502688,"iowa",19105
+"jones","MS",4.98354011596003,"mississippi",28067
+"jones","NC",5.66518564925309,"north carolina",37103
+"jones","SD",5.3680838358882,"south dakota",46075
+"jones","TX",5.6232948301262,"texas",48253
+"josephine","OR",5.73419808266258,"oregon",41033
+"juab","UT",4.71266661599934,"utah",49023
+"judith basin","MT",4.95123533812422,"montana",30045
+"juneau","WI",5.33111912261845,"wisconsin",55057
+"juniata","PA",4.66641946433107,"pennsylvania",42067
+"kalamazoo","MI",5.11641162625749,"michigan",26077
+"kalkaska","MI",4.58171907579599,"michigan",26079
+"kanabec","MN",4.84228088782217,"minnesota",27065
+"kanawha","WV",5.7127932276258,"west virginia",54039
+"kandiyohi","MN",4.45024198780411,"minnesota",27067
+"kane","IL",3.88617951131734,"illinois",17089
+"kane","UT",4.80690645747809,"utah",49025
+"kankakee","IL",3.62291495673763,"illinois",17091
+"karnes","TX",4.84060659086458,"texas",48255
+"kauai","HI",4.91837630256819,"hawaii",15007
+"kaufman","TX",4.21034675278052,"texas",48257
+"kay","OK",6.41559370986643,"oklahoma",40071
+"kearney","NE",4.65006738899296,"nebraska",31099
+"kearny","KS",5.19128269197378,"kansas",20093
+"keith","NE",5.1019388796448,"nebraska",31101
+"kemper","MS",5.77561843585236,"mississippi",28069
+"kendall","IL",4.62902807381179,"illinois",17093
+"kendall","TX",4.58754649046219,"texas",48259
+"kenedy","TX",5.12576067278034,"texas",48261
+"kennebec","ME",5.3450674250064,"maine",23011
+"kenosha","WI",5.44191572439192,"wisconsin",55059
+"kent","DE",3.61064322396538,"delaware",10001
+"kent","MD",5.35101088064943,"maryland",24029
+"kent","MI",4.23980362210435,"michigan",26081
+"kent","RI",6.19860107924056,"rhode island",44003
+"kent","TX",5.39495178345638,"texas",48263
+"kenton","KY",4.48735334183522,"kentucky",21117
+"keokuk","IA",4.86359419260885,"iowa",19107
+"kern","CA",4.27438759172606,"california",6029
+"kerr","TX",5.87129032481736,"texas",48265
+"kershaw","SC",4.19486833066586,"south carolina",45055
+"kewaunee","WI",4.89324970177381,"wisconsin",55061
+"keweenaw","MI",5.33791211410606,"michigan",26083
+"keya paha","NE",5.08270168222428,"nebraska",31103
+"kidder","ND",4.88680990843124,"north dakota",38043
+"kimball","NE",5.09344236829907,"nebraska",31105
+"kimble","TX",5.48417589371011,"texas",48267
+"king and queen","VA",5.53090084140145,"virginia",51097
+"king george","VA",5.67026215540824,"virginia",51099
+"king william","VA",5.28621871474407,"virginia",51101
+"king","TX",5.14637650989223,"texas",48269
+"king","WA",4.26620099804729,"washington",53033
+"kingfisher","OK",4.74850044043603,"oklahoma",40073
+"kingman","KS",5.11787620024893,"kansas",20095
+"kings","CA",3.9888315267004,"california",6031
+"kings","NY",5.32993180491571,"new york",36047
+"kingsbury","SD",5.31162614364997,"south dakota",46077
+"kinney","TX",4.92950412277907,"texas",48271
+"kiowa","CO",5.36029467225857,"colorado",8061
+"kiowa","KS",4.86350246532518,"kansas",20097
+"kiowa","OK",6.97464404704069,"oklahoma",40075
+"kit carson","CO",5.78811262112081,"colorado",8063
+"kitsap","WA",4.88588200859272,"washington",53035
+"kittitas","WA",4.39746580385377,"washington",53037
+"kittson","MN",5.92127658403251,"minnesota",27069
+"klamath","OR",4.78033841403836,"oregon",41035
+"kleberg","TX",4.68905567885594,"texas",48273
+"klickitat","WA",4.90993578907543,"washington",53039
+"knott","KY",4.76058941219403,"kentucky",21119
+"knox","IL",5.02359263992458,"illinois",17095
+"knox","IN",5.52115381217691,"indiana",18083
+"knox","KY",5.06684738955399,"kentucky",21121
+"knox","ME",5.9169061211211,"maine",23013
+"knox","MO",5.41380321864125,"missouri",29103
+"knox","NE",5.59051614274513,"nebraska",31107
+"knox","OH",5.83226609056864,"ohio",39083
+"knox","TN",5.09023867723723,"tennessee",47093
+"knox","TX",5.73563498070066,"texas",48275
+"koochiching","MN",5.3830618421875,"minnesota",27071
+"kootenai","ID",4.49688674713964,"idaho",16055
+"kosciusko","IN",4.9176624244204,"indiana",18085
+"kossuth","IA",5.38944746383585,"iowa",19109
+"la crosse","WI",5.47706357678715,"wisconsin",55063
+"la moure","ND",5.61924349530342,"north dakota",38045
+"la plata","CO",4.60981711497844,"colorado",8067
+"la porte","IN",6.1866545321261,"indiana",18091
+"la salle","IL",7.60914544358686,"illinois",17099
+"la salle","LA",5.29892304278524,"louisiana",22059
+"la salle","TX",5.05624056044438,"texas",48283
+"labette","KS",5.2165362999761,"kansas",20099
+"lac qui parle","MN",5.31543936885782,"minnesota",27073
+"lackawanna","PA",7.70466854996859,"pennsylvania",42069
+"laclede","MO",4.38700641486864,"missouri",29105
+"lafayette","AR",5.01802460950303,"arkansas",5073
+"lafayette","FL",4.84557827985789,"florida",12067
+"lafayette","LA",3.72089696105576,"louisiana",22055
+"lafayette","MO",5.74794141209232,"missouri",29107
+"lafayette","MS",5.20877281738494,"mississippi",28071
+"lafayette","WI",6.12650806696457,"wisconsin",55065
+"lafourche","LA",3.80629522324203,"louisiana",22057
+"lagrange","IN",5.42641425542072,"indiana",18087
+"lake of the wo","MN",5.50257475657258,"minnesota",27077
+"lake","CA",7.66593452918379,"california",6033
+"lake","CO",4.90688045995129,"colorado",8065
+"lake","FL",6.43999915265001,"florida",12069
+"lake","IL",3.90438475525827,"illinois",17097
+"lake","IN",4.85394317467725,"indiana",18089
+"lake","MI",5.24209981261065,"michigan",26085
+"lake","MN",4.90448116479649,"minnesota",27075
+"lake","MT",6.44173644786777,"montana",30047
+"lake","OH",4.12671382693542,"ohio",39085
+"lake","OR",5.19632609411026,"oregon",41037
+"lake","SD",6.13265279530395,"south dakota",46079
+"lake","TN",5.91807860216056,"tennessee",47095
+"lamar","AL",5.83875823695954,"alabama",1075
+"lamar","GA",4.5692201957316,"georgia",13171
+"lamar","MS",3.68933606287426,"mississippi",28073
+"lamar","TX",6.2297814200269,"texas",48277
+"lamb","TX",4.88229995260912,"texas",48279
+"lamoille","VT",5.30385748495369,"vermont",50015
+"lampasas","TX",5.4328587441082,"texas",48281
+"lancaster","NE",4.62729099265639,"nebraska",31109
+"lancaster","PA",5.04724638138236,"pennsylvania",42071
+"lancaster","SC",4.72955062063636,"south carolina",45057
+"lancaster","VA",5.28281294421524,"virginia",51103
+"lander","NV",5.09337781712237,"nevada",32015
+"lane","KS",4.96796588045731,"kansas",20101
+"lane","OR",4.13726690472836,"oregon",41039
+"langlade","WI",5.71453997461682,"wisconsin",55067
+"lanier","GA",4.82885462461579,"georgia",13173
+"lapeer","MI",4.10480928801842,"michigan",26087
+"laramie","WY",5.02295008692598,"wyoming",56021
+"larimer","CO",3.75446069258098,"colorado",8069
+"larue","KY",4.38453007272967,"kentucky",21123
+"las animas","CO",5.0312178820285,"colorado",8071
+"lassen","CA",5.59088092519421,"california",6035
+"latah","ID",4.10836379271852,"idaho",16057
+"latimer","OK",5.41562856192103,"oklahoma",40077
+"lauderdale","AL",4.41026112261221,"alabama",1077
+"lauderdale","MS",5.21056268255635,"mississippi",28075
+"lauderdale","TN",5.13637283447004,"tennessee",47097
+"laurel","KY",3.89253518026416,"kentucky",21125
+"laurens","GA",4.82056793588139,"georgia",13175
+"laurens","SC",6.05139681575756,"south carolina",45059
+"lavaca","TX",6.1070921587384,"texas",48285
+"lawrence","AL",5.08368098567523,"alabama",1079
+"lawrence","AR",5.32921727397562,"arkansas",5075
+"lawrence","IL",6.1775324747297,"illinois",17101
+"lawrence","IN",5.0921300879535,"indiana",18093
+"lawrence","KY",5.27734731255831,"kentucky",21127
+"lawrence","MO",5.10186360704208,"missouri",29109
+"lawrence","MS",5.11936597139751,"mississippi",28077
+"lawrence","OH",5.32477049046251,"ohio",39087
+"lawrence","PA",5.65441197370643,"pennsylvania",42073
+"lawrence","SD",5.22311471395535,"south dakota",46081
+"lawrence","TN",5.06087878066725,"tennessee",47099
+"le flore","OK",5.11644843724404,"oklahoma",40079
+"le sueur","MN",5.89586327948001,"minnesota",27079
+"lea","NM",3.98635315774404,"new mexico",35025
+"leake","MS",4.37785754344282,"mississippi",28079
+"leavenworth","KS",4.78564763887807,"kansas",20103
+"lebanon","PA",5.23379017994095,"pennsylvania",42075
+"lee","AL",4.6794051315667,"alabama",1081
+"lee","AR",5.59374712334894,"arkansas",5077
+"lee","FL",7.74435934284871,"florida",12071
+"lee","GA",4.37328858509995,"georgia",13177
+"lee","IA",6.40015711568557,"iowa",19111
+"lee","IL",4.19611832865647,"illinois",17103
+"lee","KY",6.10692297366381,"kentucky",21129
+"lee","MS",5.36454712413334,"mississippi",28081
+"lee","NC",7.08111286653605,"north carolina",37105
+"lee","SC",5.24979116514019,"south carolina",45061
+"lee","TX",5.47228617867068,"texas",48287
+"lee","VA",4.62513532746309,"virginia",51105
+"leelanau","MI",4.96289659496164,"michigan",26089
+"leflore","MS",5.19775604943325,"mississippi",28083
+"lehigh","PA",5.79471138907403,"pennsylvania",42077
+"lemhi","ID",5.50060034511372,"idaho",16059
+"lenawee","MI",3.94474800706609,"michigan",26091
+"lenoir","NC",5.1793407189302,"north carolina",37107
+"leon","FL",3.37498877740257,"florida",12073
+"leon","TX",5.61107894674433,"texas",48289
+"leslie","KY",4.4208102199598,"kentucky",21131
+"letcher","KY",4.86322679436874,"kentucky",21133
+"levy","FL",5.46599721975762,"florida",12075
+"lewis and clar","MT",5.12373933937026,"montana",30049
+"lewis","ID",5.81320273083583,"idaho",16061
+"lewis","KY",4.1848513555882,"kentucky",21135
+"lewis","MO",5.31881852196334,"missouri",29111
+"lewis","NY",5.06771469185159,"new york",36049
+"lewis","TN",5.35602201613414,"tennessee",47101
+"lewis","WA",5.81284057292331,"washington",53041
+"lewis","WV",6.04506741206329,"west virginia",54041
+"lexington city","VA",4.89812241479115,"virginia",51678
+"lexington","SC",5.36342026524965,"south carolina",45063
+"liberty","FL",5.45891413461024,"florida",12077
+"liberty","GA",3.62971541436899,"georgia",13179
+"liberty","MT",5.31794876996601,"montana",30051
+"liberty","TX",5.64569539176244,"texas",48291
+"licking","OH",4.43620170362574,"ohio",39089
+"limestone","AL",5.03693865423345,"alabama",1083
+"limestone","TX",5.43097999883435,"texas",48293
+"lincoln","AR",5.06039061121302,"arkansas",5079
+"lincoln","CO",5.44011762641656,"colorado",8073
+"lincoln","GA",5.16215298751122,"georgia",13181
+"lincoln","ID",5.5266981189219,"idaho",16063
+"lincoln","KS",5.18699396327407,"kansas",20105
+"lincoln","KY",4.72150681039375,"kentucky",21137
+"lincoln","LA",5.02257656959162,"louisiana",22061
+"lincoln","ME",5.65788949956124,"maine",23015
+"lincoln","MN",5.21479012309944,"minnesota",27081
+"lincoln","MO",4.88092559537221,"missouri",29113
+"lincoln","MS",5.04485235179854,"mississippi",28085
+"lincoln","MT",5.28095091551361,"montana",30053
+"lincoln","NC",6.29520220206923,"north carolina",37109
+"lincoln","NE",5.26730829519432,"nebraska",31111
+"lincoln","NM",5.15103437540042,"new mexico",35027
+"lincoln","NV",5.19785158816322,"nevada",32017
+"lincoln","OK",5.69547062990524,"oklahoma",40081
+"lincoln","OR",6.87896130858498,"oregon",41041
+"lincoln","SD",6.06512297579769,"south dakota",46083
+"lincoln","TN",4.89458302630825,"tennessee",47103
+"lincoln","WA",4.79105704266274,"washington",53043
+"lincoln","WI",5.67483646498299,"wisconsin",55069
+"lincoln","WV",4.46345909367687,"west virginia",54043
+"lincoln","WY",4.75308618680487,"wyoming",56023
+"linn","IA",4.38439129452204,"iowa",19113
+"linn","KS",5.47302892421512,"kansas",20107
+"linn","MO",6.39712176821669,"missouri",29115
+"linn","OR",5.54519685933748,"oregon",41043
+"lipscomb","TX",5.2009496007157,"texas",48295
+"litchfield","CT",5.67680981653547,"connecticut",9005
+"little river","AR",4.98119295293612,"arkansas",5081
+"live oak","TX",5.32598610418518,"texas",48297
+"livingston","IL",5.64033481440516,"illinois",17105
+"livingston","KY",5.06640166837705,"kentucky",21139
+"livingston","LA",3.52198251329601,"louisiana",22063
+"livingston","MI",4.48267046413758,"michigan",26093
+"livingston","MO",4.74617071033107,"missouri",29117
+"livingston","NY",3.90740264627084,"new york",36051
+"llano","TX",6.39196685413683,"texas",48299
+"logan","AR",4.64396803647926,"arkansas",5083
+"logan","CO",5.46311583822767,"colorado",8075
+"logan","IL",4.39396290198448,"illinois",17107
+"logan","KS",5.22134273433737,"kansas",20109
+"logan","KY",5.7690346190977,"kentucky",21141
+"logan","ND",4.92600513499551,"north dakota",38047
+"logan","NE",5.09046720994154,"nebraska",31113
+"logan","OH",5.22181367981756,"ohio",39091
+"logan","OK",4.65402587922571,"oklahoma",40083
+"logan","WV",4.65101124295378,"west virginia",54045
+"long","GA",4.84031140149959,"georgia",13183
+"lonoke","AR",6.21887361812966,"arkansas",5085
+"lorain","OH",5.94293989244375,"ohio",39093
+"los alamos","NM",5.0320064107692,"new mexico",35028
+"los angeles","CA",3.91684972411971,"california",6037
+"loudon","TN",6.91376188273619,"tennessee",47105
+"loudoun","VA",3.72253650494971,"virginia",51107
+"louisa","IA",5.15773002474959,"iowa",19115
+"louisa","VA",6.42017333174346,"virginia",51109
+"loup","NE",5.10754423112802,"nebraska",31115
+"love","OK",4.9432034563003,"oklahoma",40085
+"loving","TX",5.16322626382152,"texas",48301
+"lowndes","AL",4.93204618088675,"alabama",1085
+"lowndes","GA",4.87969694617703,"georgia",13185
+"lowndes","MS",4.45122679362504,"mississippi",28087
+"lubbock","TX",4.01477675180751,"texas",48303
+"lucas","IA",5.06902638082189,"iowa",19117
+"lucas","OH",4.56309157266818,"ohio",39095
+"luce","MI",6.25834337780418,"michigan",26095
+"lumpkin","GA",5.44658062852938,"georgia",13187
+"luna","NM",5.42314606018645,"new mexico",35029
+"lunenburg","VA",5.52908250898409,"virginia",51111
+"luzerne","PA",6.22372452596864,"pennsylvania",42079
+"lycoming","PA",5.71217496082974,"pennsylvania",42081
+"lyman","SD",4.94131402959231,"south dakota",46085
+"lynchburg city","VA",5.23107378600109,"virginia",51680
+"lynn","TX",4.92964713967841,"texas",48305
+"lyon","IA",5.97465335113781,"iowa",19119
+"lyon","KS",4.19646924630559,"kansas",20111
+"lyon","KY",5.24799333823146,"kentucky",21143
+"lyon","MN",5.34060049960509,"minnesota",27083
+"lyon","NV",5.42176712773911,"nevada",32019
+"mackinac","MI",5.66809260553343,"michigan",26097
+"macomb","MI",4.76202315044043,"michigan",26099
+"macon","AL",5.50880205962777,"alabama",1087
+"macon","GA",5.06011293648038,"georgia",13193
+"macon","IL",6.19976719626967,"illinois",17115
+"macon","MO",5.20539298516293,"missouri",29121
+"macon","NC",4.58934336080526,"north carolina",37113
+"macon","TN",4.65399920807333,"tennessee",47111
+"macoupin","IL",6.70162050500196,"illinois",17117
+"madera","CA",4.87206345276082,"california",6039
+"madison","AL",4.37232099123141,"alabama",1089
+"madison","AR",5.47497272515177,"arkansas",5087
+"madison","FL",5.08772232938739,"florida",12079
+"madison","GA",4.56120332351237,"georgia",13195
+"madison","IA",5.43199441749686,"iowa",19121
+"madison","ID",4.36599608636273,"idaho",16065
+"madison","IL",5.58044529307182,"illinois",17119
+"madison","IN",5.84651502118908,"indiana",18095
+"madison","KY",5.06787752363542,"kentucky",21151
+"madison","LA",5.65742601238246,"louisiana",22065
+"madison","MO",5.82398448891008,"missouri",29123
+"madison","MS",4.99362077551588,"mississippi",28089
+"madison","MT",5.01446276365941,"montana",30057
+"madison","NC",5.11037894410367,"north carolina",37115
+"madison","NE",5.42128332119942,"nebraska",31119
+"madison","NY",4.75934744373169,"new york",36053
+"madison","OH",5.05519202971264,"ohio",39097
+"madison","TN",5.89792171149126,"tennessee",47113
+"madison","TX",5.03274444240604,"texas",48313
+"madison","VA",4.51557050345727,"virginia",51113
+"magoffin","KY",5.28498296981394,"kentucky",21153
+"mahaska","IA",5.32197131189349,"iowa",19123
+"mahnomen","MN",5.13491916437261,"minnesota",27087
+"mahoning","OH",5.37782351991801,"ohio",39099
+"major","OK",5.39922356431469,"oklahoma",40093
+"malheur","OR",5.26116892952187,"oregon",41045
+"manassas park","VA",4.988768461813,"virginia",51685
+"manassas","VA",5.05521748470036,"virginia",51683
+"manatee","FL",6.94507232085599,"florida",12081
+"manistee","MI",6.80267679358842,"michigan",26101
+"manitowoc","WI",5.8229194758404,"wisconsin",55071
+"marathon","WI",4.80340712567983,"wisconsin",55073
+"marengo","AL",5.76385190827486,"alabama",1091
+"maricopa","AZ",4.54207273758906,"arizona",4013
+"maries","MO",6.0686964389003,"missouri",29125
+"marin","CA",4.7265344806263,"california",6041
+"marinette","WI",6.55101077512145,"wisconsin",55075
+"marion","AL",5.30250672448492,"alabama",1093
+"marion","AR",6.03860354404326,"arkansas",5089
+"marion","FL",6.84811350463042,"florida",12083
+"marion","GA",4.90898483251489,"georgia",13197
+"marion","IA",6.63834824084196,"iowa",19125
+"marion","IL",5.32468927612565,"illinois",17121
+"marion","IN",5.27604762524768,"indiana",18097
+"marion","KS",5.67436907196782,"kansas",20115
+"marion","KY",4.90149867336105,"kentucky",21155
+"marion","MO",6.21143330899306,"missouri",29127
+"marion","MS",5.52147795373751,"mississippi",28091
+"marion","OH",4.68658056750903,"ohio",39101
+"marion","OR",4.99124333722158,"oregon",41047
+"marion","SC",5.75547804604343,"south carolina",45067
+"marion","TN",4.9488692948149,"tennessee",47115
+"marion","TX",5.53836935934555,"texas",48315
+"marion","WV",5.41184564626738,"west virginia",54049
+"mariposa","CA",5.99698428694969,"california",6043
+"marlboro","SC",5.19984260947717,"south carolina",45069
+"marquette","MI",4.21420844676595,"michigan",26103
+"marquette","WI",5.15054038445224,"wisconsin",55077
+"marshall","AL",4.24846957977793,"alabama",1095
+"marshall","IA",5.77658194907404,"iowa",19127
+"marshall","IL",5.61840296188967,"illinois",17123
+"marshall","IN",4.12053550961382,"indiana",18099
+"marshall","KS",5.99033569014857,"kansas",20117
+"marshall","KY",5.97792662821318,"kentucky",21157
+"marshall","MN",5.69012361213789,"minnesota",27089
+"marshall","MS",4.71051410479556,"mississippi",28093
+"marshall","OK",5.60137807091878,"oklahoma",40095
+"marshall","SD",5.41673406628699,"south dakota",46091
+"marshall","TN",5.79540132707554,"tennessee",47117
+"marshall","WV",5.20553098846901,"west virginia",54051
+"martin","FL",7.31528234258073,"florida",12085
+"martin","IN",5.82788513962018,"indiana",18101
+"martin","KY",4.48912792019412,"kentucky",21159
+"martin","MN",5.87917432354302,"minnesota",27091
+"martin","NC",4.76834664053788,"north carolina",37117
+"martin","TX",4.76426105125883,"texas",48317
+"martinsville c","VA",5.54823671264699,"virginia",51690
+"mason","IL",5.56072302290833,"illinois",17125
+"mason","KY",4.90752779466011,"kentucky",21161
+"mason","MI",5.79546998064555,"michigan",26105
+"mason","TX",5.85037343999447,"texas",48319
+"mason","WA",5.03902722938725,"washington",53045
+"mason","WV",5.70930856023176,"west virginia",54053
+"massac","IL",4.49704160223036,"illinois",17127
+"matagorda","TX",5.50764995858668,"texas",48321
+"mathews","VA",4.66340390835113,"virginia",51115
+"maui","HI",4.37130428847611,"hawaii",15009
+"maury","TN",5.40114421122131,"tennessee",47119
+"maverick","TX",4.03434572842473,"texas",48323
+"mayes","OK",5.83876018478577,"oklahoma",40097
+"mcclain","OK",7.04055258723708,"oklahoma",40087
+"mccone","MT",5.61186288448806,"montana",30055
+"mccook","SD",6.2295670948545,"south dakota",46087
+"mccormick","SC",4.91117857237774,"south carolina",45065
+"mccracken","KY",7.39360642735716,"kentucky",21145
+"mccreary","KY",4.93107430242307,"kentucky",21147
+"mcculloch","TX",5.71823034197367,"texas",48307
+"mccurtain","OK",5.21680241588556,"oklahoma",40089
+"mcdonald","MO",5.19892183169367,"missouri",29119
+"mcdonough","IL",6.28012467361241,"illinois",17109
+"mcdowell","NC",5.27001077999201,"north carolina",37111
+"mcdowell","WV",5.49346665555499,"west virginia",54047
+"mcduffie","GA",4.88507397659924,"georgia",13189
+"mchenry","IL",5.22025223894914,"illinois",17111
+"mchenry","ND",5.49009994336725,"north dakota",38049
+"mcintosh","GA",5.40777749204382,"georgia",13191
+"mcintosh","ND",5.44583109713558,"north dakota",38051
+"mcintosh","OK",6.50000183171808,"oklahoma",40091
+"mckean","PA",5.53252822055704,"pennsylvania",42083
+"mckenzie","ND",4.64032083952646,"north dakota",38053
+"mckinley","NM",5.29191354165161,"new mexico",35031
+"mclean","IL",4.15477343150599,"illinois",17113
+"mclean","KY",4.73765372445798,"kentucky",21149
+"mclean","ND",5.7357050186636,"north dakota",38055
+"mclennan","TX",4.77516662290517,"texas",48309
+"mcleod","MN",4.77112175869333,"minnesota",27085
+"mcminn","TN",4.76552494561956,"tennessee",47107
+"mcmullen","TX",5.10789806578964,"texas",48311
+"mcnairy","TN",4.61234061897658,"tennessee",47109
+"mcpherson","KS",5.72224161451963,"kansas",20113
+"mcpherson","NE",5.4652122408076,"nebraska",31117
+"mcpherson","SD",5.52730013204649,"south dakota",46089
+"meade","KS",5.12030749828659,"kansas",20119
+"meade","KY",4.31181201359958,"kentucky",21163
+"meade","SD",3.83032373080254,"south dakota",46093
+"meagher","MT",5.3426024859358,"montana",30059
+"mecklenburg","NC",3.93862966525318,"north carolina",37119
+"mecklenburg","VA",4.27878330368453,"virginia",51117
+"mecosta","MI",4.66914801912619,"michigan",26107
+"medina","OH",4.55945052031313,"ohio",39103
+"medina","TX",4.61763181278825,"texas",48325
+"meeker","MN",5.34828267765071,"minnesota",27093
+"meigs","OH",5.24264192385193,"ohio",39105
+"meigs","TN",5.17241480846818,"tennessee",47121
+"mellette","SD",5.06847939387396,"south dakota",46095
+"menard","IL",5.22249895661415,"illinois",17129
+"menard","TX",4.96747048622291,"texas",48327
+"mendocino","CA",4.2878234175561,"california",6045
+"menifee","KY",5.06400282193351,"kentucky",21165
+"menominee","MI",5.98784350995792,"michigan",26109
+"menominee","WI",5.1508291687413,"wisconsin",55078
+"merced","CA",5.14731114940406,"california",6047
+"mercer","IL",4.47895968827985,"illinois",17131
+"mercer","KY",5.55804301076632,"kentucky",21167
+"mercer","MO",4.84207214193337,"missouri",29129
+"mercer","ND",6.08139720371374,"north dakota",38057
+"mercer","NJ",5.43280901607998,"new jersey",34021
+"mercer","OH",5.01426796735178,"ohio",39107
+"mercer","PA",5.78574041672392,"pennsylvania",42085
+"mercer","WV",5.14133304885732,"west virginia",54055
+"meriwether","GA",4.62270500525328,"georgia",13199
+"merrick","NE",4.82488875067921,"nebraska",31121
+"merrimack","NH",5.36358296805877,"new hampshire",33013
+"mesa","CO",5.2532072865346,"colorado",8077
+"metcalfe","KY",5.10351544397939,"kentucky",21169
+"miami","IN",4.27656389493809,"indiana",18103
+"miami","KS",4.8351627651432,"kansas",20121
+"miami","OH",5.42489820329217,"ohio",39109
+"middlesex","CT",7.62766953243082,"connecticut",9007
+"middlesex","MA",5.32121176022773,"massachusetts",25017
+"middlesex","NJ",5.91623608151635,"new jersey",34023
+"middlesex","VA",5.03693716477271,"virginia",51119
+"midland","MI",4.47897361294638,"michigan",26111
+"midland","TX",4.16224506797504,"texas",48329
+"mifflin","PA",7.79912616696233,"pennsylvania",42087
+"milam","TX",6.40644130901254,"texas",48331
+"millard","UT",5.78044220865298,"utah",49027
+"mille lacs","MN",5.29801241235136,"minnesota",27095
+"miller","AR",5.32704704205834,"arkansas",5091
+"miller","GA",4.81048681648512,"georgia",13201
+"miller","MO",5.67744719988041,"missouri",29131
+"mills","IA",5.36851005854036,"iowa",19129
+"mills","TX",6.06802290897904,"texas",48333
+"milwaukee","WI",6.08526929037499,"wisconsin",55079
+"miner","SD",5.52311881800117,"south dakota",46097
+"mineral","CO",5.10346501071025,"colorado",8079
+"mineral","MT",5.53904506431731,"montana",30061
+"mineral","NV",5.36168585266431,"nevada",32021
+"mineral","WV",4.78719663410337,"west virginia",54057
+"mingo","WV",4.08869419552136,"west virginia",54059
+"minidoka","ID",4.65473418503274,"idaho",16067
+"minnehaha","SD",5.991237851155,"south dakota",46099
+"missaukee","MI",4.6747480380207,"michigan",26113
+"mississippi","AR",5.22801164393928,"arkansas",5093
+"mississippi","MO",5.45942668975124,"missouri",29133
+"missoula","MT",4.56903518918055,"montana",30063
+"mitchell","GA",5.25052728905762,"georgia",13205
+"mitchell","IA",6.34263706927962,"iowa",19131
+"mitchell","KS",4.60744304579629,"kansas",20123
+"mitchell","NC",5.82758111229132,"north carolina",37121
+"mitchell","TX",5.73961937259452,"texas",48335
+"mobile","AL",4.38507758626422,"alabama",1097
+"modoc","CA",5.0780541224456,"california",6049
+"moffat","CO",4.80643768461273,"colorado",8081
+"mohave","AZ",7.12192730350711,"arizona",4015
+"moniteau","MO",4.89220123727073,"missouri",29135
+"monmouth","NJ",5.75447646416126,"new jersey",34025
+"mono","CA",4.47848995159015,"california",6051
+"monona","IA",5.24543835358624,"iowa",19133
+"monongalia","WV",4.45618819556392,"west virginia",54061
+"monroe","AL",4.53456416367323,"alabama",1099
+"monroe","AR",5.49717802796667,"arkansas",5095
+"monroe","FL",5.67801549912583,"florida",12087
+"monroe","GA",5.01540265205263,"georgia",13207
+"monroe","IA",6.02444568369629,"iowa",19135
+"monroe","IL",4.86168135211965,"illinois",17133
+"monroe","IN",3.54505658475457,"indiana",18105
+"monroe","KY",5.74935486863217,"kentucky",21171
+"monroe","MI",4.54861009909785,"michigan",26115
+"monroe","MO",6.25430376414656,"missouri",29137
+"monroe","MS",5.32049155601303,"mississippi",28095
+"monroe","NY",4.93233729091864,"new york",36055
+"monroe","OH",5.38488625292322,"ohio",39111
+"monroe","PA",5.01183032136954,"pennsylvania",42089
+"monroe","TN",5.12698690580622,"tennessee",47123
+"monroe","WI",6.6112031135984,"wisconsin",55081
+"monroe","WV",4.84456577390241,"west virginia",54063
+"montague","TX",5.05213050687699,"texas",48337
+"montcalm","MI",4.14213473021341,"michigan",26117
+"monterey","CA",3.56910129537265,"california",6053
+"montezuma","CO",5.42646393074867,"colorado",8083
+"montgomery","AL",4.63034154451206,"alabama",1101
+"montgomery","AR",4.88372359541826,"arkansas",5097
+"montgomery","GA",5.40494947353397,"georgia",13209
+"montgomery","IA",5.15082468336562,"iowa",19137
+"montgomery","IL",7.19924972571351,"illinois",17135
+"montgomery","IN",4.56801130036635,"indiana",18107
+"montgomery","KS",6.58166660675809,"kansas",20125
+"montgomery","KY",4.98827663041023,"kentucky",21173
+"montgomery","MD",4.16612470385047,"maryland",24031
+"montgomery","MO",5.26513531387375,"missouri",29139
+"montgomery","MS",6.43035324616108,"mississippi",28097
+"montgomery","NC",5.32813467755501,"north carolina",37123
+"montgomery","NY",6.495571015943,"new york",36057
+"montgomery","OH",4.7092678887991,"ohio",39113
+"montgomery","PA",5.13235181037261,"pennsylvania",42091
+"montgomery","TN",4.70020278993644,"tennessee",47125
+"montgomery","TX",2.89508328762167,"texas",48339
+"montgomery","VA",3.73222961121921,"virginia",51121
+"montmorency","MI",6.04528823534535,"michigan",26119
+"montour","PA",6.46617644398968,"pennsylvania",42093
+"montrose","CO",4.16062948191252,"colorado",8085
+"moody","SD",5.30925541502419,"south dakota",46101
+"moore","NC",5.03209441391084,"north carolina",37125
+"moore","TN",5.14970334343052,"tennessee",47127
+"moore","TX",4.77561909166508,"texas",48341
+"mora","NM",5.15993990778587,"new mexico",35033
+"morehouse","LA",5.42382897134919,"louisiana",22067
+"morgan","AL",4.4347109627138,"alabama",1103
+"morgan","CO",5.77078990147424,"colorado",8087
+"morgan","GA",4.92232614107663,"georgia",13211
+"morgan","IL",4.59945486619452,"illinois",17137
+"morgan","IN",5.42848284442119,"indiana",18109
+"morgan","KY",4.8849123681244,"kentucky",21175
+"morgan","MO",6.06756159980206,"missouri",29141
+"morgan","OH",5.88315533308735,"ohio",39115
+"morgan","TN",5.83130068389295,"tennessee",47129
+"morgan","UT",5.08817455739978,"utah",49029
+"morgan","WV",6.09110803278944,"west virginia",54065
+"morrill","NE",5.04236244762983,"nebraska",31123
+"morris","KS",5.32627122796165,"kansas",20127
+"morris","NJ",4.57028038865389,"new jersey",34027
+"morris","TX",4.66855011156581,"texas",48343
+"morrison","MN",7.298235416131,"minnesota",27097
+"morrow","OH",4.05079422624951,"ohio",39117
+"morrow","OR",4.88128025746445,"oregon",41049
+"morton","KS",4.8929684366059,"kansas",20129
+"morton","ND",5.77614620993811,"north dakota",38059
+"motley","TX",5.35964139102909,"texas",48345
+"moultrie","IL",5.00228613787584,"illinois",17139
+"mountrail","ND",5.2616310701062,"north dakota",38061
+"mower","MN",5.44224138819909,"minnesota",27099
+"muhlenberg","KY",5.90858956516097,"kentucky",21177
+"multnomah","OR",5.36138537773507,"oregon",41051
+"murray","GA",5.01991166168566,"georgia",13213
+"murray","MN",4.98789655892438,"minnesota",27101
+"murray","OK",5.20275198831595,"oklahoma",40099
+"muscatine","IA",4.33502271552,"iowa",19139
+"muscogee","GA",5.13547062601292,"georgia",13215
+"muskegon","MI",4.23359540467847,"michigan",26121
+"muskingum","OH",4.93340573855811,"ohio",39119
+"muskogee","OK",5.56618069151528,"oklahoma",40101
+"musselshell","MT",5.43945870776133,"montana",30065
+"nacogdoches","TX",5.23884331329885,"texas",48347
+"nance","NE",4.82193375603739,"nebraska",31125
+"nantucket","MA",5.06884889833137,"massachusetts",25019
+"napa","CA",7.34587452007497,"california",6055
+"nash","NC",4.64443677361234,"north carolina",37127
+"nassau","FL",4.62279414537887,"florida",12089
+"nassau","NY",6.23728017828384,"new york",36059
+"natchitoches","LA",6.81413481598673,"louisiana",22069
+"natrona","WY",5.19622870230805,"wyoming",56025
+"navajo","AZ",5.37598662371493,"arizona",4017
+"navarro","TX",6.14539450378355,"texas",48349
+"nelson","KY",4.06044038034697,"kentucky",21179
+"nelson","ND",5.11518948666697,"north dakota",38063
+"nelson","VA",4.44466183407067,"virginia",51125
+"nemaha","KS",5.56524776975675,"kansas",20131
+"nemaha","NE",5.16993942249425,"nebraska",31127
+"neosho","KS",4.27532990397662,"kansas",20133
+"neshoba","MS",6.15354555952998,"mississippi",28099
+"ness","KS",5.44473042414569,"kansas",20135
+"nevada","AR",4.90571595922724,"arkansas",5099
+"nevada","CA",5.01121816311072,"california",6057
+"new castle","DE",4.22162842625191,"delaware",10003
+"new hanover","NC",4.64813906757172,"north carolina",37129
+"new haven","CT",5.97483954214706,"connecticut",9009
+"new kent","VA",4.64023247169645,"virginia",51127
+"new london","CT",4.57341860578076,"connecticut",9011
+"new madrid","MO",4.74292040865489,"missouri",29143
+"new york","NY",4.86422355960972,"new york",36061
+"newaygo","MI",5.80411135040771,"michigan",26123
+"newberry","SC",5.30919620750867,"south carolina",45071
+"newport news c","VA",4.35850916753796,"virginia",51700
+"newport","RI",5.54531368763867,"rhode island",44005
+"newton","AR",4.904558261206,"arkansas",5101
+"newton","GA",5.33649393037813,"georgia",13217
+"newton","IN",6.1134636680986,"indiana",18111
+"newton","MO",5.90019085517788,"missouri",29145
+"newton","MS",5.32040015499295,"mississippi",28101
+"newton","TX",5.28983153377243,"texas",48351
+"nez perce","ID",6.05971847516922,"idaho",16069
+"niagara","NY",3.9913560585775,"new york",36063
+"nicholas","KY",4.67445267187232,"kentucky",21181
+"nicholas","WV",4.47477932691581,"west virginia",54067
+"nicollet","MN",5.19174043841836,"minnesota",27103
+"niobrara","WY",5.25440607715846,"wyoming",56027
+"noble","IN",4.7179966008371,"indiana",18113
+"noble","OH",4.91557338509962,"ohio",39121
+"noble","OK",4.99391412257836,"oklahoma",40103
+"nobles","MN",5.6278822507127,"minnesota",27105
+"nodaway","MO",4.80217087114303,"missouri",29147
+"nolan","TX",6.21463074617591,"texas",48353
+"norfolk city","VA",4.16874640967707,"virginia",51710
+"norfolk","MA",6.0083019142259,"massachusetts",25021
+"norman","MN",5.11881503325737,"minnesota",27107
+"northampton","NC",4.52904704880757,"north carolina",37131
+"northampton","PA",6.77267350633084,"pennsylvania",42095
+"northampton","VA",5.55201626990133,"virginia",51131
+"northumberland","PA",5.03615479504517,"pennsylvania",42097
+"northumberland","VA",5.56973045702673,"virginia",51133
+"norton city","VA",5.49989009654893,"virginia",51720
+"norton","KS",5.60954803906557,"kansas",20137
+"nottoway","VA",5.69601556644589,"virginia",51135
+"nowata","OK",5.64792248816079,"oklahoma",40105
+"noxubee","MS",4.84931121349609,"mississippi",28103
+"nuckolls","NE",4.97649676651476,"nebraska",31129
+"nueces","TX",4.09269954242765,"texas",48355
+"nye","NV",4.48506944239595,"nevada",32023
+"o brien","IA",5.17170166500344,"iowa",19141
+"oakland","MI",5.08683488868577,"michigan",26125
+"obion","TN",5.33140980829226,"tennessee",47131
+"ocean","NJ",7.47314241007607,"new jersey",34029
+"oceana","MI",5.29663468192258,"michigan",26127
+"ochiltree","TX",4.3967933548199,"texas",48357
+"oconee","GA",4.53231196917882,"georgia",13219
+"oconee","SC",5.72950353145902,"south carolina",45073
+"oconto","WI",5.73705395577691,"wisconsin",55083
+"ogemaw","MI",6.65418881768198,"michigan",26129
+"ogle","IL",5.45253491892635,"illinois",17141
+"oglethorpe","GA",4.97580351288496,"georgia",13221
+"ohio","IN",4.73591460527328,"indiana",18115
+"ohio","KY",6.08648430886959,"kentucky",21183
+"ohio","WV",5.72042605727171,"west virginia",54069
+"okaloosa","FL",5.2096236005817,"florida",12091
+"okanogan","WA",6.43402820249313,"washington",53047
+"okeechobee","FL",5.88620071642114,"florida",12093
+"okfuskee","OK",6.0209311538559,"oklahoma",40107
+"oklahoma","OK",5.14547656406709,"oklahoma",40109
+"okmulgee","OK",5.48203948176504,"oklahoma",40111
+"oktibbeha","MS",4.38183368834494,"mississippi",28105
+"oldham","KY",4.81634154753848,"kentucky",21185
+"oldham","TX",4.95256933107758,"texas",48359
+"oliver","ND",5.29347265664887,"north dakota",38065
+"olmsted","MN",4.04248243326099,"minnesota",27109
+"oneida","ID",4.90884520425896,"idaho",16071
+"oneida","NY",6.06066631043437,"new york",36065
+"oneida","WI",5.17850936962119,"wisconsin",55085
+"onondaga","NY",4.92955346916775,"new york",36067
+"onslow","NC",3.02962069413278,"north carolina",37133
+"ontario","NY",5.21092658669794,"new york",36069
+"ontonagon","MI",5.62835188135107,"michigan",26131
+"orange","CA",3.94094706899462,"california",6059
+"orange","FL",4.81015538763196,"florida",12095
+"orange","IN",5.79657822706649,"indiana",18117
+"orange","NC",3.90778529736941,"north carolina",37135
+"orange","NY",5.49179580181671,"new york",36071
+"orange","TX",3.47179984370535,"texas",48361
+"orange","VA",5.43962594099535,"virginia",51137
+"orange","VT",5.85288733530983,"vermont",50017
+"orangeburg","SC",5.64111478456337,"south carolina",45075
+"oregon","MO",4.4795565051541,"missouri",29149
+"orleans","LA",7.61433453888957,"louisiana",22071
+"orleans","NY",5.09403409864404,"new york",36073
+"orleans","VT",4.96011094446312,"vermont",50019
+"osage","KS",5.49709729113365,"kansas",20139
+"osage","MO",6.23570593112694,"missouri",29151
+"osage","OK",5.98149918281673,"oklahoma",40113
+"osborne","KS",5.09158792840801,"kansas",20141
+"osceola","FL",5.76310661675132,"florida",12097
+"osceola","IA",4.58376171855074,"iowa",19143
+"osceola","MI",4.65716570208859,"michigan",26133
+"oscoda","MI",5.52579336099637,"michigan",26135
+"oswego","NY",5.96345863921415,"new york",36075
+"otero","CO",5.81971737040136,"colorado",8089
+"otero","NM",3.3610756620419,"new mexico",35035
+"otoe","NE",5.01262298517499,"nebraska",31131
+"otsego","MI",5.16370754809377,"michigan",26137
+"otsego","NY",5.6437465518856,"new york",36077
+"ottawa","KS",5.0251607299928,"kansas",20143
+"ottawa","MI",4.61546253251199,"michigan",26139
+"ottawa","OH",5.57518748136549,"ohio",39123
+"ottawa","OK",6.20260603179577,"oklahoma",40115
+"otter tail","MN",7.33939147820215,"minnesota",27111
+"ouachita","AR",4.67327115867332,"arkansas",5103
+"ouachita","LA",4.17313258869983,"louisiana",22073
+"ouray","CO",5.34938856728245,"colorado",8091
+"outagamie","WI",6.11832318411926,"wisconsin",55087
+"overton","TN",5.30788206012826,"tennessee",47133
+"owen","IN",5.15755887402946,"indiana",18119
+"owen","KY",4.50815739834111,"kentucky",21187
+"owsley","KY",5.05326310335733,"kentucky",21189
+"owyhee","ID",5.70733563995132,"idaho",16073
+"oxford","ME",5.82407345808082,"maine",23017
+"ozark","MO",6.31000444182688,"missouri",29153
+"ozaukee","WI",5.61802738770393,"wisconsin",55089
+"pacific","WA",5.3266997098284,"washington",53049
+"page","IA",4.79579626742244,"iowa",19145
+"page","VA",4.42411327414163,"virginia",51139
+"palm beach","FL",8.40947011123695,"florida",12099
+"palo alto","IA",4.88838791196368,"iowa",19147
+"palo pinto","TX",4.67429939838411,"texas",48363
+"pamlico","NC",5.19410385328692,"north carolina",37137
+"panola","MS",5.80715463661846,"mississippi",28107
+"panola","TX",5.34361931919929,"texas",48365
+"park","CO",5.5862637933464,"colorado",8093
+"park","MT",5.60734960045771,"montana",30067
+"park","WY",4.46435010405521,"wyoming",56029
+"parke","IN",5.6936926624463,"indiana",18121
+"parker","TX",4.01739706086102,"texas",48367
+"parmer","TX",4.40324186045855,"texas",48369
+"pasco","FL",9.12293080870201,"florida",12101
+"pasquotank","NC",5.26531935550394,"north carolina",37139
+"passaic","NJ",5.61761990189966,"new jersey",34031
+"patrick","VA",4.33958121462031,"virginia",51141
+"paulding","GA",4.11856412231914,"georgia",13223
+"paulding","OH",5.10618650018146,"ohio",39125
+"pawnee","KS",5.20604012998651,"kansas",20145
+"pawnee","NE",5.21243188327106,"nebraska",31133
+"pawnee","OK",6.05946276499306,"oklahoma",40117
+"payette","ID",4.63731556816929,"idaho",16075
+"payne","OK",5.13577581653872,"oklahoma",40119
+"peach","GA",5.32183364349622,"georgia",13225
+"pearl river","MS",4.51253258181988,"mississippi",28109
+"pecos","TX",4.08703779279649,"texas",48371
+"pembina","ND",6.17393515524067,"north dakota",38067
+"pemiscot","MO",5.36064532097733,"missouri",29155
+"pend oreille","WA",4.81683071944206,"washington",53051
+"pender","NC",4.87401711751167,"north carolina",37141
+"pendleton","KY",6.08131261699718,"kentucky",21191
+"pendleton","WV",4.86213781928906,"west virginia",54071
+"pennington","MN",5.0422430440084,"minnesota",27113
+"pennington","SD",3.78625955758985,"south dakota",46103
+"penobscot","ME",6.54432010082578,"maine",23019
+"peoria","IL",4.9997432483671,"illinois",17143
+"pepin","WI",5.2248728850018,"wisconsin",55091
+"perkins","NE",5.20487591887574,"nebraska",31135
+"perkins","SD",5.11498529129904,"south dakota",46105
+"perquimans","NC",5.60301583536048,"north carolina",37143
+"perry","AL",5.07882255512815,"alabama",1105
+"perry","AR",5.20881821371736,"arkansas",5105
+"perry","IL",5.61130137394709,"illinois",17145
+"perry","IN",6.24617975363582,"indiana",18123
+"perry","KY",4.71403317237253,"kentucky",21193
+"perry","MO",5.11220109145409,"missouri",29157
+"perry","MS",4.85852476022882,"mississippi",28111
+"perry","OH",4.30427914760481,"ohio",39127
+"perry","PA",4.43294352265323,"pennsylvania",42099
+"perry","TN",4.99481691525192,"tennessee",47135
+"pershing","NV",5.50549675791284,"nevada",32027
+"person","NC",4.91598450076579,"north carolina",37145
+"petersburg cit","VA",5.66603151836953,"virginia",51730
+"petroleum","MT",5.139671982257,"montana",30069
+"pettis","MO",5.29088022008825,"missouri",29159
+"phelps","MO",5.39714454008343,"missouri",29161
+"phelps","NE",4.7501245592239,"nebraska",31137
+"philadelphia","PA",6.59141364323994,"pennsylvania",42101
+"phillips","AR",6.35348878997596,"arkansas",5107
+"phillips","CO",4.84495188515212,"colorado",8095
+"phillips","KS",5.84808197236672,"kansas",20147
+"phillips","MT",5.4249559233733,"montana",30071
+"piatt","IL",4.60938814524659,"illinois",17147
+"pickaway","OH",5.49683268923725,"ohio",39129
+"pickens","AL",6.23075610687266,"alabama",1107
+"pickens","GA",5.70091148010809,"georgia",13227
+"pickens","SC",4.97779727966844,"south carolina",45077
+"pickett","TN",5.12183708586084,"tennessee",47137
+"pierce","GA",4.66750690224053,"georgia",13229
+"pierce","ND",5.63378409567535,"north dakota",38069
+"pierce","NE",5.17496545165584,"nebraska",31139
+"pierce","WA",4.44743962514346,"washington",53053
+"pierce","WI",4.89413068136395,"wisconsin",55093
+"pike","AL",4.27636286581122,"alabama",1109
+"pike","AR",5.35464822077315,"arkansas",5109
+"pike","GA",4.6188999477646,"georgia",13231
+"pike","IL",5.03123595026576,"illinois",17149
+"pike","IN",5.08814389418017,"indiana",18125
+"pike","KY",5.18160067015889,"kentucky",21195
+"pike","MO",5.19825835372618,"missouri",29163
+"pike","MS",5.42353321626793,"mississippi",28113
+"pike","OH",4.48126928656315,"ohio",39131
+"pike","PA",5.63493441255062,"pennsylvania",42103
+"pima","AZ",5.49850167820947,"arizona",4019
+"pinal","AZ",4.8518691281702,"arizona",4021
+"pine","MN",4.63045775730952,"minnesota",27115
+"pinellas","FL",8.60513420105501,"florida",12103
+"pipestone","MN",4.96341075351517,"minnesota",27117
+"piscataquis","ME",4.81789135461628,"maine",23021
+"pitkin","CO",4.34090414313699,"colorado",8097
+"pitt","NC",4.51559052146756,"north carolina",37147
+"pittsburg","OK",6.04133324682363,"oklahoma",40121
+"pittsylvania","VA",5.3510347701931,"virginia",51143
+"piute","UT",5.04030913052394,"utah",49031
+"placer","CA",4.88826039704523,"california",6061
+"plaquemines","LA",5.08946282179004,"louisiana",22075
+"platte","MO",3.95545242451451,"missouri",29165
+"platte","NE",5.55132219580046,"nebraska",31141
+"platte","WY",5.02237274588836,"wyoming",56031
+"pleasants","WV",5.18662147216655,"west virginia",54073
+"plumas","CA",5.54953659540932,"california",6063
+"plymouth","IA",5.86786511654882,"iowa",19149
+"plymouth","MA",5.23271615395578,"massachusetts",25023
+"pocahontas","IA",5.2584671499835,"iowa",19151
+"pocahontas","WV",5.08311665398314,"west virginia",54075
+"poinsett","AR",5.17889952227991,"arkansas",5111
+"pointe coupee","LA",6.10418698549244,"louisiana",22077
+"polk","AR",5.62047130757332,"arkansas",5113
+"polk","FL",5.33632291390771,"florida",12105
+"polk","GA",4.9320156389343,"georgia",13233
+"polk","IA",6.68344629889996,"iowa",19153
+"polk","MN",6.59982666351235,"minnesota",27119
+"polk","MO",4.93997099521291,"missouri",29167
+"polk","NC",5.43770208011451,"north carolina",37149
+"polk","NE",4.70902524336137,"nebraska",31143
+"polk","OR",4.36285390575989,"oregon",41053
+"polk","TN",5.59121874335397,"tennessee",47139
+"polk","TX",5.9263770562807,"texas",48373
+"polk","WI",5.26747143581396,"wisconsin",55095
+"pondera","MT",5.32654424658554,"montana",30073
+"pontotoc","MS",4.53165322690363,"mississippi",28115
+"pontotoc","OK",4.42988913045908,"oklahoma",40123
+"pope","AR",5.29507088550589,"arkansas",5115
+"pope","IL",5.45013771651895,"illinois",17151
+"pope","MN",5.19607701767631,"minnesota",27121
+"poquoson","VA",4.43072779695199,"virginia",51735
+"portage","OH",4.54912829300858,"ohio",39133
+"portage","WI",3.82298655594078,"wisconsin",55097
+"porter","IN",4.40934508045997,"indiana",18127
+"portsmouth cit","VA",6.01159958605397,"virginia",51740
+"posey","IN",5.49743315695919,"indiana",18129
+"pottawatomie","KS",4.91627718873813,"kansas",20149
+"pottawatomie","OK",6.6344399475794,"oklahoma",40125
+"pottawattamie","IA",5.90089151760416,"iowa",19155
+"potter","PA",4.81503752950561,"pennsylvania",42105
+"potter","SD",6.15621748797823,"south dakota",46107
+"potter","TX",5.11592689638227,"texas",48375
+"powder river","MT",5.30921389500781,"montana",30075
+"powell","KY",5.20309111807607,"kentucky",21197
+"powell","MT",5.5274559936161,"montana",30077
+"power","ID",4.94674925352145,"idaho",16077
+"poweshiek","IA",5.00883995439858,"iowa",19157
+"powhatan","VA",4.64614208312375,"virginia",51145
+"prairie","AR",5.10937886277875,"arkansas",5117
+"prairie","MT",5.01463767798564,"montana",30079
+"pratt","KS",4.73022157122015,"kansas",20151
+"preble","OH",3.98695288820749,"ohio",39135
+"prentiss","MS",5.11967219190574,"mississippi",28117
+"presidio","TX",4.73651563075317,"texas",48377
+"presque isle","MI",4.75624344927217,"michigan",26141
+"preston","WV",5.03565474494435,"west virginia",54077
+"price","WI",4.87673656164893,"wisconsin",55099
+"prince edward","VA",4.71202277879622,"virginia",51147
+"prince george","VA",4.16070031708942,"virginia",51149
+"prince georges","MD",4.18554478901495,"maryland",24033
+"prince william","VA",3.11099993338927,"virginia",51153
+"providence","RI",6.67008332856087,"rhode island",44007
+"prowers","CO",5.06114006680383,"colorado",8099
+"pueblo","CO",5.59167377434581,"colorado",8101
+"pulaski","AR",5.42789528351306,"arkansas",5119
+"pulaski","GA",5.05007658999856,"georgia",13235
+"pulaski","IL",5.06740194532673,"illinois",17153
+"pulaski","IN",5.09182327127687,"indiana",18131
+"pulaski","KY",5.80402309219789,"kentucky",21199
+"pulaski","MO",3.50622885933759,"missouri",29169
+"pulaski","VA",4.89346099286155,"virginia",51155
+"pushmataha","OK",6.17316443811257,"oklahoma",40127
+"putnam","FL",5.41577243871851,"florida",12107
+"putnam","GA",5.7871274785613,"georgia",13237
+"putnam","IL",5.32800415802851,"illinois",17155
+"putnam","IN",5.76186608005016,"indiana",18133
+"putnam","MO",5.35240644484937,"missouri",29171
+"putnam","NY",4.70601335909335,"new york",36079
+"putnam","OH",4.19726807505962,"ohio",39137
+"putnam","TN",4.94114604391315,"tennessee",47141
+"putnam","WV",4.52917061091619,"west virginia",54079
+"quay","NM",4.4118045804151,"new mexico",35037
+"queen annes","MD",4.14609695568684,"maryland",24035
+"queens","NY",6.11051032361439,"new york",36081
+"quitman","GA",5.4309179701148,"georgia",13239
+"quitman","MS",5.74320378530885,"mississippi",28119
+"rabun","GA",5.26249241155439,"georgia",13241
+"racine","WI",5.54645284804888,"wisconsin",55101
+"radford city","VA",5.20274656530008,"virginia",51750
+"rains","TX",5.36867797131571,"texas",48379
+"raleigh","WV",5.46235501040321,"west virginia",54081
+"ralls","MO",5.70749285067126,"missouri",29173
+"ramsey","MN",5.62762792286087,"minnesota",27123
+"ramsey","ND",5.9605316924469,"north dakota",38071
+"randall","TX",5.12382925793284,"texas",48381
+"randolph","AL",4.70125683835299,"alabama",1111
+"randolph","AR",5.94569507320887,"arkansas",5121
+"randolph","GA",5.19711889013979,"georgia",13243
+"randolph","IL",6.35401316738539,"illinois",17157
+"randolph","IN",7.20118836745962,"indiana",18135
+"randolph","MO",6.14646721202933,"missouri",29175
+"randolph","NC",4.49772407255484,"north carolina",37151
+"randolph","WV",4.44151057854789,"west virginia",54083
+"rankin","MS",4.51055920256838,"mississippi",28121
+"ransom","ND",5.86186942678944,"north dakota",38073
+"rapides","LA",5.38545433255459,"louisiana",22079
+"rappahannock","VA",5.04797550014377,"virginia",51157
+"ravalli","MT",4.45179835855101,"montana",30081
+"rawlins","KS",5.503828775243,"kansas",20153
+"ray","MO",4.83296787267791,"missouri",29177
+"reagan","TX",4.77757561830115,"texas",48383
+"real","TX",5.30841271668098,"texas",48385
+"red lake","MN",5.10073725394712,"minnesota",27125
+"red river","LA",4.98351512845051,"louisiana",22081
+"red river","TX",4.88625672661441,"texas",48387
+"red willow","NE",4.87440480298883,"nebraska",31145
+"redwood","MN",5.01113609940433,"minnesota",27127
+"reeves","TX",4.85373647290821,"texas",48389
+"refugio","TX",4.86180941892163,"texas",48391
+"reno","KS",7.56880542168263,"kansas",20155
+"rensselaer","NY",5.49160298940233,"new york",36083
+"renville","MN",5.95764674909737,"minnesota",27129
+"renville","ND",5.84026363053969,"north dakota",38075
+"republic","KS",5.54246284623148,"kansas",20157
+"reynolds","MO",5.54202171107388,"missouri",29179
+"rhea","TN",4.70913015363446,"tennessee",47143
+"rice","KS",7.23819927104835,"kansas",20159
+"rice","MN",4.2570477167738,"minnesota",27131
+"rich","UT",5.01961265309815,"utah",49033
+"richardson","NE",5.59501761913706,"nebraska",31147
+"richland","IL",5.08166231269149,"illinois",17159
+"richland","LA",6.40804709490263,"louisiana",22083
+"richland","MT",5.37330782654158,"montana",30083
+"richland","ND",5.67892062954515,"north dakota",38077
+"richland","OH",4.51123012100182,"ohio",39139
+"richland","SC",5.02454225512754,"south carolina",45079
+"richland","WI",5.57329165401834,"wisconsin",55103
+"richmond city","VA",6.16255748534565,"virginia",51760
+"richmond","GA",4.66191226981875,"georgia",13245
+"richmond","NC",5.20426420836096,"north carolina",37153
+"richmond","NY",4.46594747798763,"new york",36085
+"richmond","VA",5.09681023367667,"virginia",51159
+"riley","KS",3.71981110024583,"kansas",20161
+"ringgold","IA",6.32718984566336,"iowa",19159
+"rio arriba","NM",4.72695988870682,"new mexico",35039
+"rio blanco","CO",4.96934153009955,"colorado",8103
+"rio grande","CO",4.36397638774321,"colorado",8105
+"ripley","IN",6.57286130059625,"indiana",18137
+"ripley","MO",4.89770305273802,"missouri",29181
+"ritchie","WV",5.52764168051146,"west virginia",54085
+"riverside","CA",5.1396981217699,"california",6065
+"roane","TN",3.91779721106224,"tennessee",47145
+"roane","WV",5.17433216432834,"west virginia",54087
+"roanoke city","VA",5.46289867294405,"virginia",51770
+"roanoke","VA",5.03584947852076,"virginia",51161
+"roberts","SD",5.43491710713178,"south dakota",46109
+"roberts","TX",5.07707940795535,"texas",48393
+"robertson","KY",5.32875898483434,"kentucky",21201
+"robertson","TN",4.61842546681968,"tennessee",47147
+"robertson","TX",5.82611558386272,"texas",48395
+"robeson","NC",5.40386666555381,"north carolina",37155
+"rock island","IL",6.37356925010739,"illinois",17161
+"rock","MN",5.58112183628069,"minnesota",27133
+"rock","NE",5.3207842326766,"nebraska",31149
+"rock","WI",4.7292344861291,"wisconsin",55105
+"rockbridge","VA",5.05322011491587,"virginia",51163
+"rockcastle","KY",4.99965408054548,"kentucky",21203
+"rockdale","GA",5.16633056712142,"georgia",13247
+"rockingham","NC",4.10317696925185,"north carolina",37157
+"rockingham","NH",4.28240087524192,"new hampshire",33015
+"rockingham","VA",4.183140555682,"virginia",51165
+"rockland","NY",5.50416227811148,"new york",36087
+"rockwall","TX",4.1849798308532,"texas",48397
+"roger mills","OK",5.0956358408857,"oklahoma",40129
+"rogers","OK",5.56255586043739,"oklahoma",40131
+"rolette","ND",4.79939611022564,"north dakota",38079
+"rooks","KS",4.9641118969581,"kansas",20163
+"roosevelt","MT",6.20632982958715,"montana",30085
+"roosevelt","NM",4.6637354624926,"new mexico",35041
+"roscommon","MI",6.860423241281,"michigan",26143
+"roseau","MN",5.33587368569611,"minnesota",27135
+"rosebud","MT",4.7726712152013,"montana",30087
+"ross","OH",4.95825151367677,"ohio",39141
+"routt","CO",4.96524956869975,"colorado",8107
+"rowan","KY",4.46029889367028,"kentucky",21205
+"rowan","NC",6.29973132439879,"north carolina",37159
+"runnels","TX",5.73118552055354,"texas",48399
+"rush","IN",5.27825209017711,"indiana",18139
+"rush","KS",5.15800440570984,"kansas",20165
+"rusk","TX",5.27679868055005,"texas",48401
+"rusk","WI",4.4056197783673,"wisconsin",55107
+"russell","AL",6.50347082531697,"alabama",1113
+"russell","KS",4.82754011184752,"kansas",20167
+"russell","KY",5.83310149537347,"kentucky",21207
+"russell","VA",4.56013432319075,"virginia",51167
+"rutherford","NC",6.65179756392534,"north carolina",37161
+"rutherford","TN",4.14962759391076,"tennessee",47149
+"rutland","VT",5.7384869350644,"vermont",50021
+"sabine","LA",4.15959766756731,"louisiana",22085
+"sabine","TX",4.87950981777223,"texas",48403
+"sac","IA",4.55113703573115,"iowa",19161
+"sacramento","CA",4.78718147680908,"california",6067
+"sagadahoc","ME",4.79957705624171,"maine",23023
+"saginaw","MI",4.76024330748549,"michigan",26145
+"saguache","CO",5.13668520816398,"colorado",8109
+"saint bernard","LA",5.0332838441377,"louisiana",22087
+"saint charles","LA",4.53814125577163,"louisiana",22089
+"saint charles","MO",3.05849381168623,"missouri",29183
+"saint clair","AL",5.10030334527719,"alabama",1115
+"saint clair","IL",5.9716027773879,"illinois",17163
+"saint clair","MI",5.35596789817297,"michigan",26147
+"saint clair","MO",4.8532199229847,"missouri",29185
+"saint croix","WI",5.01677058179819,"wisconsin",55109
+"saint francis","AR",5.4562467207966,"arkansas",5123
+"saint francois","MO",5.7655370459077,"missouri",29187
+"saint helena","LA",5.11579030681022,"louisiana",22091
+"saint james","LA",6.06400847520241,"louisiana",22093
+"saint john the ba","LA",5.14183567928669,"louisiana",22095
+"saint johns","FL",5.81011318844436,"florida",12109
+"saint joseph","IN",6.49335769525496,"indiana",18141
+"saint joseph","MI",4.96602341477189,"michigan",26149
+"saint landry","LA",5.54351749799411,"louisiana",22097
+"saint lawrence","NY",5.03588600749346,"new york",36089
+"saint louis city","MO",6.71106851566214,"missouri",29510
+"saint louis","MN",6.86917864269823,"minnesota",27137
+"saint louis","MO",6.28182123085339,"missouri",29189
+"saint lucie","FL",6.34137723434996,"florida",12111
+"saint martin","LA",5.5168823531064,"louisiana",22099
+"saint mary","LA",4.17610627584805,"louisiana",22101
+"saint marys","MD",4.23173279282083,"maryland",24037
+"saint tammany","LA",3.84203849314993,"louisiana",22103
+"saintess genevieve","MO",5.71231692963943,"missouri",29186
+"salem city","VA",5.77474544654022,"virginia",51775
+"salem","NJ",4.86920907097005,"new jersey",34033
+"saline","AR",5.28551205451677,"arkansas",5125
+"saline","IL",5.03942327460146,"illinois",17165
+"saline","KS",4.82871866927674,"kansas",20169
+"saline","MO",6.46900103926256,"missouri",29195
+"saline","NE",5.39716954937439,"nebraska",31151
+"salt lake","UT",2.38544247273716,"utah",49035
+"saluda","SC",4.69311347220578,"south carolina",45081
+"sampson","NC",4.55420304322199,"north carolina",37163
+"san augustine","TX",5.94181615835798,"texas",48405
+"san benito","CA",5.06807832579101,"california",6069
+"san bernardino","CA",4.49465731898644,"california",6071
+"san diego","CA",4.39871474780764,"california",6073
+"san francisco","CA",5.70301125406123,"california",6075
+"san jacinto","TX",6.03119518640069,"texas",48407
+"san joaquin","CA",5.47188497805782,"california",6077
+"san juan","CO",5.10636021390006,"colorado",8111
+"san juan","NM",4.15101031361176,"new mexico",35045
+"san juan","UT",5.31778551066408,"utah",49037
+"san juan","WA",5.70327502518702,"washington",53055
+"san luis obisp","CA",4.83109446124024,"california",6079
+"san mateo","CA",5.33193050207368,"california",6081
+"san miguel","CO",4.89024692322686,"colorado",8113
+"san miguel","NM",4.67177374732801,"new mexico",35047
+"san patricio","TX",4.65165920005798,"texas",48409
+"san saba","TX",5.94358251356894,"texas",48411
+"sanborn","SD",5.24135071647273,"south dakota",46111
+"sanders","MT",5.11121851318376,"montana",30089
+"sandoval","NM",4.35915757126366,"new mexico",35043
+"sandusky","OH",5.94858036504709,"ohio",39143
+"sangamon","IL",5.12299254724926,"illinois",17167
+"sanilac","MI",4.94992682652456,"michigan",26151
+"sanpete","UT",5.73167424158702,"utah",49039
+"santa barbara","CA",4.52746525346495,"california",6083
+"santa clara","CA",3.62661682134067,"california",6085
+"santa cruz","AZ",6.2232737682152,"arizona",4023
+"santa cruz","CA",4.41738501151653,"california",6087
+"santa fe","NM",4.33793657749677,"new mexico",35049
+"santa rosa","FL",4.47130497954893,"florida",12113
+"sarasota","FL",9.96863457347617,"florida",12115
+"saratoga","NY",3.46183676943717,"new york",36091
+"sargent","ND",4.75890344044451,"north dakota",38081
+"sarpy","NE",4.11630711626595,"nebraska",31153
+"sauk","WI",5.88043591061016,"wisconsin",55111
+"saunders","NE",6.26135252254983,"nebraska",31155
+"sawyer","WI",5.41606738046505,"wisconsin",55113
+"schenectady","NY",4.25676440611086,"new york",36093
+"schleicher","TX",5.23867866480818,"texas",48413
+"schley","GA",4.98368542489562,"georgia",13249
+"schoharie","NY",5.05182193963689,"new york",36095
+"schoolcraft","MI",5.76395320493191,"michigan",26153
+"schuyler","IL",5.17642533933782,"illinois",17169
+"schuyler","MO",5.12794121087113,"missouri",29197
+"schuyler","NY",5.8192325598,"new york",36097
+"schuylkill","PA",6.79633297434316,"pennsylvania",42107
+"scioto","OH",6.22731294920438,"ohio",39145
+"scotland","MO",5.3947160127071,"missouri",29199
+"scotland","NC",5.50043473108922,"north carolina",37165
+"scott","AR",5.32869499500805,"arkansas",5127
+"scott","IA",4.9736220500022,"iowa",19163
+"scott","IL",5.65768073438352,"illinois",17171
+"scott","IN",6.12666172958756,"indiana",18143
+"scott","KS",5.33049099142623,"kansas",20171
+"scott","KY",5.11991763110928,"kentucky",21209
+"scott","MN",4.88752522736304,"minnesota",27139
+"scott","MO",5.40894996527765,"missouri",29201
+"scott","MS",4.95320142171034,"mississippi",28123
+"scott","TN",4.96947526503595,"tennessee",47151
+"scott","VA",6.59075803173578,"virginia",51169
+"scotts bluff","NE",4.29921161655746,"nebraska",31157
+"screven","GA",4.89593137986003,"georgia",13251
+"scurry","TX",6.25211188044043,"texas",48415
+"searcy","AR",5.10816328528771,"arkansas",5129
+"sebastian","AR",4.74839860499752,"arkansas",5131
+"sedgwick","CO",4.95270892806412,"colorado",8115
+"sedgwick","KS",5.48390976843132,"kansas",20173
+"seminole","FL",3.29920381014084,"florida",12117
+"seminole","GA",5.01186005889427,"georgia",13253
+"seminole","OK",5.0912213468906,"oklahoma",40133
+"seneca","NY",4.01317459099344,"new york",36099
+"seneca","OH",5.71322357778799,"ohio",39147
+"sequatchie","TN",4.82891916492856,"tennessee",47153
+"sequoyah","OK",6.67952968989724,"oklahoma",40135
+"sevier","AR",5.09685425799431,"arkansas",5133
+"sevier","TN",5.46482975094354,"tennessee",47155
+"sevier","UT",4.39693815717862,"utah",49041
+"seward","KS",4.78063975377619,"kansas",20175
+"seward","NE",4.90812253684542,"nebraska",31159
+"shackelford","TX",5.79758230523667,"texas",48417
+"shannon","MO",5.18421028716934,"missouri",29203
+"shannon","SD",5.12495719558911,"south dakota",46113
+"sharkey","MS",5.2758552100315,"mississippi",28125
+"sharp","AR",6.66108726839396,"arkansas",5135
+"shasta","CA",5.42558285213655,"california",6089
+"shawano","WI",4.97032832808357,"wisconsin",55115
+"shawnee","KS",6.25699153570296,"kansas",20177
+"sheboygan","WI",6.78812572355987,"wisconsin",55117
+"shelby","AL",3.59754975750122,"alabama",1117
+"shelby","IA",6.64644387900757,"iowa",19165
+"shelby","IL",4.7027990451476,"illinois",17173
+"shelby","IN",6.41534082510963,"indiana",18145
+"shelby","KY",5.60268727999421,"kentucky",21211
+"shelby","MO",6.42585000507237,"missouri",29205
+"shelby","OH",3.99813737874834,"ohio",39149
+"shelby","TN",5.28916279589526,"tennessee",47157
+"shelby","TX",5.33206738754577,"texas",48419
+"shenandoah","VA",4.90514741762262,"virginia",51171
+"sherburne","MN",4.13872990462553,"minnesota",27141
+"sheridan","KS",5.56744539393981,"kansas",20179
+"sheridan","MT",5.05086057909568,"montana",30091
+"sheridan","ND",5.29700719278354,"north dakota",38083
+"sheridan","NE",5.27754786848825,"nebraska",31161
+"sheridan","WY",6.27026831331789,"wyoming",56033
+"sherman","KS",5.82444404686157,"kansas",20181
+"sherman","NE",4.86769422896804,"nebraska",31163
+"sherman","OR",5.32095495442791,"oregon",41055
+"sherman","TX",4.90634808552533,"texas",48421
+"shiawassee","MI",4.92893450135531,"michigan",26155
+"shoshone","ID",4.83271641761383,"idaho",16079
+"sibley","MN",5.47156458666491,"minnesota",27143
+"sierra","CA",5.23901557949596,"california",6091
+"sierra","NM",5.69096982931131,"new mexico",35051
+"silver bow","MT",4.13872318871294,"montana",30093
+"simpson","KY",5.91398429649846,"kentucky",21213
+"simpson","MS",4.87415518388289,"mississippi",28127
+"sioux","IA",3.71369150323205,"iowa",19167
+"sioux","ND",5.07783969363189,"north dakota",38085
+"sioux","NE",5.02100596084558,"nebraska",31165
+"siskiyou","CA",5.58856346409099,"california",6093
+"skagit","WA",5.31223907894687,"washington",53057
+"skamania","WA",5.18202825341178,"washington",53059
+"slope","ND",5.07575534652255,"north dakota",38087
+"smith","KS",5.65625143544245,"kansas",20183
+"smith","MS",4.90392845228103,"mississippi",28129
+"smith","TN",5.32251278165655,"tennessee",47159
+"smith","TX",3.72652264310808,"texas",48423
+"smyth","VA",5.85893599972988,"virginia",51173
+"snohomish","WA",3.86571186172163,"washington",53061
+"snyder","PA",4.3621415735366,"pennsylvania",42109
+"socorro","NM",4.55789870464395,"new mexico",35053
+"solano","CA",3.55423761404001,"california",6095
+"somerset","MD",5.93976357522986,"maryland",24039
+"somerset","ME",5.98569772188214,"maine",23025
+"somerset","NJ",4.84130864693032,"new jersey",34035
+"somerset","PA",6.62450368081705,"pennsylvania",42111
+"somervell","TX",5.09653558755428,"texas",48425
+"sonoma","CA",4.82562158172357,"california",6097
+"south boston c","VA",5.17143048508926,"virginia",51780
+"southampton","VA",4.74210276101774,"virginia",51175
+"spalding","GA",4.95696084000421,"georgia",13255
+"spartanburg","SC",5.06839287883623,"south carolina",45083
+"spencer","IN",4.9195149599961,"indiana",18147
+"spencer","KY",5.3534618904873,"kentucky",21215
+"spink","SD",5.1265084649918,"south dakota",46115
+"spokane","WA",4.83517562798609,"washington",53063
+"spotsylvania","VA",5.1536077227876,"virginia",51177
+"stafford","KS",5.67205248644669,"kansas",20185
+"stafford","VA",3.92843130430659,"virginia",51179
+"stanislaus","CA",4.23907523053652,"california",6099
+"stanley","SD",5.30951880911915,"south dakota",46117
+"stanly","NC",5.56839239984784,"north carolina",37167
+"stanton","KS",4.98668308882256,"kansas",20187
+"stanton","NE",4.66980734587106,"nebraska",31167
+"stark","IL",4.94650100393947,"illinois",17175
+"stark","ND",5.27870786426385,"north dakota",38089
+"stark","OH",5.33290911975291,"ohio",39151
+"starke","IN",6.29231691401334,"indiana",18149
+"starr","TX",4.18048526625044,"texas",48427
+"staunton city","VA",5.18013960746787,"virginia",51790
+"stearns","MN",3.20836051119691,"minnesota",27145
+"steele","MN",4.81504873561243,"minnesota",27147
+"steele","ND",5.26040720786723,"north dakota",38091
+"stephens","GA",5.44252726433049,"georgia",13257
+"stephens","OK",7.05680156566029,"oklahoma",40137
+"stephens","TX",5.0505652512863,"texas",48429
+"stephenson","IL",6.22333781237111,"illinois",17177
+"sterling","TX",5.03942643837816,"texas",48431
+"steuben","IN",4.8182475431598,"indiana",18151
+"steuben","NY",5.78104277454275,"new york",36101
+"stevens","KS",5.43192603761346,"kansas",20189
+"stevens","MN",5.80889030371824,"minnesota",27149
+"stevens","WA",4.42286062018292,"washington",53065
+"stewart","GA",5.32107939944335,"georgia",13259
+"stewart","TN",4.81813781940425,"tennessee",47161
+"stillwater","MT",4.72246043276663,"montana",30095
+"stoddard","MO",5.90555966257366,"missouri",29207
+"stokes","NC",4.24310959374469,"north carolina",37169
+"stone","AR",6.25070506241882,"arkansas",5137
+"stone","MO",5.60891725173357,"missouri",29209
+"stone","MS",5.17614179159988,"mississippi",28131
+"stonewall","TX",4.98893325487706,"texas",48433
+"storey","NV",5.01238382050347,"nevada",32029
+"story","IA",4.03146092032045,"iowa",19169
+"strafford","NH",4.61359474843918,"new hampshire",33017
+"stutsman","ND",4.7104821747182,"north dakota",38093
+"sublette","WY",5.04510870365838,"wyoming",56035
+"suffolk city","VA",5.02257343315319,"virginia",51800
+"suffolk","MA",6.34654011338337,"massachusetts",25025
+"suffolk","NY",4.68083641509222,"new york",36103
+"sullivan","IN",6.48309487985989,"indiana",18153
+"sullivan","MO",5.24484396624526,"missouri",29211
+"sullivan","NH",5.3013556969613,"new hampshire",33019
+"sullivan","NY",5.41876741768739,"new york",36105
+"sullivan","PA",5.62578079236319,"pennsylvania",42113
+"sullivan","TN",3.63162148523931,"tennessee",47163
+"sully","SD",5.02714819789449,"south dakota",46119
+"summers","WV",5.02710972041956,"west virginia",54089
+"summit","CO",4.31725740685348,"colorado",8117
+"summit","OH",5.22900028128682,"ohio",39153
+"summit","UT",4.55379394801099,"utah",49043
+"sumner","KS",7.75169883073383,"kansas",20191
+"sumner","TN",3.88173974540409,"tennessee",47165
+"sumter","AL",4.78117699505306,"alabama",1119
+"sumter","FL",4.72717574577757,"florida",12119
+"sumter","GA",4.09860703761271,"georgia",13261
+"sumter","SC",4.63802670183365,"south carolina",45085
+"sunflower","MS",4.54540714240212,"mississippi",28133
+"surry","NC",4.43511797974405,"north carolina",37171
+"surry","VA",5.29629009258812,"virginia",51181
+"susquehanna","PA",3.78180130724813,"pennsylvania",42115
+"sussex","DE",5.71120338692812,"delaware",10005
+"sussex","NJ",4.40726264629009,"new jersey",34037
+"sussex","VA",5.48577240073719,"virginia",51183
+"sutter","CA",4.09906470870324,"california",6101
+"sutton","TX",4.77833021471254,"texas",48435
+"suwannee","FL",4.86324292571882,"florida",12121
+"swain","NC",5.49238820577066,"north carolina",37173
+"sweet grass","MT",4.92186027159065,"montana",30097
+"sweetwater","WY",3.60060852998572,"wyoming",56037
+"swift","MN",5.44032245539112,"minnesota",27151
+"swisher","TX",4.83153411727108,"texas",48437
+"switzerland","IN",4.92854733324934,"indiana",18155
+"talbot","GA",5.63757566376689,"georgia",13263
+"talbot","MD",5.7986425498453,"maryland",24041
+"taliaferro","GA",5.10862973596773,"georgia",13265
+"talladega","AL",4.9878123983322,"alabama",1121
+"tallahatchie","MS",4.98905499865764,"mississippi",28135
+"tallapoosa","AL",7.00408401317096,"alabama",1123
+"tama","IA",5.31432108964107,"iowa",19171
+"taney","MO",6.97364518633295,"missouri",29213
+"tangipahoa","LA",3.94643924599609,"louisiana",22105
+"taos","NM",4.88422867365628,"new mexico",35055
+"tarrant","TX",4.7176289000225,"texas",48439
+"tate","MS",4.81212279988162,"mississippi",28137
+"tattnall","GA",4.26697391061549,"georgia",13267
+"taylor","FL",5.34820141682582,"florida",12123
+"taylor","GA",5.14110663653429,"georgia",13269
+"taylor","IA",5.487962669766,"iowa",19173
+"taylor","KY",4.44202603340118,"kentucky",21217
+"taylor","TX",4.93882233660943,"texas",48441
+"taylor","WI",4.42950795824976,"wisconsin",55119
+"taylor","WV",5.70367977002717,"west virginia",54091
+"tazewell","IL",5.21619069567798,"illinois",17179
+"tazewell","VA",4.80731465729813,"virginia",51185
+"tehama","CA",6.5675925414875,"california",6103
+"telfair","GA",4.89128026338184,"georgia",13271
+"teller","CO",5.55858102101294,"colorado",8119
+"tensas","LA",5.510029234189,"louisiana",22107
+"terrebonne","LA",3.6990138836776,"louisiana",22109
+"terrell","GA",5.13376826658981,"georgia",13273
+"terrell","TX",5.0290385675153,"texas",48443
+"terry","TX",4.48695119363613,"texas",48445
+"teton","ID",5.53292219406731,"idaho",16081
+"teton","MT",5.30141668294045,"montana",30099
+"teton","WY",4.391127503235,"wyoming",56039
+"texas","MO",6.36449007313626,"missouri",29215
+"texas","OK",3.99128212665201,"oklahoma",40139
+"thayer","NE",5.84480711666724,"nebraska",31169
+"thomas","GA",4.95133638031057,"georgia",13275
+"thomas","KS",4.84931736183676,"kansas",20193
+"thomas","NE",5.1147407067479,"nebraska",31171
+"throckmorton","TX",5.02283184130877,"texas",48447
+"thurston","NE",5.45072707188255,"nebraska",31173
+"thurston","WA",3.78130635429032,"washington",53067
+"tift","GA",4.85744025790645,"georgia",13277
+"tillamook","OR",6.07838084949245,"oregon",41057
+"tillman","OK",5.6098200887801,"oklahoma",40141
+"tioga","NY",4.6669268886379,"new york",36107
+"tioga","PA",5.75523138146888,"pennsylvania",42117
+"tippah","MS",5.46647629189948,"mississippi",28139
+"tippecanoe","IN",4.805194053634,"indiana",18157
+"tipton","IN",4.61458416567543,"indiana",18159
+"tipton","TN",4.11902659187739,"tennessee",47167
+"tishomingo","MS",4.821849073894,"mississippi",28141
+"titus","TX",5.43328943045997,"texas",48449
+"todd","KY",4.74435498897994,"kentucky",21219
+"todd","MN",6.75814944023694,"minnesota",27153
+"todd","SD",5.02811391470321,"south dakota",46121
+"tolland","CT",4.02226324946341,"connecticut",9013
+"tom green","TX",4.98673437718968,"texas",48451
+"tompkins","NY",4.86191747639992,"new york",36109
+"tooele","UT",4.97423207705135,"utah",49045
+"toole","MT",4.75478607540806,"montana",30101
+"toombs","GA",4.29502184892817,"georgia",13279
+"torrance","NM",4.53028889770388,"new mexico",35057
+"towner","ND",5.4843238729051,"north dakota",38095
+"towns","GA",5.01733565821705,"georgia",13281
+"traill","ND",5.64963814897081,"north dakota",38097
+"transylvania","NC",5.68622739431065,"north carolina",37175
+"traverse","MN",5.70895167180132,"minnesota",27155
+"travis","TX",3.60775634007058,"texas",48453
+"treasure","MT",5.09446304282523,"montana",30103
+"trego","KS",5.4712303220664,"kansas",20195
+"trempealeau","WI",4.79536307417989,"wisconsin",55121
+"treutlen","GA",6.11138041583662,"georgia",13283
+"trigg","KY",6.28391544982753,"kentucky",21221
+"trimble","KY",5.31380068697893,"kentucky",21223
+"trinity","CA",5.41604055733437,"california",6105
+"trinity","TX",5.10691052898955,"texas",48455
+"tripp","SD",6.48625522576038,"south dakota",46123
+"troup","GA",5.17534840718297,"georgia",13285
+"trousdale","TN",5.0970051271804,"tennessee",47169
+"trumbull","OH",5.80580463247678,"ohio",39155
+"tucker","WV",4.86071244296332,"west virginia",54093
+"tulare","CA",4.5958464268989,"california",6107
+"tulsa","OK",5.16862327387888,"oklahoma",40143
+"tunica","MS",5.62373544581064,"mississippi",28143
+"tuolumne","CA",5.59505601304418,"california",6109
+"turner","GA",5.05361573806565,"georgia",13287
+"turner","SD",5.98196447177626,"south dakota",46125
+"tuscaloosa","AL",4.74052774710475,"alabama",1125
+"tuscarawas","OH",6.07828291568003,"ohio",39157
+"tuscola","MI",4.11748734419442,"michigan",26157
+"twiggs","GA",4.80303610416048,"georgia",13289
+"twin falls","ID",4.38301850593997,"idaho",16083
+"tyler","TX",5.2543273794471,"texas",48457
+"tyler","WV",4.70365250572596,"west virginia",54095
+"tyrrell","NC",5.30433290326492,"north carolina",37177
+"uinta","WY",4.37591444476486,"wyoming",56041
+"uintah","UT",5.29813665046002,"utah",49047
+"ulster","NY",6.03160200037923,"new york",36111
+"umatilla","OR",5.73357111312471,"oregon",41059
+"unicoi","TN",5.40677336506247,"tennessee",47171
+"union","AR",6.18991408062631,"arkansas",5139
+"union","FL",4.76343012896024,"florida",12125
+"union","GA",5.29004413495775,"georgia",13291
+"union","IA",6.75216854267902,"iowa",19175
+"union","IL",6.59627493641379,"illinois",17181
+"union","IN",5.26790087648622,"indiana",18161
+"union","KY",5.26017321820567,"kentucky",21225
+"union","LA",5.49424949595618,"louisiana",22111
+"union","MS",5.51644773820163,"mississippi",28145
+"union","NC",4.98233915447773,"north carolina",37179
+"union","NJ",5.7301578197483,"new jersey",34039
+"union","NM",4.78433754278224,"new mexico",35059
+"union","OH",4.87673670743509,"ohio",39159
+"union","OR",5.18698914700269,"oregon",41061
+"union","PA",5.70603721340563,"pennsylvania",42119
+"union","SC",5.35960847780205,"south carolina",45087
+"union","SD",5.83745692839493,"south dakota",46127
+"union","TN",6.23339037368935,"tennessee",47173
+"upshur","TX",5.23121366112784,"texas",48459
+"upshur","WV",4.70326519058951,"west virginia",54097
+"upson","GA",5.26656416008386,"georgia",13293
+"upton","TX",5.10745695576342,"texas",48461
+"utah","UT",2.42220121062146,"utah",49049
+"uvalde","TX",4.23830668809078,"texas",48463
+"val verde","TX",4.41495574202013,"texas",48465
+"valencia","NM",4.18544928195725,"new mexico",35061
+"valley","ID",4.98602552947465,"idaho",16085
+"valley","MT",4.53014374978293,"montana",30105
+"valley","NE",5.04925106180013,"nebraska",31175
+"van buren","AR",5.0456964817968,"arkansas",5141
+"van buren","IA",5.47059931749626,"iowa",19177
+"van buren","MI",5.39857210833747,"michigan",26159
+"van buren","TN",5.09166191125253,"tennessee",47175
+"van wert","OH",6.17903727687431,"ohio",39161
+"van zandt","TX",5.96215103424387,"texas",48467
+"vance","NC",4.88668366796509,"north carolina",37181
+"vanderburgh","IN",6.20953898255093,"indiana",18163
+"venango","PA",5.42128156167056,"pennsylvania",42121
+"ventura","CA",4.08879062838903,"california",6111
+"vermilion","IL",6.59273212811518,"illinois",17183
+"vermilion","LA",6.14473532338169,"louisiana",22113
+"vermillion","IN",6.13863079189181,"indiana",18165
+"vernon","LA",4.0497248121944,"louisiana",22115
+"vernon","MO",5.79975790870557,"missouri",29217
+"vernon","WI",6.66906711867943,"wisconsin",55123
+"victoria","TX",5.11232787262207,"texas",48469
+"vigo","IN",5.50269130144264,"indiana",18167
+"vilas","WI",5.41640643374463,"wisconsin",55125
+"vinton","OH",4.92130595649952,"ohio",39163
+"virginia beach","VA",3.55805033352284,"virginia",51810
+"volusia","FL",6.69763162195402,"florida",12127
+"wabash","IL",4.24198948851866,"illinois",17185
+"wabash","IN",5.22887542413343,"indiana",18169
+"wabasha","MN",5.71051864834335,"minnesota",27157
+"wabaunsee","KS",5.25974054005741,"kansas",20197
+"wadena","MN",5.87499068882668,"minnesota",27159
+"wagoner","OK",4.29260871723129,"oklahoma",40145
+"wahkiakum","WA",4.90863715459992,"washington",53069
+"wake","NC",3.26285398704084,"north carolina",37183
+"wakulla","FL",4.69580841320097,"florida",12129
+"waldo","ME",5.49322194028008,"maine",23027
+"walker","AL",5.37345274695243,"alabama",1127
+"walker","GA",4.52296050358472,"georgia",13295
+"walker","TX",3.64796850912565,"texas",48471
+"walla walla","WA",4.80031069158054,"washington",53071
+"wallace","KS",5.01132703819581,"kansas",20199
+"waller","TX",4.78030961262943,"texas",48473
+"wallowa","OR",5.21988230681986,"oregon",41063
+"walsh","ND",6.00001049827192,"north dakota",38099
+"walthall","MS",5.74831083780347,"mississippi",28147
+"walton","FL",5.98449904974768,"florida",12131
+"walton","GA",4.52290978176408,"georgia",13297
+"walworth","SD",5.32988462240659,"south dakota",46129
+"walworth","WI",5.62682404495273,"wisconsin",55127
+"wapello","IA",5.73032431540029,"iowa",19179
+"ward","ND",4.50815980666947,"north dakota",38101
+"ward","TX",4.70778764094862,"texas",48475
+"ware","GA",3.8212690485642,"georgia",13299
+"warren","GA",5.30690294254558,"georgia",13301
+"warren","IA",5.43742894056746,"iowa",19181
+"warren","IL",5.39353898324163,"illinois",17187
+"warren","IN",5.13857353995029,"indiana",18171
+"warren","KY",4.32253838534329,"kentucky",21227
+"warren","MO",5.64707500884703,"missouri",29219
+"warren","MS",5.2071924973307,"mississippi",28149
+"warren","NC",6.22845080120003,"north carolina",37185
+"warren","NJ",5.84926351590084,"new jersey",34041
+"warren","NY",5.94104158376977,"new york",36113
+"warren","OH",4.14780798506634,"ohio",39165
+"warren","PA",4.85420432867171,"pennsylvania",42123
+"warren","TN",5.17492107640134,"tennessee",47177
+"warren","VA",6.06242750786141,"virginia",51187
+"warrick","IN",5.38665067057573,"indiana",18173
+"wasatch","UT",4.75800666709052,"utah",49051
+"wasco","OR",5.36276749119818,"oregon",41065
+"waseca","MN",4.99907283578489,"minnesota",27161
+"washakie","WY",5.03965145211533,"wyoming",56043
+"washburn","WI",6.42480597950081,"wisconsin",55129
+"washington","AL",4.62975779889411,"alabama",1129
+"washington","AR",4.41859629179485,"arkansas",5143
+"washington","CO",5.36259665598339,"colorado",8121
+"washington","FL",5.39429983764948,"florida",12133
+"washington","GA",5.37241042765041,"georgia",13303
+"washington","IA",5.20022798235391,"iowa",19183
+"washington","ID",5.72579680378252,"idaho",16087
+"washington","IL",5.75686892106582,"illinois",17189
+"washington","IN",4.24744028330409,"indiana",18175
+"washington","KS",5.1794484827712,"kansas",20201
+"washington","KY",5.06706562022504,"kentucky",21229
+"washington","LA",5.0195158610469,"louisiana",22117
+"washington","MD",4.87837877550728,"maryland",24043
+"washington","ME",5.96723552774567,"maine",23029
+"washington","MN",4.10268254684684,"minnesota",27163
+"washington","MO",4.98875181789955,"missouri",29221
+"washington","MS",3.67565976475268,"mississippi",28151
+"washington","NC",5.18770996225599,"north carolina",37187
+"washington","NE",4.63591416346296,"nebraska",31177
+"washington","NY",6.08881807056322,"new york",36115
+"washington","OH",5.05579508539889,"ohio",39167
+"washington","OK",6.06699920477902,"oklahoma",40147
+"washington","OR",3.99915717797945,"oregon",41067
+"washington","PA",4.81460804918092,"pennsylvania",42125
+"washington","RI",5.49766543931478,"rhode island",44009
+"washington","TN",4.36892170394025,"tennessee",47179
+"washington","TX",6.98142446660985,"texas",48477
+"washington","UT",5.18955515963075,"utah",49053
+"washington","VA",5.67954549196194,"virginia",51191
+"washington","VT",6.55746266578691,"vermont",50023
+"washington","WI",4.72521716665602,"wisconsin",55131
+"washita","OK",5.59224916712695,"oklahoma",40149
+"washoe","NV",4.5923994935405,"nevada",32031
+"washtenaw","MI",3.10304103701469,"michigan",26161
+"watauga","NC",3.98440530256322,"north carolina",37189
+"watonwan","MN",6.0001996396288,"minnesota",27165
+"waukesha","WI",4.93477630376497,"wisconsin",55133
+"waupaca","WI",6.50066519232824,"wisconsin",55135
+"waushara","WI",7.26807005250273,"wisconsin",55137
+"wayne","GA",6.10214855758028,"georgia",13305
+"wayne","IA",5.49914133812909,"iowa",19185
+"wayne","IL",4.53056709859497,"illinois",17191
+"wayne","IN",5.16887847145489,"indiana",18177
+"wayne","KY",5.10897864221097,"kentucky",21231
+"wayne","MI",5.48677737120083,"michigan",26163
+"wayne","MO",4.65052505811161,"missouri",29223
+"wayne","MS",5.11352686309007,"mississippi",28153
+"wayne","NC",4.78070464824719,"north carolina",37191
+"wayne","NE",5.06228113445905,"nebraska",31179
+"wayne","NY",4.86735170981773,"new york",36117
+"wayne","OH",5.60319974010343,"ohio",39169
+"wayne","PA",5.33317326876485,"pennsylvania",42127
+"wayne","TN",5.29747433986482,"tennessee",47181
+"wayne","UT",5.32133638954959,"utah",49055
+"wayne","WV",3.97211286263571,"west virginia",54099
+"waynesboro cit","VA",5.93827173919861,"virginia",51820
+"weakley","TN",5.71719569171982,"tennessee",47183
+"webb","TX",3.78993345923053,"texas",48479
+"weber","UT",4.51652880861486,"utah",49057
+"webster","GA",5.07503873126718,"georgia",13307
+"webster","IA",5.29886170024121,"iowa",19187
+"webster","KY",5.067041494827,"kentucky",21233
+"webster","LA",4.38905879196709,"louisiana",22119
+"webster","MO",5.03490150369313,"missouri",29225
+"webster","MS",5.45719627647287,"mississippi",28155
+"webster","NE",5.11987863784725,"nebraska",31181
+"webster","WV",5.47247794872534,"west virginia",54101
+"weld","CO",3.84731667539655,"colorado",8123
+"wells","IN",5.55146871956658,"indiana",18179
+"wells","ND",6.1711372686472,"north dakota",38103
+"west baton rou","LA",5.10200808181164,"louisiana",22121
+"west carroll","LA",5.56847229662499,"louisiana",22123
+"west feliciana","LA",4.94150608220141,"louisiana",22125
+"westchester","NY",5.824149326959,"new york",36119
+"westmoreland","PA",6.37105248260488,"pennsylvania",42129
+"westmoreland","VA",5.66562689567672,"virginia",51193
+"weston","WY",4.91074551518662,"wyoming",56045
+"wetzel","WV",4.85941645893993,"west virginia",54103
+"wexford","MI",5.81073863426655,"michigan",26165
+"wharton","TX",5.02447635364858,"texas",48481
+"whatcom","WA",5.12985043967246,"washington",53073
+"wheatland","MT",5.31856470044513,"montana",30107
+"wheeler","GA",5.20726141070831,"georgia",13309
+"wheeler","NE",5.10092787490111,"nebraska",31183
+"wheeler","OR",5.37844977248595,"oregon",41069
+"wheeler","TX",5.84628566142973,"texas",48483
+"white pine","NV",5.1291313193904,"nevada",32033
+"white","AR",5.60654023037009,"arkansas",5145
+"white","GA",5.54793249210762,"georgia",13311
+"white","IL",4.81294340475347,"illinois",17193
+"white","IN",5.95101844869452,"indiana",18181
+"white","TN",4.97746278962809,"tennessee",47185
+"whiteside","IL",4.21703834403545,"illinois",17195
+"whitfield","GA",5.72778414032061,"georgia",13313
+"whitley","IN",4.76347309449542,"indiana",18183
+"whitley","KY",4.65314285796325,"kentucky",21235
+"whitman","WA",3.96570399085944,"washington",53075
+"wibaux","MT",5.38464281192769,"montana",30109
+"wichita","KS",4.92603955132273,"kansas",20203
+"wichita","TX",4.90439560598326,"texas",48485
+"wicomico","MD",4.63812463783054,"maryland",24045
+"wilbarger","TX",6.35991455162523,"texas",48487
+"wilcox","AL",5.77803872585559,"alabama",1131
+"wilcox","GA",4.82104717460208,"georgia",13315
+"wilkes","GA",5.96423861154432,"georgia",13317
+"wilkes","NC",5.80641756612529,"north carolina",37193
+"wilkin","MN",5.76808561347786,"minnesota",27167
+"wilkinson","GA",5.0252202525023,"georgia",13319
+"wilkinson","MS",5.25309974282931,"mississippi",28157
+"will","IL",4.33403874097266,"illinois",17197
+"willacy","TX",4.0046871933026,"texas",48489
+"williams","ND",4.41257516765847,"north dakota",38105
+"williams","OH",5.3310650017057,"ohio",39171
+"williamsburg c","VA",5.11523738650899,"virginia",51830
+"williamsburg","SC",4.79739119430081,"south carolina",45089
+"williamson","IL",5.33123400940357,"illinois",17199
+"williamson","TN",4.87293896190245,"tennessee",47187
+"williamson","TX",4.1128137455696,"texas",48491
+"wilson","KS",5.81713996403543,"kansas",20205
+"wilson","NC",5.58274022646488,"north carolina",37195
+"wilson","TN",3.74443495834487,"tennessee",47189
+"wilson","TX",4.18671762670627,"texas",48493
+"winchester cit","VA",5.33329610851131,"virginia",51840
+"windham","CT",6.02748116676783,"connecticut",9015
+"windham","VT",5.23303844429596,"vermont",50025
+"windsor","VT",4.58217520401173,"vermont",50027
+"winkler","TX",5.30347391800884,"texas",48495
+"winn","LA",4.58892036943346,"louisiana",22127
+"winnebago","IA",4.28206127663405,"iowa",19189
+"winnebago","IL",5.41129544903701,"illinois",17201
+"winnebago","WI",6.20783233900996,"wisconsin",55139
+"winneshiek","IA",5.32151890609001,"iowa",19191
+"winona","MN",5.44084737081422,"minnesota",27169
+"winston","AL",5.05635627761975,"alabama",1133
+"winston","MS",4.95282070022625,"mississippi",28159
+"wirt","WV",5.38061586037353,"west virginia",54105
+"wise","TX",4.98514730633939,"texas",48497
+"wise","VA",5.49188792718934,"virginia",51195
+"wolfe","KY",5.55639571663414,"kentucky",21237
+"wood","OH",5.32017620144945,"ohio",39173
+"wood","TX",6.81968060557643,"texas",48499
+"wood","WI",5.10470712442594,"wisconsin",55141
+"wood","WV",4.47014610932863,"west virginia",54107
+"woodbury","IA",4.44479238889138,"iowa",19193
+"woodford","IL",4.45818022239873,"illinois",17203
+"woodford","KY",5.64239938905994,"kentucky",21239
+"woodruff","AR",4.94591906845656,"arkansas",5147
+"woods","OK",5.01247845345774,"oklahoma",40151
+"woodson","KS",5.76310729628072,"kansas",20207
+"woodward","OK",5.03676276099513,"oklahoma",40153
+"worcester","MA",4.96496304904645,"massachusetts",25027
+"worcester","MD",5.58714979713551,"maryland",24047
+"worth","GA",4.56316803201231,"georgia",13321
+"worth","IA",6.29739616893018,"iowa",19195
+"worth","MO",5.6041023060415,"missouri",29227
+"wright","IA",4.68904741050032,"iowa",19197
+"wright","MN",6.63610392775155,"minnesota",27171
+"wright","MO",6.47857043988246,"missouri",29229
+"wyandot","OH",5.02392501433273,"ohio",39175
+"wyandotte","KS",6.20262497289496,"kansas",20209
+"wyoming","NY",5.31972469616372,"new york",36121
+"wyoming","PA",4.75907045989644,"pennsylvania",42131
+"wyoming","WV",4.65581963237138,"west virginia",54109
+"wythe","VA",4.92367884624031,"virginia",51197
+"yadkin","NC",4.95047671664471,"north carolina",37197
+"yakima","WA",4.66378896286611,"washington",53077
+"yalobusha","MS",5.52432507799205,"mississippi",28161
+"yamhill","OR",5.7385857940535,"oregon",41071
+"yancey","NC",5.24172034379737,"north carolina",37199
+"yankton","SD",5.57836375082095,"south dakota",46135
+"yates","NY",4.83736760297172,"new york",36123
+"yavapai","AZ",7.20954331386121,"arizona",4025
+"yazoo","MS",4.82572282236516,"mississippi",28163
+"yell","AR",5.38146354411604,"arkansas",5149
+"yellow medicin","MN",5.92366697254068,"minnesota",27173
+"yellowstone na","MT",5.18386680554882,"montana",30113
+"yellowstone","MT",4.82366021575991,"montana",30111
+"yoakum","TX",4.49254600765287,"texas",48501
+"yolo","CA",5.22498348276336,"california",6113
+"york","ME",5.10369566541598,"maine",23031
+"york","NE",4.72347221651886,"nebraska",31185
+"york","PA",5.17600923988868,"pennsylvania",42133
+"york","SC",5.19530552623519,"south carolina",45091
+"york","VA",5.58631036074932,"virginia",51199
+"young","TX",5.72797797822933,"texas",48503
+"yuba","CA",5.93851156439232,"california",6115
+"yuma","AZ",4.69701339726083,"arizona",4027
+"yuma","CO",5.3350238506144,"colorado",8125
+"zapata","TX",5.18024819295506,"texas",48505
+"zavala","TX",5.15562932521259,"texas",48507
+"ziebach","SD",5.08766406492637,"south dakota",46137
