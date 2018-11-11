@@ -1,0 +1,524 @@
+---
+title: "Chapter 2: Single-parameter models"
+output: github_document
+---
+
+```{r, include=FALSE}
+library(Cairo)
+knitr::opts_chunk$set(
+  fig.path = "ch02_figs/ch02-"
+)
+```
+
+Libraries for models and helper functions for plots:
+
+```{r message=FALSE, warning=FALSE}
+library(brms)
+library(tools)
+
+col.alpha <- function( acol , alpha=0.2 ) {
+    acol <- col2rgb(acol)
+    acol <- rgb(acol[1]/255,acol[2]/255,acol[3]/255,alpha)
+    acol
+}
+
+col.desat <- function( acol , amt=0.5 ) {
+    acol <- col2rgb(acol)
+    ahsv <- rgb2hsv(acol)
+    ahsv[2] <- ahsv[2] * amt
+    hsv( ahsv[1] , ahsv[2] , ahsv[3] )
+}
+
+rangi2 <- col.desat("blue", 0.5)
+```
+
+# 2.1 Estimating a probability from binomial data
+
+## Historical note: Bayes and Laplace
+
+>[Laplace's] first serious application was to estimate the proportion of girl births in a population. A total of 241,945 girls and 251,527 boys were born in Paris from 1745 to 1770. Letting theta be the probability that any birth is female, Laplace showed that
+
+>**Pr(theta >= 0.5 | y = 241945, n = 251527+241945) ~ 1.15 \* 10^(-42),**
+
+>and so he was 'morally certain' that **theta < 0.5**.
+
+```{r}
+pbeta(0.5, 241945+1, 251527+1, lower.tail = FALSE)
+```
+
+# 2.6 Other standard single-parameter models
+
+## Estimating a rate from Poisson data: an idealized example
+
+If we hadn't done the math to find the posterior analytically, we could still get the same mean and posterior samples using **brms**. The following model estimates theta in the formula **y ~ Poisson(theta\*x)**. Note that we need to specify that **brms** should use an identity link function, since otherwise it will default to a log link.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m2_1 <- brm(
+    y ~ 0 + x,
+    family = poisson("identity"),
+    prior = prior(gamma(3,5)),
+    data = list(y = 3, x = 2),
+    control = list(adapt_delta = 0.999)
+)
+```
+
+```{r}
+summary(m2_1)
+```
+
+As expected, the posterior mean for theta is roughly 0.86. We can re-create Figure 2.5 using the posterior samples:
+
+```{r dev="CairoPNG"}
+theta <- as.data.frame(m2_1)$b_x
+plot(density(theta), xlim = c(0, 3), xlab = "theta", main = "One year of data")
+```
+
+To fit the model to the new 10-year data, we can just pass it to the last model with `update()`. This avoids recompiling anything.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m2_2 <- update(m2_1, newdata = list(y = 30, x = 20))
+```
+
+```{r}
+summary(m2_2)
+```
+
+```{r dev="CairoPNG"}
+theta <- as.data.frame(m2_2)$b_x
+plot(density(theta), xlim = c(0, 3), xlab = "theta", main = "Ten years of data")
+# probability that theta > 1
+sum(theta > 1) / length(theta)
+```
+
+### Fitting the model on the log scale
+
+Often it's more natural to fit Poisson means on a log scale, especially if you want to include predictors. For this problem, the model on the log scale (that is, using a log link function) looks like
+
+- **y ~ Poisson(lambda)**
+- **log(lambda) = phi + log(x)**
+
+and our goal is to estimate phi. We can then retrieve theta using the relationship **theta = exp(phi)**.
+
+Now we have to specify a prior for phi. Here's what Gelman's gamma(3,5) prior for theta looks like on the log scale:
+
+```{r dev="CairoPNG"}
+curve(dgamma(exp(x), 3, 5)*exp(x), from = -4, to = 1, ylim = c(0, 0.8))
+```
+
+With **brms** there's no need to restrict ourselves to a conjugate prior, so there are many acceptable priors we could use instead. Reasonable options would be a normal density with the same mean and variance as this, or even a skew-normal density.
+
+The mean and standard deviation of Gelman's prior on the log scale are:
+
+```{r}
+mu <- integrate(function(x) x*dgamma(exp(x), 3, 5)*exp(x), lower = -20, upper = 10)$value
+sigma <- sqrt(integrate(function(x) x^2*dgamma(exp(x), 3, 5)*exp(x), lower = -20, upper = 10)$value - mu^2)
+data.frame(mean = mu, sd = sigma)
+```
+
+Here's a plot of the normal with these parameters (dashed), and the skew-normal with skew -2.1 (blue), against Gelman's prior.
+
+```{r dev="CairoPNG"}
+curve(dgamma(exp(x), 3, 5)*exp(x), from = -4, to = 1, ylim = c(0, 0.8))
+curve(dnorm(x, mu, sigma), lty = 2, add = TRUE)
+curve(dskew_normal(x, mu, sigma, alpha =  -2.1), col = rangi2, add = TRUE)
+```
+
+We'll choose the skew-normal to capture the skewness of Gelman's original prior. Since Stan uses a different parameterization (see [vignette("brms_families")](https://cran.r-project.org/web/packages/brms/vignettes/brms_families.html)), we need to transform mu and sigma into xi and omega:
+
+```{r}
+alpha <- -2.1
+omega <- sigma/sqrt(1 - 2*alpha^2/(pi*(1+alpha^2)))
+xi <- mu - omega*alpha*sqrt(2/pi)/sqrt(1+alpha^2)
+data.frame(xi = xi, omega = omega, alpha = alpha)
+```
+
+Now we fit the model using **brms**. Note that the exposure x = 2 is passed using the `offset()` command.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+## Requires brms version >=2.6.1.
+## Ref: https://github.com/paul-buerkner/brms/issues/545
+m2_3 <- brm(
+    y ~ offset(log(x)),
+    family = poisson("log"),
+    prior = prior(skew_normal(-0.0339, 0.906, -2.1), class = Intercept),
+    data = list(y = 3, x = 2)
+)
+```
+
+```{r}
+summary(m2_3)
+```
+
+And we retrieve theta by exponentiating the intercept phi:
+
+```{r dev="CairoPNG"}
+theta <- exp(as.data.frame(m2_3)$b_Intercept)
+mean(theta)
+plot(density(theta), xlim = c(0, 3), xlab = "theta", main = "One year of data")
+```
+
+This is essentially the same mean and posterior density that we got earlier. For ten years of data:
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m2_4 <- update(m2_3, newdata = list(y = 30, x = 20))
+```
+
+```{r}
+summary(m2_4)
+```
+
+```{r dev="CairoPNG"}
+theta <- exp(as.data.frame(m2_4)$b_Intercept)
+mean(theta)
+plot(density(theta), xlim = c(0, 3), xlab = "theta", main = "Ten years of data")
+# probability that theta > 1
+sum(theta > 1) / length(theta)
+```
+
+#### Was all that really necessary?
+
+One immediate benefit of fitting the model using the log link is that sampling was MUCH more efficient and didn't require crazy `adapt_delta` values to get rid of divergent transitions.
+
+We put in some extra effort to match Gelman's prior as best we could. In practice we would have looked at the available past data on the log scale from the start, and picked a prior based on that. This has the added benefit of being able to plug the appropriate mean and standard deviation directly into a skew-normal density rather than needing to play around with the parameters of the gamma distribution.
+
+
+# 2.7 Example: Informative prior distribution for cancer ratios
+
+Gelman provides data for this example on his website for the book, but R had some trouble reading it directly because of double-tabbed separators in some rows and sporadic typos (rogue '.' characters instead of tabs, spelling counties and states(!) differently between the two files, etc.). So I cleaned up the data a bit and included it in the "/cancerdata/" folder of this Github repository.
+
+I believe these files contain the age-adjusted deaths and populations for these counties in the years 1980-1984 and 1985-1989. Consequently, each county will have at most two rows in the combined data. We will use these two data points to get a single estimate for the true death rate for this type of cancer in this county the decade 1980-1989.
+
+Here's our process to prep the data for analysis:
+
+- Load the two files with `read.delim` and combine them into a single data frame.
+- Remove empty rows and rows for counties with 0 population.
+- Replace periods with spaces in state and county names.
+- Convert state and county names to lowercase to get rid of capitalization irregularities.
+- Create a new column called `state_county` which combines the state names and counties to serve as a unique identifier for each county in the country.
+
+```{r}
+d1 <- read.delim("gd80to84.txt")
+d2 <- read.delim("gd85to89.txt")
+cancer <- rbind(d1, d2)
+cancer <- cancer[!is.na(cancer$state) & cancer$pop > 0,]
+cancer$state <- as.factor(tolower(gsub(".", " ", cancer$state, fixed = TRUE)))
+cancer$county <- as.factor(tolower(gsub(".", " ", cancer$county, fixed = TRUE)))
+cancer$state_county <- paste(cancer$state, "-", cancer$county)
+cancer$state_county <- as.factor(cancer$state_county)
+nrow(cancer)
+```
+
+And here are the first few rows of the data:
+
+```{r}
+head(cancer)
+```
+
+If I understand correctly, the column **dc** contains the number of deaths, and the column **dcC** contains the death rates per 100,000 people. You can check that **dc**\*1e5/**pop** = **dcC**.
+
+Gelman suggests using a gamma(20, 430000) prior. Let's plot this over the density of positive death rates in the data.
+
+```{r dev="CairoPNG"}
+plot(
+    density(cancer[cancer$dc > 0,]$dcC, adj = 0.5),
+    ylim = c(0, 0.4), xlim = c(0, 25),
+    xlab = "Kidney cancer death rates (per 100,000 per year)", ylab = "Density of counties", main = ""
+)
+
+curve(dgamma(x, 20, 4.3), lty = 2, add = TRUE)  # 4.3 instead of 430,000 since death rates are per 100,000
+```
+
+## Models
+
+Somewhat contrary to the spirit of this singalong, we'll switch over to the [**rethinking** package](https://github.com/rmcelreath/rethinking) for the remainder of the chapter. Throughout the following I'll comment on what was difficult (or impossible) to do with **brms**.
+
+```{r message=FALSE, warning=FALSE}
+unloadNamespace("brms")
+library(rethinking)
+```
+
+Let's make a data frame containing just the columns from the cancer data that we'll use to fit the models. To make the numbers a little easier to work with we'll divide the populations by 100,000. Then the thetas we estimate will be death rates per 100,000.
+
+```{r}
+d <- data.frame(
+    y = cancer$dc,
+    n = cancer$pop * 1e-5,
+    state_county = cancer$state_county
+)
+head(d)
+```
+
+### Using Gelman's prior
+
+To start, we'll just compute the adjusted estimates for the first 20 counties in the data using Gelman's gamma(20, 4.3) prior. Here's what this prior looks like against a histogram of these 20 empirical death rates:
+
+```{r dev="CairoPNG"}
+curve(dgamma(x, 20, 4.3), lty = 2, from = 0, to = 15)
+hist((d$y/d$n)[1:20], breaks = 10, probability = TRUE, add = TRUE)
+```
+
+Defining the model in **rethinking** looks a bit different than the models in **brms**. We specify the Poisson likelihood with `y ~ dpois(lambda)`, and specify the formula **lambda = theta[j]\*n[j]** below it, indicating that we want to estimate a different theta for each county with `theta[state_county]`. We then set the gamma(20, 4.3) prior on all of these thetas.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m2_5 <- map2stan(
+    alist(
+        y ~ dpois(lambda),
+        lambda <- theta[state_county]*n,
+        theta[state_county] ~ dgamma(20, 4.3)
+    ),
+    data = d[1:20,],
+    start = list(theta = rep(4, 20)),
+    chains = 4,
+    cores = 4
+)
+```
+
+```{r}
+precis(m2_5, depth = 2)
+```
+
+I wasn't able to figure out an easy way to fit this model in **brms**. But, if we wanted, we could fit the model on a log scale with a skew-normal prior that approximates the transformed gamma prior.
+
+
+### Estimating the prior from the data
+
+As Gelman notes, the approach of estimating the parameters of the prior by matching moments with the distribution of the data is difficult to generalize and is really only feasible when using conjugate priors.
+
+One great aspect of **rethinking** is that we can estimate the parameters of our prior at the same time that we estimate the thetas. Instead of the usual gamma distribution, we'll use a re-parameterization of it from **rethinking** called gamma2, which is defined by
+
+**gamma2(mean, scale) = gamma(shape = mean/scale, rate = 1/scale)**
+
+Estimating the mean and the scale turns out to be much more numerically stable than estimating the shape and the rate. Here's our model:
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m2_6 <- map2stan(
+    alist(
+        y ~ dpois(lambda),
+        lambda <- theta[state_county]*n,
+        theta[state_county] ~ dgamma2(mu, scale),
+        mu ~ dnorm(5, 0.5),
+        scale ~ dgamma(2, 6)
+    ),
+    data = d,
+    start = list(theta = rep(5, nlevels(d$state_county))),  # tells Stan how many counties there are
+    constraints = list(mu = "lower=0"),  # mu can only be positive
+    control = list(max_treedepth = 15),
+    iter = 3e3,
+    warmup = 1e3,
+    chains = 4,
+    cores = 4
+)
+```
+
+This model took about half an hour to sample on my laptop. According to the author of **brms**, [it's impossible to fit this model using **brms**](https://discourse.mc-stan.org/t/adaptive-priors-other-than-gaussians-for-group-level-effects/6425). For the priors of grouped parameters (like theta in this model), **brms** only uses Gaussian distributions. Of course this is extremely useful when you have multiple parameters with the same groups because it's then possible to model correlations between the parameters (using multivariate Gaussians). But for weird little models like this one, where the whole point is to fit the data using an adaptive gamma prior, we're better off using **rethinking**.
+
+Anyway, here are the estimated mean and scale parameters for our gamma prior.
+
+```{r}
+precis(m2_6)
+```
+
+Let's plot this prior (blue), as well as Gelman's gamma(20, 4.3) prior (dashed), over the histogram of empirical death rates.
+
+```{r dev="CairoPNG"}
+coefs <- coef(m2_6)
+curve(
+    dgamma(x, 20, 4.3),
+    from = 0, to = 15,
+    lty = 2,
+    xlab = "Empirical kidney cancer death rates", ylab = "Density"
+)
+hist(d$y/d$n, breaks = 250, probability = TRUE, add = TRUE)
+curve(dgamma2(x, coefs["mu"], coefs["scale"]), col = rangi2, add = TRUE)
+```
+
+### Results
+
+First we'll make a data frame containing our estimates along with their corresponding state, county, and state abbreviation.
+
+```{r}
+estimates <- data.frame(
+    value = coefs[1:nlevels(cancer$state_county)],
+    state = sapply(
+        1:nlevels(cancer$state_county),
+        function(i) cancer[cancer$state_county == levels(cancer$state_county)[i],][1, "state"]
+    ),
+    county = sapply(
+        1:nlevels(cancer$state_county),
+        function(i) cancer[cancer$state_county == levels(cancer$state_county)[i],][1, "county"]
+    )
+)
+estimates$stateabbr <- sapply(
+    as.character(estimates$state),
+    function(s) ifelse(s == "District of Columbia", "DC", state.abb[grep(toTitleCase(s), state.name)][1])
+)
+rownames(estimates) <- NULL
+```
+
+Here are the fifty counties with the lowest estimated death rates.
+
+```{r}
+estimates[order(estimates$value),][1:50,]
+```
+
+And here are the fifty counties with the highest estimated death rates.
+
+```{r}
+estimates[order(estimates$value, decreasing = TRUE),][1:50,]
+```
+
+I'd like to make a map similar to the ones in the book. To do so we need the FIPS codes for each of the counties in the data. These can be downloaded from the [US Census Bureau](https://www.census.gov/geo/reference/codes/cou.html). But to make them match the county names in our data I had to make quite a few small modifications. I've included the modified file "fips.txt" in the "/cancerdata/" folder of this repository.
+
+```{r}
+fips <- read.delim("fips.txt")
+fips$county <- tolower(fips$county)
+estimates <- merge(estimates, fips)
+head(estimates)
+```
+
+Now we have a new column containing the unique FIPS code for each county. A mapping package like **choroplethr** can take these codes and create some beautiful maps from our data.
+
+```{r message=FALSE, warning=FALSE}
+library(choroplethr)
+```
+
+Here is a map coloring each county along a continuous gradient according to its estimated death rate. Darker counties had higher estimated death rates.
+
+```{r dev="CairoPNG", message=FALSE, warning=FALSE}
+county_choropleth(
+    estimates,
+    num_colors = 1,
+    title = "Estimated kidney cancer death rates during the decade 1980-1989",
+    legend = "Death Rate"
+)
+```
+
+We can also bin the counties. I'm not sure how choropleth picks these bin widths (by standard deviations? by number of counties in each range?). Here we chose a different color scheme, with yellow counties having the lowest death rates and red counties having the highest.
+
+```{r dev="CairoPNG", message=FALSE, warning=FALSE}
+choro <- CountyChoropleth$new(estimates)
+choro$title <- "Estimated kidney cancer death rates during the decade 1980-1989"
+choro$ggplot_scale <- scale_fill_brewer(name = "Death Rate", palette = "YlOrRd")
+choro$render()
+```
+
+I'm now living in Oregon, and I wanted to see what the death rates here look like. I'll overlay it on a map with some city names for reference.
+
+```{r message=FALSE, warning=FALSE}
+# Needs the latest version of ggmap. Install with
+# devtools::install_github("dkahle/ggmap")
+library(ggmap)
+# Then tell ggmap your API key for static Google maps with
+# register_google(Your static maps API key)
+```
+
+```{r dev="CairoPNG", message=FALSE, warning=FALSE}
+county_choropleth(
+    estimates,
+    state_zoom = "oregon",
+    reference_map = TRUE,
+    num_colors = 1,
+    title = "Estimated Kidney cancer death rates in Oregon during the decade 1980-1989",
+    legend = "Death Rate"
+)
+```
+
+
+### Download the estimates
+
+You can find the final estimates computed using the adaptive gamma prior in the "/cancerdata/" folder of this repository.
+
+
+***
+
+[Antonio R. Vargas](https://github.com/szego)
+
+10 Nov 2018
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
