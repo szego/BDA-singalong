@@ -56,7 +56,7 @@ dim(theta) <- nrow(theta)*ncol(theta)
 dens(theta, adj = 1, xlim = c(0, 1))
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-5-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-5-1.png)<!-- -->
 
 ## 2.2
 
@@ -98,7 +98,7 @@ dens(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-8-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-8-1.png)<!-- -->
 
 ``` r
 quantile(predictive, probs = c(0.05, 0.25, 0.5, 0.75, 0.95))
@@ -122,7 +122,7 @@ dbeta2 <- function(x, mean, sd, log = FALSE)
 curve(dbeta2(x, mean = 0.6, sd = 0.3), from = 0, to = 1)
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-10-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-10-1.png)<!-- -->
 
 ``` r
 curve(
@@ -133,7 +133,7 @@ curve(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-11-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-11-1.png)<!-- -->
 
 ## 2.10
 
@@ -153,7 +153,7 @@ coef <- 1/sum(posterior(n.seq))
 plot(203:1e3, coef*posterior(203:1e3), type = "l", xlab = "N", ylab = "posterior")
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-12-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-12-1.png)<!-- -->
 
 ``` r
 # posterior mean
@@ -181,7 +181,7 @@ coef <- 1/(pi^2/6 - sum(posterior(1:202)))
 plot(203:1e3, coef*posterior(203:1e3), type = "l", xlab = "N", ylab = "posterior")
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-13-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-13-1.png)<!-- -->
 
 The mean and standard deviation of this distribution are infinite.
 
@@ -218,7 +218,7 @@ theta <- extract.samples(m2e11)$theta
 dens(theta, xlab = "theta", main = "Posterior for theta")
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-16-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-16-1.png)<!-- -->
 
 ### (c)
 
@@ -227,7 +227,7 @@ predictive <- rcauchy(1e3, theta)
 hist(predictive, breaks = 500, xlim = c(0, 100), xlab = "y", main = "Predictive distribution")
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-17-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-17-1.png)<!-- -->
 
 ## 2.13
 
@@ -300,7 +300,7 @@ theta <- exp(as.data.frame(m2e_13_1)$b_Intercept)
 plot(density(theta), xlab = "theta", ylab = "density", main = "Posterior for theta")
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-22-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-22-1.png)<!-- -->
 
 #### Predicting the number of accidents in 1986
 
@@ -441,7 +441,7 @@ plot(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-29-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-29-1.png)<!-- -->
 
 We can then use this posterior to create a predictive distribution.
 
@@ -455,7 +455,7 @@ plot(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-30-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-30-1.png)<!-- -->
 
 And here’s the 95% predictive interval this gives us:
 
@@ -480,7 +480,7 @@ for(year in 1976:1985)
     lines(x = c(year, year), y = HPDIs[,year - 1975])
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-32-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-32-1.png)<!-- -->
 
 Neither of the previous models have taken this into account. The
 simplest way we could do so is to assume that the accident rate will be
@@ -530,7 +530,7 @@ for(year in 1976:1985)
     lines(x = c(year, year), y = log_HPDIs[,year - 1975])
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-35-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-35-1.png)<!-- -->
 
 ``` r
 m2e_13_3 <- brm(
@@ -599,7 +599,7 @@ labels <- log_estimates$year
 axis( side=1 , at=at , labels=labels )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-38-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-38-1.png)<!-- -->
 
 Using the prediction from this regression we can compute a posterior for
 the accident rate in 1986 by simulating a normal distribution with the
@@ -617,7 +617,7 @@ plot(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-39-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-39-1.png)<!-- -->
 
 And we’ll compute the corresponding posterior predictive distribution.
 
@@ -632,7 +632,7 @@ plot(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-40-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-40-1.png)<!-- -->
 
 This predictive distribution yields the following estimate and
 corresponding 95% prediction interval.
@@ -689,7 +689,7 @@ theta <- exp(as.data.frame(m2e_13_4)$b_Intercept)
 plot(density(theta), xlab = "theta", ylab = "density", main = "Posterior for theta")
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-44-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-44-1.png)<!-- -->
 
 #### Predicting the number of passenger deaths in 1986
 
@@ -795,7 +795,7 @@ plot(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-50-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-50-1.png)<!-- -->
 
 We then use this posterior to create a predictive distribution.
 
@@ -810,7 +810,7 @@ plot(
 )
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-51-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-51-1.png)<!-- -->
 
 And here’s the 95% predictive interval this gives us:
 
@@ -832,7 +832,7 @@ for(year in 1976:1985)
     lines(x = c(year, year), y = HPDIs[,year - 1975])
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-53-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-53-1.png)<!-- -->
 
 ### (e)
 
@@ -1103,7 +1103,7 @@ plot(
 text(x = d1$vote_Obama_pct, y = d1$very_liberal/d1$total_surveyed, labels = d1$stateabbr)
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-61-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-61-1.png)<!-- -->
 
 ### (b)
 
@@ -1119,7 +1119,7 @@ plot(
 text(x = d2$vote_Obama_pct, y = d2$proportion, labels = d2$stateabbr)
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-62-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-62-1.png)<!-- -->
 
 ### (c)
 
@@ -1134,7 +1134,7 @@ plot(
 text(x = d3$total_surveyed, y = d3$very_liberal/d3$total_surveyed, labels = d3$stateabbr)
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-63-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-63-1.png)<!-- -->
 
 ``` r
 plot(
@@ -1146,7 +1146,7 @@ plot(
 text(x = d3$total_surveyed, y = d3$proportion, labels = d3$stateabbr)
 ```
 
-![](ch02ex_figs/ch02ex-unnamed-chunk-64-1.png)<!-- -->
+![](figs/ch02ex_figs/ch02ex-unnamed-chunk-64-1.png)<!-- -->
 
 -----
 

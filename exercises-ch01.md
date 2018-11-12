@@ -26,7 +26,7 @@ p <- function(y, sigma) 0.5*dnorm(y, 1, sigma) + 0.5*dnorm(y, 2, sigma)
 curve(p(x, 2), from = -4, to = 7, xlab = "y", ylab = "p(y)")
 ```
 
-![](ch01ex_figs/ch01ex-unnamed-chunk-3-1.png)<!-- -->
+![](figs/ch01ex_figs/ch01ex-unnamed-chunk-3-1.png)<!-- -->
 
 ### (b)
 
@@ -57,7 +57,7 @@ post <- sapply(
 plot(sigma.seq, post[1,], type = "l", xlab = "sigma", ylab = "Pr( theta=1 | y=1 )")
 ```
 
-![](ch01ex_figs/ch01ex-unnamed-chunk-5-1.png)<!-- -->
+![](figs/ch01ex_figs/ch01ex-unnamed-chunk-5-1.png)<!-- -->
 
 ## 1.6
 
@@ -258,25 +258,25 @@ meanwaits <- na.omit(meanwaits)
 simplehist(patients, xlab = "total patients")
 ```
 
-![](ch01ex_figs/ch01ex-unnamed-chunk-9-1.png)<!-- -->
+![](figs/ch01ex_figs/ch01ex-unnamed-chunk-9-1.png)<!-- -->
 
 ``` r
 simplehist(waited, xlab = "number of patients who waited")
 ```
 
-![](ch01ex_figs/ch01ex-unnamed-chunk-9-2.png)<!-- -->
+![](figs/ch01ex_figs/ch01ex-unnamed-chunk-9-2.png)<!-- -->
 
 ``` r
 plot(density(meanwaits), xlab = "mean wait time (in minutes)", ylab = "density", main = "")
 ```
 
-![](ch01ex_figs/ch01ex-unnamed-chunk-9-3.png)<!-- -->
+![](figs/ch01ex_figs/ch01ex-unnamed-chunk-9-3.png)<!-- -->
 
 ``` r
 simplehist(close, xlab = "minutes office was open")
 ```
 
-![](ch01ex_figs/ch01ex-unnamed-chunk-9-4.png)<!-- -->
+![](figs/ch01ex_figs/ch01ex-unnamed-chunk-9-4.png)<!-- -->
 
 ``` r
 data.frame(

@@ -6,7 +6,7 @@ output: github_document
 ```{r, echo = FALSE}
 library(Cairo)
 knitr::opts_chunk$set(
-  fig.path = "ch01_figs/ch01-"
+  fig.path = "figs/ch01_figs/ch01-"
 )
 ```
 
