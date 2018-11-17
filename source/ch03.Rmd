@@ -179,7 +179,7 @@ m3_3 <- brm(
 summary(m3_3)
 ```
 
-Because we have three categories, the model estimates two parameters; the first category is set to 0. The other two categories are log-odds ratios relative to the first category. So we have (roughly)
+Because we have three categories, the model estimates two parameters; the first category is set to 0. The other two categories are log-odds ratios relative to the first category. So we have
 
 log(Pr(1)/Pr(1)) = 0 (= mu1),
 
