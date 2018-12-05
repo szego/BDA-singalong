@@ -1,0 +1,779 @@
+---
+title: "Chapter 5: Hierarchical models"
+output: github_document
+---
+
+```{r, include=FALSE}
+library(Cairo)
+knitr::opts_chunk$set(
+  fig.path = "figs/ch05_figs/ch05-"
+)
+```
+
+>Perhaps even more important in practice is that simple nonhierarchical models are usually inappropriate for hierarchical data: with few parameters, they generally cannot fit large datasets accurately, whereas with many parameters, they tend to 'overfit' such data in the sense of producing models that fit the existing data well but lead to inferior predictions for the new data. In contrast, hierarchical models can have enough parameters to fit the data well, while using a population distribution to structure some dependence into the parameters, thereby avoiding problems of overfitting. As we show in the examples in this chapter, it is often sensible to fit hierarchical models with more parameters than there are data points.
+
+Libraries for models and helper functions for plots:
+
+```{r message=FALSE, warning=FALSE}
+library(rstan)
+library(brms)
+library(coda)
+library(gtools)    # for logit()
+library(MASS)      # for mvrnorm()
+library(mixtools)  # for ellipse()
+library(plotrix)   # for draw.ellipse()
+
+# The following helper functions are from the 'rethinking' package.
+# https://github.com/rmcelreath/rethinking
+
+col.alpha <- function( acol , alpha=0.2 ) {
+    acol <- col2rgb(acol)
+    acol <- rgb(acol[1]/255,acol[2]/255,acol[3]/255,alpha)
+    acol
+}
+
+col.desat <- function( acol , amt=0.5 ) {
+    acol <- col2rgb(acol)
+    ahsv <- rgb2hsv(acol)
+    ahsv[2] <- ahsv[2] * amt
+    hsv( ahsv[1] , ahsv[2] , ahsv[3] )
+}
+
+rangi2 <- col.desat("blue", 0.5)
+red2 <- col.desat("red", 0.5)
+```
+
+# 5.1 Constructing a parameterized prior distribution
+
+## Example. Estimating the risk of tumor in a group of rats
+
+The data for this example is available from [Gelman's website](http://www.stat.columbia.edu/~gelman/book/data/).
+
+```{r}
+ratdata <- read.table("rats.asc", header = TRUE, skip = 3)
+colnames(ratdata) <- c("tumors", "rats")
+```
+
+We'll go ahead and fit a full probability model on the hyperparameters of the Beta prior. As such this will be a combination of sections 5.1 and 5.3.
+
+The **rethinking** package can *almost* run this model. Strangely it comments out certain key lines in the Stan code it generates which prevents it from compiling. [As I explained in the notes for chapter 2](https://github.com/szego/BDA-singalong/blob/master/ch02.md#estimating-the-prior-from-the-data), **brms** can't run this kind of model either.
+
+### Fitting the model with Stan
+
+Stan can definitely handle it, though. I implement it below, using the parameterization for the Beta prior the book suggests later in section 5.3: we set `tau = log(alpha/beta)` and `omega = log(alpha + beta)`, and estimate `tau` and `omega` instead of `alpha` and `beta`. This parameterization is substantially easier to fit.
+
+It's straightforward to set weakly informative priors for the hyperparameters `tau` and `omega`; we can just use wide distributions centered at 0. We'll use Student t-distributions with 3 degrees of freedom and standard deviations equal to 10.
+
+The hyperparameters have pretty low numbers of effective samples (n_eff in the output below) so I run the model for 120,000 iterations to make sure to get enough. It takes about a minute to sample on my laptop after compiling.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+model_code <- "
+data{
+    int<lower=1> N;
+    int<lower=1> rats[N];
+    int<lower=0> tumors[N];
+}
+parameters{
+    real<lower=0,upper=1> p[N];
+    real tau;
+    real omega;
+}
+transformed parameters{
+    real<lower=0> shape_alpha;
+    real<lower=0> shape_beta;
+    shape_alpha = exp(tau + omega)/(1 + exp(tau));
+    shape_beta = exp(omega)/(1 + exp(tau));
+}
+model{
+    // priors
+    tau ~ student_t(3, 0, 10);
+    omega ~ student_t(3, 0, 10);
+    for (i in 1:N)
+        p[i] ~ beta(shape_alpha, shape_beta);
+    
+    // likelihood
+    tumors ~ binomial(rats, p);
+}
+"
+
+m5_1 <- stan(
+    model_code = model_code,
+    data = list(
+        N = nrow(ratdata),
+        rats = ratdata$rats,
+        tumors = ratdata$tumors
+    ),
+    iter = 3e4,
+    warmup = 2e3,
+    chains = 4,
+    cores = 4
+)
+```
+
+In the posterior summary below we see the adjusted estimates for the current experiment's tumor probability and for the hyperparameters `tau` and `omega`. I've also included the posteriors for the usual shape parameters for the Beta distribution, `alpha` and `beta`.
+
+```{r}
+print(
+    summary(
+        m5_1,
+        pars = c("p[71]", "tau", "omega", "shape_alpha", "shape_beta"),
+        probs = c(0.025, 0.975)
+    )$summary
+)
+```
+
+Let's plot a few sampled priors in blue against the book's Beta(1.4, 8.6) prior in black and dashed.
+
+```{r dev="CairoPNG"}
+samples_1 <- extract(m5_1)
+
+curve(
+    dbeta(x, 1.4, 8.6),
+    from = 0, to = 1,
+    ylim = c(0, 7),
+    xlab = "theta", ylab = "density",
+    main = "Beta prior for theta",
+    type = "n"
+)
+
+for(i in 1:100)
+    curve(
+        dbeta(x, samples_1$shape_alpha[i], samples_1$shape_beta[i]),
+        col = col.alpha(rangi2, 0.25),
+        add = TRUE
+    )
+
+curve(dbeta(x, 1.4, 8.6), lty = 2, add = TRUE)
+```
+
+### Fitting a similar model with **brms**
+
+Of course we don't have to use an adaptive Beta prior. If we take the logit of the binomial parameter p, we can fit an adaptive normal prior on the transformed estimates instead. This is where **brms** shines.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+ratdata$experiment <- 1:nrow(ratdata)
+
+m5_2 <- brm(
+    tumors | trials(rats) ~ (1 | experiment),
+    family = binomial,
+    data = ratdata,
+    iter = 2e4,
+    warmup = 1e3,
+    control = list(adapt_delta = 0.95),
+    chains = 4,
+    cores = 4
+)
+```
+
+```{r}
+summary(m5_2)
+```
+
+Here's the new posterior summary for the Bayes-adjusted tumor probability for the current experiment:
+
+```{r}
+samples_2 <- as.data.frame(m5_2)
+
+p71_samples <- inv_logit_scaled(samples_2$b_Intercept + samples_2$r_experiment.71.Intercept.)
+p71_mean <- mean(p71_samples)
+p71_sd <- sd(p71_samples)
+p71_HPI <- HPDinterval(as.mcmc(p71_samples))[1,]
+
+data.frame(
+    experiment = 71,
+    mean = round(p71_mean, 3),
+    sd = round(p71_sd, 3),
+    HPDI_95 = paste(round(p71_HPI[1], 2), "to", round(p71_HPI[2], 2))
+)
+```
+
+This is basically the same as the result from the first model.
+
+Just for fun, let's map the some sampled normal priors back to the interval [0,1] by reversing the logit map and plot them in red against our blue estimated Beta priors from the first model. The book's Beta(1.4, 8.6) prior is again shown dashed in black.
+
+```{r dev="CairoPNG"}
+curve(
+    dbeta(x, 1.4, 8.6),
+    from = 0, to = 1,
+    ylim = c(0, 7),
+    xlab = "theta", ylab = "density",
+    main = "Beta and transformed normal priors for theta",
+    type = "n"
+)
+
+for(i in 1:100)
+    curve(
+        dbeta(x, samples_1$shape_alpha[i], samples_1$shape_beta[i]),
+        col = col.alpha(rangi2, 0.25),
+        add = TRUE
+    )
+
+for(i in 1:100) {
+    mu <- samples_2$b_Intercept[i]
+    sigma <- samples_2$sd_experiment__Intercept[i]
+    curve(
+        dnorm(log(x) - log(1-x), mu, sigma)/(x*(1-x)),
+        col = col.alpha(red2, 0.22),
+        add = TRUE
+    )
+}
+
+curve(dbeta(x, 1.4, 8.6), lty = 2, add = TRUE)
+```
+
+The bulk of the uncertainty is very similar between the two priors.
+
+# 5.2 Exchangeability and sampling
+
+## Exchangeability when additional information is available on the units
+
+>If $y_i$ has additional information $x_i$ so that $y_i$ are not exchangeable but $(y_i, x_i)$ still are exchangeable, then we can make a joint model for $(y_i, x_i)$ or a conditional model for $y_i \mid x_i$.
+
+>For states having the same last year divorce rates $x_j$, we could use grouping and assume partial exchangeability.
+
+This would be a two-level hierarchical model with separate adaptive priors for each group of states with the same divorce rates. One way to do this would be to use an adaptive hyperprior on the hyperparameters of the adaptive priors to model variation among the groups. Alternatively we could separate the groups in the model formula like
+
+    (1 | state) + (1 | same_previous_rate)
+
+which can also be written `(1 | state + same_previous_rate)`. This second method has the added benefit of allowing us to control for the average effect of each of the two groupings.
+
+>If there are many possible values for $x_j$ (as we would assume for divorce rates) we could assume conditional exchangeability and use $x_j$ as a covariate in the regression model.
+
+So including a predictor in the model formula is equivalent to assuming exchangeability conditional on that predictor and model formula.
+
+# 5.3 Bayesian analysis of conjugate hierarchical models
+
+## Application to the model for rat tumors
+
+We already carried out the full Bayesian treatment of this problem above. Let's plot our sampled Beta priors against the book's estimated Beta(2.4, 14.3) prior, shown in solid black.
+
+```{r dev="CairoPNG"}
+curve(
+    dbeta(x, 1.4, 8.6),
+    from = 0, to = 1,
+    ylim = c(0, 7),
+    xlab = "theta", ylab = "density",
+    main = "Beta and transformed normal priors for theta",
+    type = "n"
+)
+
+for(i in 1:100)
+    curve(
+        dbeta(x, samples_1$shape_alpha[i], samples_1$shape_beta[i]),
+        col = col.alpha(rangi2, 0.25),
+        add = TRUE
+    )
+
+for(i in 1:100) {
+    mu <- samples_2$b_Intercept[i]
+    sigma <- samples_2$sd_experiment__Intercept[i]
+    curve(
+        dnorm(log(x) - log(1-x), mu, sigma)/(x*(1-x)),
+        col = col.alpha(red2, 0.22),
+        add = TRUE
+    )
+}
+
+curve(dbeta(x, 2.4, 14.3), add = TRUE)
+```
+
+And here's our version of Figure 5.3(b).
+
+```{r dev="CairoPNG"}
+tau <- samples_1$tau[1:4000]
+omega <- samples_1$omega[1:4000]
+
+par(pty = "s")
+plot(
+    omega ~ tau,
+    col = col.alpha("black", 0.15),
+    xlab = "tau = log(alpha/beta)", ylab = "omega = log(alpha + beta)",
+    main = "Joint posterior for tau and omega"
+)
+```
+
+
+# 5.5 Example: parallel experiments in eight schools
+
+## Inferences based on nonhierarchical models and their problems
+
+### A pooled estimate
+
+>Under the hypothesis that all experiments have the same effect and produce independent estimates of this common effect, we could treat the data [...] as eight normally distributed observations with known variances.
+
+```{r}
+schools <- data.frame(
+    school = c("A", "B", "C", "D", "E", "F", "G", "H"),
+    est_effect = c(28, 8, -3, 7, -1, 1, 18, 12),
+    std_err = c(15, 10, 16, 11, 9, 11, 10, 18)
+)
+```
+
+We'll fit a model which uses the known standard errors for these effects and also estimates the posterior standard deviation of their distribution.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m5_3 <- brm(
+    est_effect | se(std_err, sigma = TRUE) ~ 1,
+    data = schools,
+    iter = 3e4,
+    warmup = 2e3
+)
+```
+
+```{r}
+summary(m5_3)
+```
+
+The mean and standard error of the intercept are similar those given in the book (estimate = 7.7 and std error = 4.1).
+
+>To get a feeling for the natural variation that we would expect across eight studies if this assumption were true, suppose the estimated treatment effects are eight independent draws from a normal distribution with mean 8 points and standard deviation 13 points (the square root of the mean of the eight variances).
+
+Instead of using the point estimates for the mean and standard deviations as in the text, we should probably use their complete posteriors for this calculation (in other words, we should compute the posterior predictive distribution).
+
+```{r dev="CairoPNG"}
+samples <- as.data.frame(m5_3)
+posterior <- rnorm(nrow(samples), samples$b_Intercept, samples$sigma)
+post_mu <- mean(posterior)
+post_HPI <- HPDinterval(as.mcmc(posterior))[1,]
+
+plot(
+    density(posterior),
+    xlab = "effect",
+    ylab = "density",
+    main = "predictive distribution from complete pooling"
+)
+
+points(post_mu, 0.0015, pch = 16, col = rangi2)
+
+lines(post_HPI, c(0.0015, 0.0015), lwd = 2, col = rangi2)
+```
+
+Here's a summary of this distribution.
+
+```{r}
+post_sd <- sd(posterior)
+data.frame(
+    mean = round(post_mu, 2),
+    sd = round(post_sd, 2),
+    HPDI_95 = paste(round(post_HPI[1], 1), "to", round(post_HPI[2], 1))
+)
+```
+
+Based on this we expect the largest observed value to be about 24 points and the smallest to be about -7 points.
+
+>Thus, it would appear imprudent to believe that school A really has an effect as large as 28 points.
+
+## Posterior simulation under the hierarchical model
+
+Now we fit a multilevel model with an adaptive normal prior on the estimates for each school. We'll draw an absolute boatload of samples (about 8 million) to make the plots in the next section as smooth as possible.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m5_4 <- brm(
+    est_effect | se(std_err) ~ (1 | school),
+    data = schools,
+    iter = 2e6,
+    warmup = 3e3,
+    chains = 4,
+    cores = 4,
+    control = list(adapt_delta = 0.99)
+)
+```
+
+Sampling for this model takes between 5 and 10 minutes on my laptop.
+
+```{r}
+summary(m5_4)
+```
+
+Let's plot the marginal posteriors for the effect at each school.
+
+```{r dev="CairoPNG"}
+samples <- as.data.frame(m5_4)
+school_posts <- apply(samples[,3:10], 2, function(x) x + samples$b_Intercept)
+school_mus <- apply(school_posts, 2, mean)
+school_sds <- apply(school_posts, 2, sd)
+school_HPIs <- apply(school_posts, 2, function(x) HPDinterval(as.mcmc(x))[1,])
+
+for (i in 1:8) {
+    plot(
+        density(school_posts[,i]),
+        xlim = c(-22, 38),
+        ylim = c(0, 0.081),
+        xlab = paste("Bayes-adjusted school", schools$school[i], "effect"),
+        ylab = "density",
+        main = ""
+    )
+    
+    points(school_mus[i], 0.002, pch = 16, col = rangi2)
+    
+    lines(school_HPIs[,i], c(0.002, 0.002), lwd = 2, col = rangi2)
+}
+```
+
+```{r}
+results <- data.frame(
+    school = schools$school,
+    Bayes_adjusted_effect = round(school_mus, 1),
+    sd = round(school_sds, 1),
+    HPDI_95 = paste(round(school_HPIs[1,]), "to", round(school_HPIs[2,]))
+)
+rownames(results) <- NULL
+results
+```
+
+What's the posterior probability that the coaching program in school A (the school with the highest mean) is more effective than in school E (the school with the lowest mean)?
+
+```{r}
+sum(school_posts[,1] > school_posts[,5])/nrow(school_posts)
+```
+
+Is that a safe bet?
+
+## Results
+
+This subsection is all about tau, the standard deviation of the group effects.
+
+```{r dev="CairoPNG"}
+plot(
+    density(samples$sd_school__Intercept, adj = 0.05),
+    xlim = c(0, 30),
+    xlab = "tau",
+    ylab = "density",
+    main = "Marginal posterior for tau"
+)
+```
+
+Because we're working with samples it's a bit harder to access the conditional posterior means of the treatment effects. We'll attempt to re-create the book's figures 5.6 and 5.7 using the approximation
+
+    (theta_j | tau = t) ~ (theta_j | t - 1 < tau < t + 1).
+
+For each t between 0 and 25, we compute the means for each school using only the samples for which tau is between t-1 and t+1.
+
+```{r dev="CairoPNG"}
+marginal_mu <- function(tau) {
+    posts <- school_posts[samples$sd_school__Intercept > tau - 1 & 
+                              samples$sd_school__Intercept < tau + 1,]
+    return(apply(posts, 2, mean))
+}
+
+marginal_sigma <- function(tau) {
+    posts <- school_posts[samples$sd_school__Intercept > tau - 1 & 
+                              samples$sd_school__Intercept < tau + 1,]
+    return(apply(posts, 2, sd))
+}
+
+tau.seq <- seq(from = 0, to = 26, length.out = 30)
+
+mu_margins <- sapply(tau.seq, marginal_mu)
+sigma_margins <- sapply(tau.seq, marginal_sigma)
+
+plot(0, xlim = c(0, 25), ylim = c(-2, 25), xlab = "tau", ylab = "Estimated Treatment Effects", type = "n")
+
+for (i in 1:8)
+    lines(tau.seq, mu_margins[i,])
+
+plot(0, xlim = c(0, 25), ylim = c(0, 18), xlab = "tau", ylab = "Posterior Standard Deviations", type = "n")
+
+for (i in 1:8)
+    lines(tau.seq, sigma_margins[i,])
+```
+
+(These are the plots we needed so many samples for. Higher values of tau are less and less likely, so we need lots of samples overall to get enough samples in which tau is large.)
+
+Next the book calculates the probability that school A's effect is < 28 is 93%, given that tau = 10. To make a similar calculation with the samples, we can pick out the samples for which tau is within 0.05 of 10.
+
+```{r}
+# The probability that school A's effect is < 28 given that 9.95 < tau < 10.05
+A <- school_posts[9.95 < samples$sd_school__Intercept & samples$sd_school__Intercept < 10.05, 1]
+sum(A < 28)/length(A)
+```
+
+## Discussion
+
+Finally a sequence of statistics is computed from the posterior samples.
+
+The posterior probability that the effect in school A is > 28 points:
+
+```{r}
+sum(school_posts[,1] > 28)/nrow(school_posts)
+```
+
+The posterior probability that the effect of ANY school is > 28 points:
+
+```{r}
+maxes <- apply(school_posts, 1, max)
+sum(maxes > 28)/nrow(school_posts)
+```
+
+Here's a re-creation of figure 5.8:
+
+```{r dev="CairoPNG"}
+plot(
+    density(maxes),
+    xlim = c(-22, 38),
+    xlab = "Largest Effect",
+    ylab = "Density",
+    main = ""
+)
+```
+
+And the posterior probability that the coaching program in school A is more effective than in school C:
+
+```{r}
+sum(school_posts[,1] > school_posts[,3])/nrow(school_posts)
+```
+
+# 5.6 Hierarchical modeling applied to a meta-analysis
+
+The data for this example is available from [Gelman's website](http://www.stat.columbia.edu/~gelman/book/data/). Reading it into R is a bit tricky since the columns are separated by an uneven amount of whitespace in each row. There is probably a straightforward way to do what's below with just a single regular expression, but those are still on my "to-learn" list.
+
+```{r}
+metatext <- readChar("meta.asc", file.info("meta.asc")$size)
+# skip the preamble
+metatext <- substr(metatext, regexpr("\n\n", metatext) + 2, nchar(metatext))
+# remove leading and trailing spaces around newlines
+metatext <- gsub("\n ", "\n", metatext)
+metatext <- gsub(" \n", "\n", metatext)
+# replace repeated spaces with tabs
+metatext <- gsub(" +", "\t", metatext)
+# read the tab-delimited data into a data frame
+meta <- read.delim(text = metatext)
+```
+
+The first model we will fit is exactly the one described in the book, using the point estimates for the log odds ratios and their estimated standard errors. This model is relatively straightforward to build but has the shortcoming of relying on incomplete pictures of the distributions of the log odds ratios.
+
+Such approximations are unnecessary. To complement the book's model we will build a second model, a multivariate binomial regression, which uses the original death counts and patient totals in the control and treatment groups directly.
+
+## A hierarchical normal model
+
+We estimate the log odds ratios and their standard deviations using formulas (5.23) and (5.24) in the book.
+
+```{r}
+meta$log_odds_ratio <- log(meta$control.total/meta$control.deaths - 1) -
+    log(meta$treated.total/meta$treated.deaths - 1)
+meta$lor_sd <- sqrt(1/meta$treated.deaths + 1/(meta$treated.total - meta$treated.deaths) +
+    1/meta$control.deaths + 1/(meta$control.total - meta$control.deaths))
+```
+
+We then implement the model described in the book using **brms**.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m5_5 <- brm(
+    log_odds_ratio | se(lor_sd) ~ (1 | study),
+    data = list(log_odds_ratio = meta$log_odds_ratio, lor_sd = meta$lor_sd, study = meta$study),
+    iter =  2e4,
+    warmup = 2e3,
+    chains = 4,
+    cores = 4,
+    control = list(adapt_delta = 0.95)
+)
+```
+
+```{r}
+summary(m5_5)
+```
+
+These posterior distributions for mu and tau match those in Table 5.5 in the book.
+
+Let's plot the posterior predictive distribution for theta.
+
+```{r dev="CairoPNG"}
+samples <- as.data.frame(m5_5)
+predictive <- rnorm(nrow(samples), samples$b_Intercept, samples$sd_study__Intercept)
+predictive_mu <- mean(predictive)
+predictive_HPI <- HPDinterval(as.mcmc(predictive))[1,]
+
+plot(
+    density(predictive),
+    xlim = c(-1.51, 1.1),
+    xlab = "theta",
+    ylab = "density",
+    main = "Posterior predictive distribution"
+)
+
+points(predictive_mu, 0.05, col = rangi2, pch = 16)
+
+lines(predictive_HPI, c(0.05, 0.05), lwd = 2, col = rangi2)
+```
+
+In table form:
+
+```{r}
+predictive_summary <- data.frame(
+    mean = round(predictive_mu, 3),
+    HPDI_95 = paste(round(predictive_HPI[1], 2), "to", round(predictive_HPI[2], 2))
+)
+rownames(predictive_summary) <- "predicted effect"
+predictive_summary
+```
+
+This also matches the posterior given in Table 5.5.
+
+Finally, we compute the posterior probability that the true effect in a new study will be positive.
+
+```{r}
+sum(predictive > 0)/length(predictive)
+```
+
+Strangely this is lower than the book's conclusion that this probability "is just over 10%". Is that a typo?
+
+## A multivariate binomial model
+
+Now we'll fit a model which uses the original counts directly. We will model the number of deaths in a given study and group (control or treatment) as a binomial random variable depending on a probability of death **p** (to be estimated) and the number of patients in the group.
+
+It seems plausible that external/unobserved factors specific to each study might play a large role in determining the survival rates in the study. Studies with lower (or higher) death rates in the control group may also have lower (or higher) death rates in the treatment group. To model this possible correlation we will place an adaptive *multivariate* normal distribution on the logit-probability-of-death pairs **(logit p_control, logit p_treated)**. For details on how to do this in **brms** see its [multivariate models vignette](https://cran.r-project.org/web/packages/brms/vignettes/brms_multivariate.html).
+
+We'll use weak priors on the hyperparameters of the multivariate normal. In particular, we'll use a Uniform(-1,1) prior for the correlation between control and treatment logit-probabilities.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+f1 <- bf(cdeaths | trials(ctotal) ~ (1 |p| study))
+f2 <- bf(tdeaths | trials(ttotal) ~ (1 |p| study))
+
+m5_6 <- brm(
+    mvbf(f1, f2),
+    family = binomial,
+    data = list(
+        cdeaths = meta$control.deaths,
+        ctotal = meta$control.total,
+        tdeaths = meta$treated.deaths,
+        ttotal = meta$treated.total,
+        study = meta$study
+    ),
+    iter = 4e4,
+    warmup = 2e3,
+    chains = 4,
+    cores = 4,
+    control = list(adapt_delta = 0.95)
+)
+```
+
+```{r}
+summary(m5_6)
+```
+
+That's an extremely high estimate for the correlation between treated and control death rates. Studies with higher death rates in their control group are strongly expected to have higher death rates in their treated group. It seems like external factors in each study (environment, common patient background, or even bedside manner?) have a very large effect on the outcomes.
+
+### Visualizing the estimates
+
+I'd like to get an idea of the shrinkage in the estimates induced by this model.
+
+We'll first plot the raw logit-probabilities-of-death observed in the data as translucent black ellipses, with the length of the axes corresponding to the numbers of patients in the control and treated groups. Larger ellipses indicate larger sample sizes.
+
+Next we'll plot the adjusted estimates from the model as blue dots and connect these estimates to their corresponding raw probabilities with black lines.
+
+Finally we can visualize uncertainty in the correlation between control and treated probabilities by plotting level curves of the multivariate normal distributions corresponding to posterior samples of the hyperparameters. The first 300 samples are used below.
+
+```{r fig.width=9, fig.height=9, dev="CairoPNG"}
+samples <- as.data.frame(m5_6)
+
+# mean estimates for the logit-probabilities-of-death
+cdeaths <- sapply(6:27, function(i) samples$b_cdeaths_Intercept + samples[,i])
+tdeaths <- sapply(28:49, function(i) samples$b_tdeaths_Intercept + samples[,i])
+cdeaths_mu <- apply(cdeaths, 2, mean)
+tdeaths_mu <- apply(tdeaths, 2, mean)
+
+# observed logit-probabilities-of-death
+cdeaths_obs <- gtools::logit(meta$control.deaths/meta$control.total)
+tdeaths_obs <- gtools::logit(meta$treated.deaths/meta$treated.total)
+
+plot(
+    0,
+    xlab = "logit-probability-of-death in control group",
+    ylab = "logit-probability-of-death in treated group",
+    xlim = c(-4, -0.5), ylim = c(-4, -1),
+    asp = 1,
+    type = "n"
+)
+
+# plot 95% density level curves for 300 sampled multivariate normal priors
+for(i in 1:300) {
+    Mu <- c(samples$b_cdeaths_Intercept[i], samples$b_tdeaths_Intercept[i])
+    DS <- diag(c(samples$sd_study__cdeaths_Intercept[i], samples$sd_study__tdeaths_Intercept[i]))
+    Rho <- matrix(c(1, rep(samples$cor_study__cdeaths_Intercept__tdeaths_Intercept[i], 2), 1), nrow = 2)
+    Sigma <- DS %*% Rho %*% DS
+    mixtools::ellipse(
+        mu = Mu,
+        sigma = Sigma,
+        alpha = .05,
+        npoints = 250,
+        col = col.alpha(red2, 0.2)
+    )
+}
+
+# draw lines connecting the observed rates with the estimates
+for(i in 1:22)
+    lines(c(cdeaths_mu[i], cdeaths_obs[i]), c(tdeaths_mu[i], tdeaths_obs[i]), lwd = 2)
+
+# plot the observed and estimated logit-probabilities-of-death
+for(i in 1:22)
+    plotrix::draw.ellipse(
+        cdeaths_obs[i], tdeaths_obs[i],
+        0.002*sqrt(meta$control.total[i]), 0.002*sqrt(meta$treated.total[i]),
+        border = "white", col = col.alpha("black", 0.4)
+    )
+points(cdeaths_mu, tdeaths_mu, pch = 21, bg = rangi2, col = "black", cex = 1.5)
+
+# legend
+points(-3.7, -1, pch = 21, bg = col.alpha("black", 0.4), col = "white", cex = 2)
+points(-3.7, -1.2, pch = 21, bg = rangi2, col = "black", cex = 2)
+text(-3.45, -0.985, labels = "observed")
+text(-3.45, -1.185, labels = "estimate")
+```
+
+Take a look at the two bottommost raw estimates, near the point (-2.7, -3.5). They are initially very close together, but the resulting (blue) estimate for the smaller study was pulled further from its starting position than the one for the larger study.
+
+In general, the estimates for smaller studies were shrunk more toward the mean than the estimates for larger studies. This makes sense; there should be more uncertainty about the estimates for smaller studies, so their estimates should be more sensitive to information from the other studies. There aren't a lot of lopsided studies, where the numbers of patients in their control and treated groups are very different, but I would expect those studies to be pulled more in the direction corresponding to whichever half (control or treated) had fewer patients.
+
+### The new predictive distribution
+
+In this case we need to sample from a multivariate normal distribution to get the posterior predictive distribution.
+
+```{r dev="CairoPNG"}
+predictive <- sapply(
+    1:nrow(samples),
+    function(i) {
+        Mu <- c(samples$b_cdeaths_Intercept[i], samples$b_tdeaths_Intercept[i])
+        DS <- diag(c(samples$sd_study__cdeaths_Intercept[i], samples$sd_study__tdeaths_Intercept[i]))
+        Rho <- matrix(c(1, rep(samples$cor_study__cdeaths_Intercept__tdeaths_Intercept[i], 2), 1), nrow = 2)
+        Sigma <- DS %*% Rho %*% DS
+        MASS::mvrnorm(1, Mu, Sigma)
+    }
+)
+log_odds_ratio <- predictive[2,] - predictive[1,]
+lor_mu <- mean(log_odds_ratio)
+lor_PI <- HPDinterval(as.mcmc(log_odds_ratio))[1,]
+
+plot(
+    density(log_odds_ratio),
+    xlim = c(-1.51, 1.1),
+    xlab = "theta", ylab = "density",
+    main = "(New) Predictive distribution for theta"
+)
+
+points(lor_mu, 0.02, col = rangi2, pch = 16)
+
+lines(lor_PI, c(0.02, 0.02), lwd = 2, col = rangi2)
+```
+
+```{r}
+predictive_summary <- data.frame(
+    mean = round(lor_mu, 3),
+    HPDI_95 = paste(round(lor_PI[1], 2), "to", round(lor_PI[2], 2))
+)
+rownames(predictive_summary) <- "(new) predicted effect"
+predictive_summary
+```
+
+Though the mean is the same as before, this predictive distribution is wider than the one from our first model. It also estimates a higher probability that the true effect in a new study will be positive:
+
+```{r}
+sum(log_odds_ratio > 0)/length(log_odds_ratio)
+```
+
+***
+
+[Antonio R. Vargas](https://github.com/szego)
+
+4 Dec 2018
+
+
