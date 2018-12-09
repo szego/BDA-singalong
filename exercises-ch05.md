@@ -269,7 +269,7 @@ text(15.75, ymax - 0.02, "no bike lane")
 
 We can see in these plots that the estimates are pulled toward each
 other, and that those corresponding to smaller sample sizes are pulled
-less. Let’s plot all three of these on the same axis to summarize.
+more. Let’s plot all three of these on the same axis to summarize.
 
 ``` r
 plot(
@@ -341,8 +341,8 @@ s
 We calculate the posterior predictive distribution **p** for the
 proportion of bicycles on a residential street labeled a bike route by
 averaging over the hyperparameters of the adaptive normal prior. The
-predictive distribution for the number of bicycles is then the expected
-value of the average binomial distribution
+predictive distribution for the number of bicycles is then the averaged
+binomial distribution
 
 **predictive(k | n = 100) = E\[Binomial(k | n = 100, p)\].**
 
