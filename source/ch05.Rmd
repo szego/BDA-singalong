@@ -148,7 +148,7 @@ curve(dbeta(x, 1.4, 8.6), lty = 2, add = TRUE)
 
 ### Fitting a similar model with **brms**
 
-Of course we don't have to use an adaptive Beta prior. If we take the logit of the binomial parameter p, we can fit an adaptive normal prior on the transformed estimates instead. This is where **brms** shines.
+Of course we don't have to use an adaptive Beta prior. If we take the logit of the binomial parameter `p`, we can fit an adaptive normal prior on the transformed estimates instead. This is where **brms** shines.
 
 ```{r message=FALSE, warning=FALSE, results=FALSE}
 ratdata$experiment <- 1:nrow(ratdata)
@@ -309,11 +309,12 @@ schools <- data.frame(
 )
 ```
 
-We'll fit a model which uses the known standard errors for these effects and also estimates the posterior standard deviation of their distribution.
+To make our posterior match in the book's, we'll replace the default Student-t prior for the intercept set by **brms** with a flat (improper) prior on the real line.
 
 ```{r message=FALSE, warning=FALSE, results=FALSE}
 m5_3 <- brm(
-    est_effect | se(std_err, sigma = TRUE) ~ 1,
+    est_effect | se(std_err) ~ 1,
+    prior = set_prior("", class = "Intercept"),
     data = schools,
     iter = 3e4,
     warmup = 2e3
@@ -324,42 +325,77 @@ m5_3 <- brm(
 summary(m5_3)
 ```
 
-The mean and standard error of the intercept are similar those given in the book (estimate = 7.7 and std error = 4.1).
+The mean and standard error of the mean are similar those given in the book (estimate = 7.7 and std error = 4.1). Of course we could have computed these directly without Monte Carlo sampling:
+
+```{r}
+# common effect (via inverse-variance weighting)
+sum(schools$est_effect/schools$std_err^2)/sum(1/schools$std_err^2)
+# standard error of the common effect
+sqrt(1/sum(1/schools$std_err^2))
+```
 
 >To get a feeling for the natural variation that we would expect across eight studies if this assumption were true, suppose the estimated treatment effects are eight independent draws from a normal distribution with mean 8 points and standard deviation 13 points (the square root of the mean of the eight variances).
 
-Instead of using the point estimates for the mean and standard deviations as in the text, we should probably use their complete posteriors for this calculation (in other words, we should compute the posterior predictive distribution).
+Instead of using the point estimates for the mean and standard deviations as in the text, we can model the effects in each school as being samples from a common normal distribution. We'll take the given standard errors to represent the measurement errors of the schools' effects.
+
+```{r message=FALSE, warning=FALSE, results=FALSE}
+m5_4 <- brm(
+    est_effect | se(std_err, sigma = TRUE) ~ 1,
+    prior = set_prior("", class = "Intercept"),
+    data = schools,
+    iter = 3e4,
+    warmup = 2e3
+)
+```
+
+```{r}
+summary(m5_4)
+```
+
+There is (rightfully) lots of uncertainty about the width of the common distribution. Let's look at the posterior for its standard deviation.
 
 ```{r dev="CairoPNG"}
-samples <- as.data.frame(m5_3)
-posterior <- rnorm(nrow(samples), samples$b_Intercept, samples$sigma)
-post_mu <- mean(posterior)
-post_HPI <- HPDinterval(as.mcmc(posterior))[1,]
+samples <- as.data.frame(m5_4)
+plot(
+    density(samples$sigma),
+    xlim = c(0, 30),
+    xlab = "sigma",
+    ylab = "density",
+    main = "posterior for the scale of the common distribution"
+)
+```
+
+Using this we can compute the posterior predictive distribution for the school effects.
+
+```{r dev="CairoPNG"}
+predictive <- rnorm(nrow(samples), samples$b_Intercept, samples$sigma)
+pred_mu <- mean(predictive)
+pred_HPI <- HPDinterval(as.mcmc(predictive))[1,]
 
 plot(
-    density(posterior),
+    density(predictive),
     xlab = "effect",
     ylab = "density",
-    main = "predictive distribution from complete pooling"
+    main = "posterior predictive distribution from complete pooling"
 )
 
-points(post_mu, 0.0015, pch = 16, col = rangi2)
+points(pred_mu, 0.0015, pch = 16, col = rangi2)
 
-lines(post_HPI, c(0.0015, 0.0015), lwd = 2, col = rangi2)
+lines(pred_HPI, c(0.0015, 0.0015), lwd = 2, col = rangi2)
 ```
 
 Here's a summary of this distribution.
 
 ```{r}
-post_sd <- sd(posterior)
+pred_sd <- sd(predictive)
 data.frame(
-    mean = round(post_mu, 2),
-    sd = round(post_sd, 2),
-    HPDI_95 = paste(round(post_HPI[1], 1), "to", round(post_HPI[2], 1))
+    mean = round(pred_mu, 2),
+    sd = round(pred_sd, 2),
+    HPDI_95 = paste(round(pred_HPI[1], 1), "to", round(pred_HPI[2], 1))
 )
 ```
 
-Based on this we expect the largest observed value to be about 24 points and the smallest to be about -7 points.
+Based on this we expect the largest observed value to be about 24 points and the smallest to be about -8 points.
 
 >Thus, it would appear imprudent to believe that school A really has an effect as large as 28 points.
 
@@ -368,7 +404,7 @@ Based on this we expect the largest observed value to be about 24 points and the
 Now we fit a multilevel model with an adaptive normal prior on the estimates for each school. We'll draw an absolute boatload of samples (about 8 million) to make the plots in the next section as smooth as possible.
 
 ```{r message=FALSE, warning=FALSE, results=FALSE}
-m5_4 <- brm(
+m5_5 <- brm(
     est_effect | se(std_err) ~ (1 | school),
     data = schools,
     iter = 2e6,
@@ -382,13 +418,13 @@ m5_4 <- brm(
 Sampling for this model takes between 5 and 10 minutes on my laptop.
 
 ```{r}
-summary(m5_4)
+summary(m5_5)
 ```
 
 Let's plot the marginal posteriors for the effect at each school.
 
 ```{r dev="CairoPNG"}
-samples <- as.data.frame(m5_4)
+samples <- as.data.frame(m5_5)
 school_posts <- apply(samples[,3:10], 2, function(x) x + samples$b_Intercept)
 school_mus <- apply(school_posts, 2, mean)
 school_sds <- apply(school_posts, 2, sd)
@@ -442,6 +478,8 @@ plot(
     main = "Marginal posterior for tau"
 )
 ```
+
+Note that this is very similar to the posterior distribution of sigma from `m5_4`.
 
 Because we're working with samples it's a bit harder to access the conditional posterior means of the treatment effects. We'll attempt to re-create the book's figures 5.6 and 5.7 using the approximation
 
@@ -558,7 +596,7 @@ meta$lor_sd <- sqrt(1/meta$treated.deaths + 1/(meta$treated.total - meta$treated
 We then implement the model described in the book using **brms**.
 
 ```{r message=FALSE, warning=FALSE, results=FALSE}
-m5_5 <- brm(
+m5_6 <- brm(
     log_odds_ratio | se(lor_sd) ~ (1 | study),
     data = list(log_odds_ratio = meta$log_odds_ratio, lor_sd = meta$lor_sd, study = meta$study),
     iter =  2e4,
@@ -570,7 +608,7 @@ m5_5 <- brm(
 ```
 
 ```{r}
-summary(m5_5)
+summary(m5_6)
 ```
 
 These posterior distributions for mu and tau match those in Table 5.5 in the book.
@@ -578,7 +616,7 @@ These posterior distributions for mu and tau match those in Table 5.5 in the boo
 Let's plot the posterior predictive distribution for theta.
 
 ```{r dev="CairoPNG"}
-samples <- as.data.frame(m5_5)
+samples <- as.data.frame(m5_6)
 predictive <- rnorm(nrow(samples), samples$b_Intercept, samples$sd_study__Intercept)
 predictive_mu <- mean(predictive)
 predictive_HPI <- HPDinterval(as.mcmc(predictive))[1,]
@@ -629,7 +667,7 @@ We'll use weak priors on the hyperparameters of the multivariate normal. In part
 f1 <- bf(cdeaths | trials(ctotal) ~ (1 |p| study))
 f2 <- bf(tdeaths | trials(ttotal) ~ (1 |p| study))
 
-m5_6 <- brm(
+m5_7 <- brm(
     mvbf(f1, f2),
     family = binomial,
     data = list(
@@ -648,7 +686,7 @@ m5_6 <- brm(
 ```
 
 ```{r}
-summary(m5_6)
+summary(m5_7)
 ```
 
 That's an extremely high estimate for the correlation between treated and control death rates. Studies with higher death rates in their control group are strongly expected to have higher death rates in their treated group. It seems like external factors in each study (environment, common patient background, or even bedside manner?) have a very large effect on the outcomes.
@@ -664,7 +702,7 @@ Next we'll plot the adjusted estimates from the model as blue dots and connect t
 Finally we can visualize uncertainty in the correlation between control and treated probabilities by plotting level curves of the multivariate normal distributions corresponding to posterior samples of the hyperparameters. The first 300 samples are used below.
 
 ```{r fig.width=9, fig.height=9, dev="CairoPNG"}
-samples <- as.data.frame(m5_6)
+samples <- as.data.frame(m5_7)
 
 # mean estimates for the logit-probabilities-of-death
 cdeaths <- sapply(6:27, function(i) samples$b_cdeaths_Intercept + samples[,i])
@@ -774,6 +812,6 @@ sum(log_odds_ratio > 0)/length(log_odds_ratio)
 
 [Antonio R. Vargas](https://github.com/szego)
 
-4 Dec 2018
+26 May 2019
 
 
